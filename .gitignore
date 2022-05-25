@@ -1,6 +1,7 @@
 # Data files
 *.pdb
 *.ent
+*.flr
 
 # Jupyter
 .DS_Store
