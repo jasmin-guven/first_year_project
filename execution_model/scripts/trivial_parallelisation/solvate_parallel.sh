@@ -2,7 +2,7 @@
 
 N_LIGANDS=$(ls -l ligands | grep ^d | wc -l)
 
-N_TASKS = $(($N_LIGANDS -1))
+N_TASKS=$(($N_LIGANDS -1))
 
 for i in $(seq 0 $N_TASKS)
 do
