@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/jasminguven/Projects/metalloproteins/execution_model/scripts/trivial_parallelisation/ligands/ligand_2/solvation_2.py", line 2, in <module>
+    import BioSimSpace as bss
+ModuleNotFoundError: No module named 'BioSimSpace'

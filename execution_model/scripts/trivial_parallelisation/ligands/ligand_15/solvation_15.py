@@ -13,15 +13,15 @@ runtime_npt = 200  # ps
 print(f"program: {sys.argv[0]}, index: {sys.argv[1]}")
 index = int(sys.argv[1])
 
-ligand_stream = open("../../ligands.dat", "r")
+ligand_stream = open("../ligands.dat", "r")
 ligand_lines = ligand_stream.readlines()
 ligand_name = ligand_lines[index].rstrip()
 
 #print(ligand_name)
 
-ligand = bss.IO.readMolecules(f"../../inputs/ligands/{ligand_name}.mol2")[0]
+ligand = bss.IO.readMolecules(f"../inputs/ligands/{ligand_name}.mol2")[0]
 
-protocol_stream = open("../../protocol.dat", "r")
+protocol_stream = open("../protocol.dat", "r")
 protocol_lines = protocol_stream.readlines()
 ligand_force_field = protocol_lines[0].rstrip()
 
@@ -49,7 +49,7 @@ box_min, box_max = ligand_params.getAxisAlignedBoundingBox()
 box_size = [y - x for x, y in zip(box_min, box_max)]
 box_sizes = [x + int(box_axis_length) * box_axis_unit for x in box_size]
 
-protein = bss.IO.readMolecules(["../../inputs/protein/protein_complex.rst7", "../../inputs/protein/protein_complex.prm7"])[0]
+protein = bss.IO.readMolecules(["../inputs/protein/protein_complex.rst7", "../inputs/protein/protein_complex.prm7"])[0]
 system = ligand_params + protein
 box_min_system, box_max_system = system.getAxisAlignedBoundingBox()
 box_size_system = [y - x for x, y in zip(box_min_s, box_max_system)]
