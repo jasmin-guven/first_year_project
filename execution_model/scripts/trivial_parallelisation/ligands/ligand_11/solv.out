@@ -1,4 +1,23 @@
+/home/jguven/Software/miniconda3/envs/bss-d/lib/python3.9/site-packages/numpy/core/getlimits.py:499: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/home/jguven/Software/miniconda3/envs/bss-d/lib/python3.9/site-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+/home/jguven/Software/miniconda3/envs/bss-d/lib/python3.9/site-packages/numpy/core/getlimits.py:499: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/home/jguven/Software/miniconda3/envs/bss-d/lib/python3.9/site-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+Warning: importing 'simtk.openmm' is deprecated.  Import 'openmm' instead.
+
+==============================================================
+Sending anonymous Sire usage statistics to http://siremol.org.
+For more information, see http://siremol.org/analytics
+To disable, set the environment variable 'SIRE_DONT_PHONEHOME' to 1
+To see the information sent, set the environment variable 
+SIRE_VERBOSE_PHONEHOME equal to 1. To silence this message, set
+the environment variable SIRE_SILENT_PHONEHOME to 1.
+==============================================================
+
 Traceback (most recent call last):
-  File "/Users/jasminguven/Projects/metalloproteins/execution_model/scripts/trivial_parallelisation/ligands/ligand_11/solvation_11.py", line 2, in <module>
-    import BioSimSpace as bss
-ModuleNotFoundError: No module named 'BioSimSpace'
+  File "/home/jguven/Projects/metalloproteins/execution_model/scripts/trivial_parallelisation/ligands/ligand_11/solvation_11.py", line 13, in <module>
+    print(f"program: {sys.argv[0]}, index: {sys.argv[1]}")
+IndexError: list index out of range
