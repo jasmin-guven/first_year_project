@@ -7,8 +7,6 @@
 /home/jguven/Software/miniconda3/envs/bss-d/lib/python3.9/site-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
   return self._float_to_str(self.smallest_subnormal)
 Warning: importing 'simtk.openmm' is deprecated.  Import 'openmm' instead.
-program: solvation_12.py, index: 11
-Parameterising lig_h_1 using GAFF2 force field.
 
 ==============================================================
 Sending anonymous Sire usage statistics to http://siremol.org.
@@ -19,10 +17,8 @@ SIRE_VERBOSE_PHONEHOME equal to 1. To silence this message, set
 the environment variable SIRE_SILENT_PHONEHOME to 1.
 ==============================================================
 
+program: solvation_12.py, index: 11
+Parameterising lig_h_1 using GAFF2 force field.
 box type is set to orthorhombic
 Solvating ligand.
 Solvating ligand + protein system.
-Traceback (most recent call last):
-  File "/home/jguven/Projects/metalloproteins/execution_model/scripts/trivial_parallelisation/ligands/ligand_12/solvation_12.py", line 64, in <module>
-    box, angles = bss.Box.cubic(max(box_sizes_s))
-NameError: name 'box_sizes_s' is not defined
