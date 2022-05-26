@@ -20,5 +20,7 @@ the environment variable SIRE_SILENT_PHONEHOME to 1.
 program: equilibration_4.py, index: 3
 Traceback (most recent call last):
   File "/home/jguven/Projects/metalloproteins/execution_model/scripts/parallel_solvation/ligands/ligand_4/equilibration_4.py", line 36, in <module>
-    ligand_solvated = BSS.IO.readMolecules([f"../../inputs/ligands/{ligand_name}_ligand_solvated.prm7",
-NameError: name 'BSS' is not defined
+    ligand_solvated = bss.IO.readMolecules([f"../../inputs/ligands/{ligand_name}_ligand_solvated.prm7",
+  File "/home/jguven/Software/miniconda3/envs/bss-d/lib/python3.9/site-packages/BioSimSpace/IO/_io.py", line 373, in readMolecules
+    raise IOError("Missing input file: '%s'" % file)
+OSError: Missing input file: '../../inputs/ligands/lig_h_16_ligand_solvated.prm7'
