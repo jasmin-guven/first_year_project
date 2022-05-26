@@ -2,6 +2,7 @@
 *.pdb
 *.ent
 *.flr
+*.swp
 
 # Jupyter
 .DS_Store
