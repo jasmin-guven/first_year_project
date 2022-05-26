@@ -8,7 +8,7 @@ for i in $(seq 0 $N_TASKS)
 do
 
 DIR_INDEX=$(($i +1))
-cd ligands/ligand_$DIR_INDEX
+cd ../parallel_solvation/ligands/ligand_$DIR_INDEX
 nohup python equilibration_$DIR_INDEX.py $i > equil.out &
 cd ../../
 

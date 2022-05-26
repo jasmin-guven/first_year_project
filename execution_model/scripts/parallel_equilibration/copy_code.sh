@@ -4,12 +4,12 @@
 DIRS=$(ls -l ../parallel_solvation/ligands | grep ^d | wc -l)
 #echo $DIRS
 
-cd ligands
+cd ../parallel_solvation/ligands
 
 # loop over directories
 for i in $(seq 1 $DIRS) 
 do 
 cd ligand_$i
-cp ../../equilibration_parallel.py equilibration_$i.py
+cp ../../../parallel_equilibration/equilibration_parallel.py equilibration_$i.py
 cd ..
 done
