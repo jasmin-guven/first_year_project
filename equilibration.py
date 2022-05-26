@@ -1,4 +1,4 @@
-# equilibration.py
+# solvation.py
 
 import BioSimSpace as BSS
 import sys

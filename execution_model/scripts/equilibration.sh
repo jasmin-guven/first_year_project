@@ -1,13 +1,15 @@
 #!/bin/bash
 
 # Number of ligands
-n_ligands=$(< "../ligands.dat" wc -l)
+N_LIGANDS=$(< "../ligands.dat" wc -l)
 
 # Number of tasks
-n_tasks=$(($n_ligands -1))
+N_TASKS=$(($N_LIGANDS -1))
+#echo $N_TASKS
 
 # loop over number of tasks
-for i in n_tasks:
+for i in $(seq 0 $N_TASKS)
 do
-	python equilibration.py $i
+python equilibration.py $i
+#echo $i
 done
