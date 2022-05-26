@@ -1,0 +1,8 @@
+ligand forcefield = gaff2
+protein forcefield = ff14SB
+solvent = TIP3P
+box edges = 20*angstrom
+box type = orthorhombic
+protocol = default
+sampling = 2*ns
+engine = SOMD
