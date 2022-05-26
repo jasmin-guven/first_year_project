@@ -7,6 +7,16 @@ n_ligands=$(< "../ligands.dat" wc -l)
 n_tasks=$(( $n_ligands -1 ))
 
 # Perturbations
-mapfile perturbations < ../network.dat
-echo $perturbations
+mapfile PERTURBATIONS < ../network.dat
+#echo ${PERTURBATIONS[@]}
+
+for ligand
+
+
+#for perturbation in "${PERTURBATIONS[@]}"
+#do
+#	#echo $perturbation
+	#IFS=' ' read -a ligand_pair <<< "$perturbation"
+	#echo $ligand_pair
+#done
 
