@@ -7,8 +7,22 @@
 /home/jguven/Software/miniconda3/envs/bss-d/lib/python3.9/site-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
   return self._float_to_str(self.smallest_subnormal)
 Warning: importing 'simtk.openmm' is deprecated.  Import 'openmm' instead.
+
+==============================================================
+Sending anonymous Sire usage statistics to http://siremol.org.
+For more information, see http://siremol.org/analytics
+To disable, set the environment variable 'SIRE_DONT_PHONEHOME' to 1
+To see the information sent, set the environment variable 
+SIRE_VERBOSE_PHONEHOME equal to 1. To silence this message, set
+the environment variable SIRE_SILENT_PHONEHOME to 1.
+==============================================================
+
 program: solvation_14.py, index: 13
+Parameterising lig_h_2 using GAFF2 force field.
+box type is set to orthorhombic
+Solvating ligand.
+Solvating ligand + protein system.
 Traceback (most recent call last):
-  File "/home/jguven/Projects/metalloproteins/execution_model/scripts/trivial_parallelisation/ligands/ligand_14/solvation_14.py", line 16, in <module>
-    ligand_stream = open("../../ligands.dat", "r")
-FileNotFoundError: [Errno 2] No such file or directory: '../../ligands.dat'
+  File "/home/jguven/Projects/metalloproteins/execution_model/scripts/trivial_parallelisation/ligands/ligand_14/solvation_14.py", line 64, in <module>
+    box, angles = bss.Box.cubic(max(box_sizes_s))
+NameError: name 'box_sizes_s' is not defined
