@@ -8,7 +8,7 @@ for i in $(seq 0 $N_TASKS)
 do
 DIR_INDEX=$(($i +1))
 cd ligands/ligand_$DIR_INDEX
-#nohup python solvation_$i.py $i > solv.out &
+nohup python solvation_$DIR_INDEX.py $i > solv.out &
 cd ../../
 
 done

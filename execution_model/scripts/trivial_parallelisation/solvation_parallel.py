@@ -52,7 +52,7 @@ box_sizes = [x + int(box_axis_length) * box_axis_unit for x in box_size]
 protein = bss.IO.readMolecules(["../../inputs/protein/protein_complex.rst7", "../../inputs/protein/protein_complex.prm7"])[0]
 system = ligand_params + protein
 box_min_system, box_max_system = system.getAxisAlignedBoundingBox()
-box_size_system = [y - x for x, y in zip(box_min_s, box_max_system)]
+box_size_system = [y - x for x, y in zip(box_min_system, box_max_system)]
 box_sizes_system = [x + int(box_axis_length) * box_axis_unit for x in box_size_system]
 
 print("Solvating ligand.")
