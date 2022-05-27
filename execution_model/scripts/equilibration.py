@@ -11,6 +11,8 @@ def run_process(system, md_protocol):
     @return the processed system.
     """
     process = BSS.Process.Gromacs(system, md_protocol)
+    process.setArg("-nt", 1)
+    print(process.getOutput)
     process.start()
     process.wait()
     if process.isError():
