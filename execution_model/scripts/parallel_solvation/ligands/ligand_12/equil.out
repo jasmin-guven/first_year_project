@@ -7,6 +7,7 @@
 /home/jguven/Software/miniconda3/envs/bss-d/lib/python3.9/site-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
   return self._float_to_str(self.smallest_subnormal)
 Warning: importing 'simtk.openmm' is deprecated.  Import 'openmm' instead.
+program: equilibration_12.py, index: 11
 
 ==============================================================
 Sending anonymous Sire usage statistics to http://siremol.org.
@@ -17,10 +18,27 @@ SIRE_VERBOSE_PHONEHOME equal to 1. To silence this message, set
 the environment variable SIRE_SILENT_PHONEHOME to 1.
 ==============================================================
 
-program: equilibration_12.py, index: 11
+---------------------------
+Working on solvated ligand.
+Minimising in 250 steps.
+Finished minimisation.
+NVT equilibration for 5 ps while restraining all non-solvent atoms.
+
+Fatal error:
+There is no domain decomposition for 16 ranks that is compatible with the
+given box and a minimum cell size of 0.735 nm
+Change the number of ranks or mdrun option -rdd or -dds
+Look in the log file for details on the domain decomposition
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+None
+All output has been redirected to the stdout stream!
+None
 Traceback (most recent call last):
-  File "/home/jguven/Projects/metalloproteins/execution_model/scripts/parallel_solvation/ligands/ligand_12/equilibration_12.py", line 36, in <module>
-    ligand_solvated = bss.IO.readMolecules([f"../../inputs/ligands/{ligand_name}_ligand_solvated.prm7",
-  File "/home/jguven/Software/miniconda3/envs/bss-d/lib/python3.9/site-packages/BioSimSpace/IO/_io.py", line 373, in readMolecules
-    raise IOError("Missing input file: '%s'" % file)
-OSError: Missing input file: '../../inputs/ligands/lig_h_1_ligand_solvated.prm7'
+  File "/home/jguven/Projects/metalloproteins/execution_model/scripts/parallel_solvation/ligands/ligand_12/equilibration_12.py", line 54, in <module>
+    restrained_nvt = run_process(minimised, protocol)
+  File "/home/jguven/Projects/metalloproteins/execution_model/scripts/parallel_solvation/ligands/ligand_12/equilibration_12.py", line 19, in run_process
+    raise _Exceptions.ThirdPartyError("The process exited with an error!")
+BioSimSpace._Exceptions._exceptions.ThirdPartyError: The process exited with an error!

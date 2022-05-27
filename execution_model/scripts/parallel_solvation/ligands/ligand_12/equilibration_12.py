@@ -21,10 +21,10 @@ def run_process(system, md_protocol):
     return system
 
 
-minimisation_steps = 250
+minimisation_steps = 10
 runtime_short_nvt = 5  # ps
-runtime_nvt = 50  # ps
-runtime_npt = 200  # ps
+runtime_nvt = 5  # ps
+runtime_npt = 5  # ps
 
 print(f"program: {sys.argv[0]}, index: {sys.argv[1]}")
 index = int(sys.argv[1])
@@ -33,10 +33,10 @@ ligand_stream = open("../../../../ligands.dat", "r")
 ligand_lines = ligand_stream.readlines()
 ligand_name = ligand_lines[index].rstrip()
 
-ligand_solvated = bss.IO.readMolecules([f"../../inputs/ligands/{ligand_name}_ligand_solvated.prm7",
-                                        f"../../inputs/ligands/{ligand_name}_ligand_solvated.rst7"])
-system_solvated = bss.IO.readMolecules([f"../../inputs/ligands/{ligand_name}_system_solvated.prm7",
-                                        f"../../inputs/ligands/{ligand_name}_system_solvated.rst7"])
+ligand_solvated = bss.IO.readMolecules([f"../../../../inputs/ligands/{ligand_name}_ligand_solvated.prm7",
+                                        f"../../../../inputs/ligands/{ligand_name}_ligand_solvated.rst7"])
+system_solvated = bss.IO.readMolecules([f"../../../../inputs/ligands/{ligand_name}_system_solvated.prm7",
+                                        f"../../../../inputs/ligands/{ligand_name}_system_solvated.rst7"])
 print("---------------------------")
 print("Working on solvated ligand.")
 print(f"Minimising in {minimisation_steps} steps.")
@@ -126,17 +126,17 @@ protocol = bss.Protocol.Equilibration(
                                 )
 equilibrated_system = run_process(restrained_npt_system, protocol)
 
-os.system("mkdir -p ../../prep/ligands")
-os.system("mkdir -p ../../prep/protein")
+os.system("mkdir -p ../../../../prep/ligands")
+os.system("mkdir -p ../../../../prep/protein")
 
 print("Saving solvated/equilibrated systems.")
 print("Ligand:")
 print(equilibrated_ligand)
-bss.IO.saveMolecules(f"../../prep/ligands/{ligand_name}_ligand_prepped", equilibrated_ligand, ["PRM7", "RST7"])
+bss.IO.saveMolecules(f"../../../../prep/ligands/{ligand_name}_ligand_prepped", equilibrated_ligand, ["PRM7", "RST7"])
 
 print("Ligand + protein:")
 print(equilibrated_system)
-bss.IO.saveMolecules(f"../../prep/protein/{lig_name}_system_prepped", equilibrated_system, ["PRM7", "RST7"])
+bss.IO.saveMolecules(f"../../../../prep/protein/{lig_name}_system_prepped", equilibrated_system, ["PRM7", "RST7"])
 print("First 20 molecules in ligand + protein system:")
 for molecules in equilibrated_system.getMolecules()[:20]:
     print(molecules)
