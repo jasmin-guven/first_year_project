@@ -31,7 +31,7 @@ runtime_npt = 200  # ps
 print(f"program: {sys.argv[0]}, index: {sys.argv[1]}")
 index = int(sys.argv[1])
 
-ligand_stream = open("../../../../ligands.dat", "r")
+ligand_stream = open("../ligands.dat", "r")
 ligand_lines = ligand_stream.readlines()
 ligand_name = ligand_lines[index].rstrip()
 
