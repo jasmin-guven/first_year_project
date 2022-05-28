@@ -8,5 +8,6 @@ for i in $(seq 0 $N_TASKS)
 do
 #DIR_INDEX=$(($i +1))
 echo $("task index is $i")
-python equilibration.py $i
+mkdir nohup_output_$i
+nohup python equilibration.py $i > nohup_output_$i/nohup_$i.out &
 done
