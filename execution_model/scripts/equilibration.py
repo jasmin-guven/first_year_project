@@ -118,7 +118,7 @@ protocol = bss.Protocol.Equilibration(
                                 temperature=300*bss.Units.Temperature.kelvin,
                                 restraint="heavy",
                                 )
-restrained_npt_system = run_process(npt, protocol)
+restrained_npt_system = run_process(nvt_system, protocol)
 
 print(f"NPT equilibration for {runtime_npt} ps without restraints.")
 protocol = bss.Protocol.Equilibration(
