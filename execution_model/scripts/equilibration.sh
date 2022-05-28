@@ -4,10 +4,10 @@ N_LIGANDS=$(ls -l parallel_solvation/ligands | grep ^d | wc -l)
 
 N_TASKS=$(($N_LIGANDS -1))
 
+
 for i in $(seq 0 $N_TASKS)
 do
 #DIR_INDEX=$(($i +1))
-echo $("task index is $i")
-mkdir nohup_output_$i
-nohup python equilibration.py $i > nohup_output_$i/nohup_$i.out &
+echo "task index is $i"
+nohup python equilibration.py $i > nohup_output/nohup_$i.out &
 done

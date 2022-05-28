@@ -12,7 +12,7 @@ def run_process(system, md_protocol):
     """
     process = bss.Process.Gromacs(system, md_protocol)
     process.setArg("-nt", 1)
-    print(process.getOutput)
+    print(process.workDir())
     process.start()
     process.wait()
     if process.isError():
