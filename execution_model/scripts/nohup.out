@@ -414,3 +414,7 @@ Traceback (most recent call last):
   File "/home/jguven/Projects/metalloproteins/execution_model/scripts/solvation.py", line 55, in <module>
     box_size_system = [y - x for x, y in zip(box_min_s, box_max_system)]
 NameError: name 'box_min_s' is not defined
+Traceback (most recent call last):
+  File "/home/jguven/projects/metalloproteins/execution_model/scripts/equilibration_test.py", line 1, in <module>
+    import BioSimSpace as bss
+ModuleNotFoundError: No module named 'BioSimSpace'

@@ -2,7 +2,7 @@ import BioSimSpace as bss
 import sys
 from BioSimSpace import _Exceptions
 import os
-from tqdm import tqdm
+
 
 def run_process(system, md_protocol):
     """
@@ -23,10 +23,10 @@ def run_process(system, md_protocol):
     return system
 
 
-minimisation_steps = 10
+minimisation_steps = 50
 runtime_short_nvt = 5  # ps
-runtime_nvt = 5  # ps
-runtime_npt = 5  # ps
+runtime_nvt = 10  # ps
+runtime_npt = 50  # ps
 
 print(f"program: {sys.argv[0]}, index: {sys.argv[1]}")
 index = int(sys.argv[1])
@@ -41,10 +41,9 @@ system_solvated = bss.IO.readMolecules([f"../inputs/ligands/{ligand_name}_system
                                         f"../inputs/ligands/{ligand_name}_system_solvated.rst7"])
 print("---------------------------")
 print("Working on solvated ligand.")
-print(f"Minimising in {minimisation_steps} steps.")
+print(f"Minimising in {minimisation_steps} steps..")
 protocol = bss.Protocol.Minimisation(steps=minimisation_steps)
-for i in tqdm(range(minimisation_steps)):
-    minimised = run_process(ligand_solvated, protocol)
+minimised = run_process(ligand_solvated, protocol)
 print("Finished minimisation.")
 
 print(f"NVT equilibration for {runtime_short_nvt} ps while restraining all non-solvent atoms.")
@@ -54,16 +53,15 @@ protocol = bss.Protocol.Equilibration(
                                     temperature_end=300*bss.Units.Temperature.kelvin,
                                     restraint="all"
                                 )
-for i in tqdm(range(runtime_short_nvt)):
-    restrained_nvt = run_process(minimised, protocol)
+restrained_nvt = run_process(minimised, protocol)
 
 print(f"NVT equilibration for {runtime_nvt} ps without restraints.")
 protocol = bss.Protocol.Equilibration(
                                 runtime=runtime_nvt*bss.Units.Time.picosecond,
                                 temperature=300*bss.Units.Temperature.kelvin,
                                 )
-for i in tqdm(range(runtime_nvt)):
-    nvt = run_process(restrained_nvt, protocol)
+
+nvt = run_process(restrained_nvt, protocol)
 
 print(f"NPT equilibration for {runtime_npt} ps while restraining non-solvent heavy atoms.")
 protocol = bss.Protocol.Equilibration(
@@ -72,8 +70,7 @@ protocol = bss.Protocol.Equilibration(
                                 temperature=300*bss.Units.Temperature.kelvin,
                                 restraint="heavy",
                                 )
-for i in tqdm(range(runtime_npt)):
-    restrained_npt = run_process(nvt, protocol)
+restrained_npt = run_process(nvt, protocol)
 
 print(f"NPT equilibration for {runtime_npt} ps without restraints.")
 protocol = bss.Protocol.Equilibration(
@@ -81,17 +78,13 @@ protocol = bss.Protocol.Equilibration(
                                 pressure=1*bss.Units.Pressure.atm,
                                 temperature=300*bss.Units.Temperature.kelvin,
                                 )
-
-for i in tqdm(range(runtime_npt)):
-    equilibrated_ligand = run_process(restrained_npt, protocol)
+equilibrated_ligand = run_process(restrained_npt, protocol)
 
 print("---------------------------")
 print("Working on solvated ligand+protein.")
 print(f"Minimising in {minimisation_steps} steps..")
 protocol = bss.Protocol.Minimisation(steps=minimisation_steps)
-
-for i in tqdm(range(minimisation_steps)):
-    minimised = run_process(system_solvated, protocol)
+minimised = run_process(system_solvated, protocol)
 
 print(f"NVT equilibration for {runtime_short_nvt} ps while restraining all non-solvent atoms.")
 protocol = bss.Protocol.Equilibration(
@@ -100,9 +93,7 @@ protocol = bss.Protocol.Equilibration(
                                 temperature_end=300*bss.Units.Temperature.kelvin,
                                 restraint="all"
                                 )
-
-for i in tqdm(range(runtime_short_nvt)):
-    restrained_nvt_system = run_process(minimised, protocol)
+restrained_nvt_system = run_process(minimised, protocol)
 
 print(f"NVT equilibration for {runtime_nvt} ps while restraining all backbone atoms.")
 protocol = bss.Protocol.Equilibration(
@@ -110,17 +101,15 @@ protocol = bss.Protocol.Equilibration(
                                 temperature=300*bss.Units.Temperature.kelvin,
                                 restraint="backbone"
                                 )
-
-for i in tqdm(range(runtime_nvt)):
-    backbone_restrained_nvt_system = run_process(restrained_nvt_system, protocol)
+backbone_restrained_nvt_system = run_process(restrained_nvt_system, protocol)
 
 print(f"NVT equilibration for {runtime_nvt} ps without restraints.")
 protocol = bss.Protocol.Equilibration(
                                 runtime=runtime_nvt*bss.Units.Time.picosecond,
                                 temperature_end=300*bss.Units.Temperature.kelvin,
                                 )
-for i in tqdm(range(runtime_nvt)):
-    nvt_system = run_process(backbone_restrained_nvt_system, protocol)
+
+nvt_system = run_process(backbone_restrained_nvt_system, protocol)
 
 print(f"NPT equilibration for {runtime_npt} ps while restraining non-solvent heavy atoms..")
 protocol = bss.Protocol.Equilibration(
@@ -129,9 +118,7 @@ protocol = bss.Protocol.Equilibration(
                                 temperature=300*bss.Units.Temperature.kelvin,
                                 restraint="heavy",
                                 )
-
-for i in tqdm(range(runtime_npt)):
-    restrained_npt_system = run_process(nvt_system, protocol)
+restrained_npt_system = run_process(nvt_system, protocol)
 
 print(f"NPT equilibration for {runtime_npt} ps without restraints.")
 protocol = bss.Protocol.Equilibration(
@@ -139,8 +126,7 @@ protocol = bss.Protocol.Equilibration(
                                 pressure=1*bss.Units.Pressure.atm,
                                 temperature=300*bss.Units.Temperature.kelvin,
                                 )
-for i in tqdm(range(runtime_npt)):
-    equilibrated_system = run_process(restrained_npt_system, protocol)
+equilibrated_system = run_process(restrained_npt_system, protocol)
 
 os.system("mkdir -p ../prep/ligands")
 os.system("mkdir -p ../prep/protein")
