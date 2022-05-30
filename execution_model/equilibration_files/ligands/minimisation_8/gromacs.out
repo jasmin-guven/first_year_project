@@ -1,0 +1,460 @@
+                      :-) GROMACS - gmx mdrun, 2021.3 (-:
+
+                            GROMACS is written by:
+     Andrey Alekseenko              Emile Apol              Rossen Apostolov     
+         Paul Bauer           Herman J.C. Berendsen           Par Bjelkmar       
+       Christian Blau           Viacheslav Bolnykh             Kevin Boyd        
+     Aldert van Buuren           Rudi van Drunen             Anton Feenstra      
+    Gilles Gouaillardet             Alan Gray               Gerrit Groenhof      
+       Anca Hamuraru            Vincent Hindriksen          M. Eric Irrgang      
+      Aleksei Iupinov           Christoph Junghans             Joe Jordan        
+    Dimitrios Karkoulis            Peter Kasson                Jiri Kraus        
+      Carsten Kutzner              Per Larsson              Justin A. Lemkul     
+       Viveca Lindahl            Magnus Lundborg             Erik Marklund       
+        Pascal Merz             Pieter Meulenhoff            Teemu Murtola       
+        Szilard Pall               Sander Pronk              Roland Schulz       
+       Michael Shirts            Alexey Shvetsov             Alfons Sijbers      
+       Peter Tieleman              Jon Vincent              Teemu Virolainen     
+     Christian Wennberg            Maarten Wolf              Artem Zhmurov       
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2021.3
+Executable:   /opt/bin/bin/gmx
+Data prefix:  /opt/bin
+Working dir:  /tmp/tmpseuaxzo1
+Command line:
+  gmx mdrun -v -deffnm gromacs -nt 1
+
+Reading file gromacs.tpr, VERSION 2021.3 (single precision)
+Using 1 MPI thread
+Using 1 OpenMP thread 
+
+
+NOTE: Thread affinity was not set.
+
+Steepest Descents:
+   Tolerance (Fmax)   =  1.00000e+01
+   Number of steps    =          500
+Step=    0, Dmax= 1.0e-02 nm, Epot=  6.00843e+03 Fmax= 1.43519e+05, atom= 2048
+Step=    1, Dmax= 1.0e-02 nm, Epot= -3.76612e+03 Fmax= 4.83795e+04, atom= 986
+Step=    2, Dmax= 1.2e-02 nm, Epot= -1.10279e+04 Fmax= 1.93057e+04, atom= 1859
+Step=    3, Dmax= 1.4e-02 nm, Epot= -1.65376e+04 Fmax= 8.29137e+03, atom= 1859
+Step=    4, Dmax= 1.7e-02 nm, Epot= -2.04682e+04 Fmax= 3.72205e+03, atom= 830
+Step=    5, Dmax= 2.1e-02 nm, Epot= -2.30742e+04 Fmax= 4.74090e+03, atom= 15
+Step=    6, Dmax= 2.5e-02 nm, Epot= -2.31992e+04 Fmax= 2.62464e+04, atom= 15
+Step=    7, Dmax= 3.0e-02 nm, Epot= -2.42149e+04 Fmax= 9.90869e+03, atom= 15
+Step=    8, Dmax= 3.6e-02 nm, Epot= -2.28571e+04 Fmax= 4.30059e+04, atom= 4Step=    9, Dmax= 1.8e-02 nm, Epot= -2.43547e+04 Fmax= 1.60135e+04, atom= 4
+Step=   10, Dmax= 2.1e-02 nm, Epot= -2.46090e+04 Fmax= 1.49572e+04, atom= 4
+Step=   11, Dmax= 2.6e-02 nm, Epot= -2.46400e+04 Fmax= 2.27908e+04, atom= 4
+Step=   12, Dmax= 3.1e-02 nm, Epot= -2.48364e+04 Fmax= 2.17576e+04, atom= 4
+Step=   13, Dmax= 3.7e-02 nm, Epot= -2.46793e+04 Fmax= 3.24785e+04, atom= 4Step=   14, Dmax= 1.9e-02 nm, Epot= -2.52387e+04 Fmax= 4.93261e+03, atom= 4
+Step=   15, Dmax= 2.2e-02 nm, Epot= -2.52645e+04 Fmax= 2.64184e+04, atom= 4
+Step=   16, Dmax= 2.7e-02 nm, Epot= -2.57150e+04 Fmax= 1.19951e+04, atom= 4
+Step=   17, Dmax= 3.2e-02 nm, Epot= -2.53070e+04 Fmax= 3.35509e+04, atom= 4Step=   18, Dmax= 1.6e-02 nm, Epot= -2.58420e+04 Fmax= 1.09456e+04, atom= 4
+Step=   19, Dmax= 1.9e-02 nm, Epot= -2.58845e+04 Fmax= 1.70085e+04, atom= 4
+Step=   20, Dmax= 2.3e-02 nm, Epot= -2.60034e+04 Fmax= 1.60902e+04, atom= 4
+Step=   21, Dmax= 2.8e-02 nm, Epot= -2.59389e+04 Fmax= 2.41484e+04, atom= 4Step=   22, Dmax= 1.4e-02 nm, Epot= -2.62258e+04 Fmax= 3.80794e+03, atom= 4
+Step=   23, Dmax= 1.7e-02 nm, Epot= -2.63000e+04 Fmax= 1.96004e+04, atom= 4
+Step=   24, Dmax= 2.0e-02 nm, Epot= -2.65622e+04 Fmax= 9.06516e+03, atom= 4
+Step=   25, Dmax= 2.4e-02 nm, Epot= -2.63777e+04 Fmax= 2.49347e+04, atom= 4Step=   26, Dmax= 1.2e-02 nm, Epot= -2.66548e+04 Fmax= 8.03950e+03, atom= 4
+Step=   27, Dmax= 1.4e-02 nm, Epot= -2.67030e+04 Fmax= 1.27859e+04, atom= 4
+Step=   28, Dmax= 1.7e-02 nm, Epot= -2.67924e+04 Fmax= 1.18871e+04, atom= 4
+Step=   29, Dmax= 2.1e-02 nm, Epot= -2.67779e+04 Fmax= 1.80689e+04, atom= 4Step=   30, Dmax= 1.0e-02 nm, Epot= -2.69269e+04 Fmax= 2.97340e+03, atom= 4
+Step=   31, Dmax= 1.2e-02 nm, Epot= -2.70231e+04 Fmax= 1.45034e+04, atom= 4
+Step=   32, Dmax= 1.5e-02 nm, Epot= -2.71802e+04 Fmax= 6.89345e+03, atom= 4
+Step=   33, Dmax= 1.8e-02 nm, Epot= -2.71152e+04 Fmax= 1.84931e+04, atom= 4Step=   34, Dmax= 8.9e-03 nm, Epot= -2.72508e+04 Fmax= 5.86343e+03, atom= 4
+Step=   35, Dmax= 1.1e-02 nm, Epot= -2.73010e+04 Fmax= 9.66380e+03, atom= 4
+Step=   36, Dmax= 1.3e-02 nm, Epot= -2.73710e+04 Fmax= 8.73688e+03, atom= 4
+Step=   37, Dmax= 1.5e-02 nm, Epot= -2.73828e+04 Fmax= 1.35852e+04, atom= 4
+Step=   38, Dmax= 1.9e-02 nm, Epot= -2.74488e+04 Fmax= 1.29423e+04, atom= 4
+Step=   39, Dmax= 2.2e-02 nm, Epot= -2.73980e+04 Fmax= 1.91926e+04, atom= 4Step=   40, Dmax= 1.1e-02 nm, Epot= -2.75866e+04 Fmax= 2.99075e+03, atom= 4
+Step=   41, Dmax= 1.3e-02 nm, Epot= -2.76094e+04 Fmax= 1.58680e+04, atom= 4
+Step=   42, Dmax= 1.6e-02 nm, Epot= -2.77777e+04 Fmax= 7.08373e+03, atom= 4
+Step=   43, Dmax= 1.9e-02 nm, Epot= -2.76447e+04 Fmax= 2.02263e+04, atom= 4Step=   44, Dmax= 9.6e-03 nm, Epot= -2.78305e+04 Fmax= 6.64039e+03, atom= 4
+Step=   45, Dmax= 1.2e-02 nm, Epot= -2.78582e+04 Fmax= 9.99154e+03, atom= 4
+Step=   46, Dmax= 1.4e-02 nm, Epot= -2.79072e+04 Fmax= 9.79240e+03, atom= 4
+Step=   47, Dmax= 1.7e-02 nm, Epot= -2.79007e+04 Fmax= 1.41428e+04, atom= 4Step=   48, Dmax= 8.3e-03 nm, Epot= -2.79947e+04 Fmax= 2.10406e+03, atom= 4
+Step=   49, Dmax= 1.0e-02 nm, Epot= -2.80608e+04 Fmax= 1.19647e+04, atom= 4
+Step=   50, Dmax= 1.2e-02 nm, Epot= -2.81667e+04 Fmax= 5.16616e+03, atom= 4
+Step=   51, Dmax= 1.4e-02 nm, Epot= -2.81178e+04 Fmax= 1.52257e+04, atom= 4Step=   52, Dmax= 7.2e-03 nm, Epot= -2.82089e+04 Fmax= 5.07093e+03, atom= 4
+Step=   53, Dmax= 8.6e-03 nm, Epot= -2.82416e+04 Fmax= 7.32841e+03, atom= 4
+Step=   54, Dmax= 1.0e-02 nm, Epot= -2.82804e+04 Fmax= 7.42979e+03, atom= 4
+Step=   55, Dmax= 1.2e-02 nm, Epot= -2.82945e+04 Fmax= 1.04096e+04, atom= 4
+Step=   56, Dmax= 1.5e-02 nm, Epot= -2.83260e+04 Fmax= 1.08573e+04, atom= 4
+Step=   57, Dmax= 1.8e-02 nm, Epot= -2.83077e+04 Fmax= 1.48306e+04, atom= 4Step=   58, Dmax= 8.9e-03 nm, Epot= -2.84215e+04 Fmax= 1.90562e+03, atom= 4
+Step=   59, Dmax= 1.1e-02 nm, Epot= -2.84573e+04 Fmax= 1.32534e+04, atom= 4
+Step=   60, Dmax= 1.3e-02 nm, Epot= -2.85771e+04 Fmax= 5.13107e+03, atom= 4
+Step=   61, Dmax= 1.5e-02 nm, Epot= -2.84842e+04 Fmax= 1.67970e+04, atom= 4Step=   62, Dmax= 7.7e-03 nm, Epot= -2.86076e+04 Fmax= 5.87795e+03, atom= 4
+Step=   63, Dmax= 9.3e-03 nm, Epot= -2.86321e+04 Fmax= 7.41661e+03, atom= 4
+Step=   64, Dmax= 1.1e-02 nm, Epot= -2.86556e+04 Fmax= 8.44836e+03, atom= 4
+Step=   65, Dmax= 1.3e-02 nm, Epot= -2.86649e+04 Fmax= 1.06919e+04, atom= 4
+Step=   66, Dmax= 1.6e-02 nm, Epot= -2.86751e+04 Fmax= 1.21634e+04, atom= 4
+Step=   67, Dmax= 1.9e-02 nm, Epot= -2.86550e+04 Fmax= 1.54113e+04, atom= 4Step=   68, Dmax= 9.6e-03 nm, Epot= -2.87856e+04 Fmax= 1.53263e+03, atom= 4
+Step=   69, Dmax= 1.2e-02 nm, Epot= -2.88048e+04 Fmax= 1.47910e+04, atom= 4
+Step=   70, Dmax= 1.4e-02 nm, Epot= -2.89482e+04 Fmax= 4.94394e+03, atom= 4
+Step=   71, Dmax= 1.7e-02 nm, Epot= -2.88051e+04 Fmax= 1.86240e+04, atom= 4Step=   72, Dmax= 8.3e-03 nm, Epot= -2.89656e+04 Fmax= 6.88883e+03, atom= 4
+Step=   73, Dmax= 1.0e-02 nm, Epot= -2.89890e+04 Fmax= 7.37407e+03, atom= 4
+Step=   74, Dmax= 1.2e-02 nm, Epot= -2.89936e+04 Fmax= 9.67534e+03, atom= 4
+Step=   75, Dmax= 1.4e-02 nm, Epot= -2.90061e+04 Fmax= 1.08674e+04, atom= 4
+Step=   76, Dmax= 1.7e-02 nm, Epot= -2.89889e+04 Fmax= 1.36898e+04, atom= 4Step=   77, Dmax= 8.6e-03 nm, Epot= -2.90936e+04 Fmax= 1.47828e+03, atom= 4
+Step=   78, Dmax= 1.0e-02 nm, Epot= -2.91049e+04 Fmax= 1.33835e+04, atom= 4
+Step=   79, Dmax= 1.2e-02 nm, Epot= -2.92207e+04 Fmax= 4.38385e+03, atom= 4
+Step=   80, Dmax= 1.5e-02 nm, Epot= -2.91062e+04 Fmax= 1.70304e+04, atom= 4Step=   81, Dmax= 7.4e-03 nm, Epot= -2.92359e+04 Fmax= 6.25935e+03, atom= 4
+Step=   82, Dmax= 8.9e-03 nm, Epot= -2.92568e+04 Fmax= 6.48074e+03, atom= 4
+Step=   83, Dmax= 1.1e-02 nm, Epot= -2.92604e+04 Fmax= 8.84769e+03, atom= 4
+Step=   84, Dmax= 1.3e-02 nm, Epot= -2.92749e+04 Fmax= 9.49715e+03, atom= 4
+Step=   85, Dmax= 1.5e-02 nm, Epot= -2.92577e+04 Fmax= 1.25873e+04, atom= 4Step=   86, Dmax= 7.7e-03 nm, Epot= -2.93437e+04 Fmax= 1.48733e+03, atom= 4
+Step=   87, Dmax= 9.2e-03 nm, Epot= -2.93517e+04 Fmax= 1.16796e+04, atom= 4
+Step=   88, Dmax= 1.1e-02 nm, Epot= -2.94419e+04 Fmax= 4.14698e+03, atom= 4
+Step=   89, Dmax= 1.3e-02 nm, Epot= -2.93580e+04 Fmax= 1.48004e+04, atom= 4Step=   90, Dmax= 6.7e-03 nm, Epot= -2.94574e+04 Fmax= 5.35995e+03, atom= 4
+Step=   91, Dmax= 8.0e-03 nm, Epot= -2.94735e+04 Fmax= 6.06558e+03, atom= 4
+Step=   92, Dmax= 9.6e-03 nm, Epot= -2.94816e+04 Fmax= 7.62365e+03, atom= 4
+Step=   93, Dmax= 1.1e-02 nm, Epot= -2.94901e+04 Fmax= 8.83551e+03, atom= 4
+Step=   94, Dmax= 1.4e-02 nm, Epot= -2.94849e+04 Fmax= 1.08741e+04, atom= 4Step=   95, Dmax= 6.9e-03 nm, Epot= -2.95494e+04 Fmax= 1.06295e+03, atom= 4
+Step=   96, Dmax= 8.3e-03 nm, Epot= -2.95800e+04 Fmax= 1.07890e+04, atom= 4
+Step=   97, Dmax= 9.9e-03 nm, Epot= -2.96576e+04 Fmax= 3.45459e+03, atom= 4
+Step=   98, Dmax= 1.2e-02 nm, Epot= -2.95904e+04 Fmax= 1.36723e+04, atom= 4Step=   99, Dmax= 6.0e-03 nm, Epot= -2.96705e+04 Fmax= 5.06985e+03, atom= 4
+Step=  100, Dmax= 7.2e-03 nm, Epot= -2.96872e+04 Fmax= 5.15705e+03, atom= 4
+Step=  101, Dmax= 8.6e-03 nm, Epot= -2.96923e+04 Fmax= 7.12278e+03, atom= 4
+Step=  102, Dmax= 1.0e-02 nm, Epot= -2.97050e+04 Fmax= 7.59963e+03, atom= 4
+Step=  103, Dmax= 1.2e-02 nm, Epot= -2.96968e+04 Fmax= 1.00937e+04, atom= 4Step=  104, Dmax= 6.2e-03 nm, Epot= -2.97507e+04 Fmax= 1.21089e+03, atom= 4
+Step=  105, Dmax= 7.4e-03 nm, Epot= -2.97671e+04 Fmax= 9.38943e+03, atom= 4
+Step=  106, Dmax= 8.9e-03 nm, Epot= -2.98273e+04 Fmax= 3.30378e+03, atom= 4
+Step=  107, Dmax= 1.1e-02 nm, Epot= -2.97794e+04 Fmax= 1.19225e+04, atom= 4Step=  108, Dmax= 5.3e-03 nm, Epot= -2.98405e+04 Fmax= 4.33158e+03, atom= 4
+Step=  109, Dmax= 6.4e-03 nm, Epot= -2.98540e+04 Fmax= 4.82269e+03, atom= 4
+Step=  110, Dmax= 7.7e-03 nm, Epot= -2.98621e+04 Fmax= 6.16721e+03, atom= 4
+Step=  111, Dmax= 9.2e-03 nm, Epot= -2.98713e+04 Fmax= 7.02235e+03, atom= 4
+Step=  112, Dmax= 1.1e-02 nm, Epot= -2.98701e+04 Fmax= 8.79662e+03, atom= 4Step=  113, Dmax= 5.5e-03 nm, Epot= -2.99106e+04 Fmax= 9.15243e+02, atom= 4
+Step=  114, Dmax= 6.6e-03 nm, Epot= -2.99417e+04 Fmax= 8.54723e+03, atom= 4
+Step=  115, Dmax= 8.0e-03 nm, Epot= -2.99922e+04 Fmax= 2.87477e+03, atom= 4
+Step=  116, Dmax= 9.6e-03 nm, Epot= -2.99569e+04 Fmax= 1.08281e+04, atom= 4Step=  117, Dmax= 4.8e-03 nm, Epot= -3.00044e+04 Fmax= 3.95268e+03, atom= 4
+Step=  118, Dmax= 5.7e-03 nm, Epot= -3.00173e+04 Fmax= 4.25766e+03, atom= 4
+Step=  119, Dmax= 6.9e-03 nm, Epot= -3.00251e+04 Fmax= 5.58110e+03, atom= 4
+Step=  120, Dmax= 8.3e-03 nm, Epot= -3.00346e+04 Fmax= 6.23518e+03, atom= 4
+Step=  121, Dmax= 9.9e-03 nm, Epot= -3.00348e+04 Fmax= 7.94278e+03, atom= 4
+Step=  122, Dmax= 1.2e-02 nm, Epot= -3.00367e+04 Fmax= 9.06489e+03, atom= 4
+Step=  123, Dmax= 1.4e-02 nm, Epot= -3.00226e+04 Fmax= 1.13689e+04, atom= 4Step=  124, Dmax= 7.1e-03 nm, Epot= -3.00960e+04 Fmax= 1.10408e+03, atom= 4
+Step=  125, Dmax= 8.6e-03 nm, Epot= -3.00897e+04 Fmax= 1.11784e+04, atom= 4Step=  126, Dmax= 4.3e-03 nm, Epot= -3.01172e+04 Fmax= 5.05098e+03, atom= 4
+Step=  127, Dmax= 5.1e-03 nm, Epot= -3.01396e+04 Fmax= 2.28013e+03, atom= 4
+Step=  128, Dmax= 6.2e-03 nm, Epot= -3.01405e+04 Fmax= 6.54429e+03, atom= 4
+Step=  129, Dmax= 7.4e-03 nm, Epot= -3.01677e+04 Fmax= 4.01758e+03, atom= 4
+Step=  130, Dmax= 8.9e-03 nm, Epot= -3.01499e+04 Fmax= 8.67256e+03, atom= 4Step=  131, Dmax= 4.4e-03 nm, Epot= -3.01846e+04 Fmax= 2.34420e+03, atom= 4
+Step=  132, Dmax= 5.3e-03 nm, Epot= -3.01908e+04 Fmax= 5.25954e+03, atom= 4
+Step=  133, Dmax= 6.4e-03 nm, Epot= -3.02094e+04 Fmax= 3.89516e+03, atom= 4
+Step=  134, Dmax= 7.7e-03 nm, Epot= -3.02046e+04 Fmax= 7.07124e+03, atom= 4Step=  135, Dmax= 3.8e-03 nm, Epot= -3.02261e+04 Fmax= 1.57414e+03, atom= 4
+Step=  136, Dmax= 4.6e-03 nm, Epot= -3.02371e+04 Fmax= 5.02682e+03, atom= 4
+Step=  137, Dmax= 5.5e-03 nm, Epot= -3.02574e+04 Fmax= 2.85397e+03, atom= 4
+Step=  138, Dmax= 6.6e-03 nm, Epot= -3.02544e+04 Fmax= 6.62964e+03, atom= 4Step=  139, Dmax= 3.3e-03 nm, Epot= -3.02702e+04 Fmax= 1.89760e+03, atom= 4
+Step=  140, Dmax= 4.0e-03 nm, Epot= -3.02812e+04 Fmax= 3.77018e+03, atom= 4
+Step=  141, Dmax= 4.8e-03 nm, Epot= -3.02949e+04 Fmax= 3.06592e+03, atom= 4
+Step=  142, Dmax= 5.7e-03 nm, Epot= -3.02998e+04 Fmax= 5.10978e+03, atom= 4
+Step=  143, Dmax= 6.9e-03 nm, Epot= -3.03133e+04 Fmax= 4.72740e+03, atom= 4
+Step=  144, Dmax= 8.3e-03 nm, Epot= -3.03101e+04 Fmax= 7.05889e+03, atom= 4Step=  145, Dmax= 4.1e-03 nm, Epot= -3.03338e+04 Fmax= 1.15002e+03, atom= 4
+Step=  146, Dmax= 5.0e-03 nm, Epot= -3.03468e+04 Fmax= 5.95675e+03, atom= 4
+Step=  147, Dmax= 5.9e-03 nm, Epot= -3.03733e+04 Fmax= 2.51140e+03, atom= 4
+Step=  148, Dmax= 7.1e-03 nm, Epot= -3.03621e+04 Fmax= 7.68217e+03, atom= 4Step=  149, Dmax= 3.6e-03 nm, Epot= -3.03843e+04 Fmax= 2.59598e+03, atom= 4
+Step=  150, Dmax= 4.3e-03 nm, Epot= -3.03937e+04 Fmax= 3.49940e+03, atom= 4
+Step=  151, Dmax= 5.1e-03 nm, Epot= -3.04036e+04 Fmax= 3.84751e+03, atom= 4
+Step=  152, Dmax= 6.2e-03 nm, Epot= -3.04098e+04 Fmax= 4.94028e+03, atom= 4
+Step=  153, Dmax= 7.4e-03 nm, Epot= -3.04166e+04 Fmax= 5.63058e+03, atom= 4
+Step=  154, Dmax= 8.9e-03 nm, Epot= -3.04173e+04 Fmax= 7.03589e+03, atom= 4
+Step=  155, Dmax= 1.1e-02 nm, Epot= -3.04175e+04 Fmax= 8.17601e+03, atom= 4
+Step=  156, Dmax= 1.3e-02 nm, Epot= -3.04075e+04 Fmax= 1.00808e+04, atom= 4Step=  157, Dmax= 6.4e-03 nm, Epot= -3.04655e+04 Fmax= 9.14765e+02, atom= 4
+Step=  158, Dmax= 7.7e-03 nm, Epot= -3.04626e+04 Fmax= 1.01073e+04, atom= 4Step=  159, Dmax= 3.8e-03 nm, Epot= -3.04836e+04 Fmax= 4.60768e+03, atom= 4
+Step=  160, Dmax= 4.6e-03 nm, Epot= -3.05020e+04 Fmax= 1.94325e+03, atom= 4
+Step=  161, Dmax= 5.5e-03 nm, Epot= -3.05024e+04 Fmax= 5.95875e+03, atom= 4
+Step=  162, Dmax= 6.6e-03 nm, Epot= -3.05253e+04 Fmax= 3.48020e+03, atom= 4
+Step=  163, Dmax= 7.9e-03 nm, Epot= -3.05096e+04 Fmax= 7.87579e+03, atom= 4Step=  164, Dmax= 4.0e-03 nm, Epot= -3.05381e+04 Fmax= 2.21112e+03, atom= 4
+Step=  165, Dmax= 4.8e-03 nm, Epot= -3.05431e+04 Fmax= 4.57892e+03, atom= 4
+Step=  166, Dmax= 5.7e-03 nm, Epot= -3.05570e+04 Fmax= 3.60949e+03, atom= 4
+Step=  167, Dmax= 6.9e-03 nm, Epot= -3.05541e+04 Fmax= 6.18638e+03, atom= 4Step=  168, Dmax= 3.4e-03 nm, Epot= -3.05708e+04 Fmax= 1.27766e+03, atom= 4
+Step=  169, Dmax= 4.1e-03 nm, Epot= -3.05805e+04 Fmax= 4.63789e+03, atom= 4
+Step=  170, Dmax= 4.9e-03 nm, Epot= -3.05978e+04 Fmax= 2.40470e+03, atom= 4
+Step=  171, Dmax= 5.9e-03 nm, Epot= -3.05947e+04 Fmax= 6.08402e+03, atom= 4Step=  172, Dmax= 3.0e-03 nm, Epot= -3.06078e+04 Fmax= 1.84733e+03, atom= 4
+Step=  173, Dmax= 3.6e-03 nm, Epot= -3.06164e+04 Fmax= 3.21476e+03, atom= 4
+Step=  174, Dmax= 4.3e-03 nm, Epot= -3.06265e+04 Fmax= 2.90122e+03, atom= 4
+Step=  175, Dmax= 5.1e-03 nm, Epot= -3.06313e+04 Fmax= 4.40263e+03, atom= 4
+Step=  176, Dmax= 6.2e-03 nm, Epot= -3.06406e+04 Fmax= 4.39633e+03, atom= 4
+Step=  177, Dmax= 7.4e-03 nm, Epot= -3.06400e+04 Fmax= 6.13460e+03, atom= 4Step=  178, Dmax= 3.7e-03 nm, Epot= -3.06579e+04 Fmax= 8.56913e+02, atom= 4
+Step=  179, Dmax= 4.4e-03 nm, Epot= -3.06727e+04 Fmax= 5.51982e+03, atom= 4
+Step=  180, Dmax= 5.3e-03 nm, Epot= -3.06956e+04 Fmax= 2.04952e+03, atom= 4
+Step=  181, Dmax= 6.4e-03 nm, Epot= -3.06862e+04 Fmax= 7.07553e+03, atom= 4Step=  182, Dmax= 3.2e-03 nm, Epot= -3.07042e+04 Fmax= 2.52157e+03, atom= 4
+Step=  183, Dmax= 3.8e-03 nm, Epot= -3.07123e+04 Fmax= 2.92507e+03, atom= 4
+Step=  184, Dmax= 4.6e-03 nm, Epot= -3.07192e+04 Fmax= 3.64780e+03, atom= 4
+Step=  185, Dmax= 5.5e-03 nm, Epot= -3.07259e+04 Fmax= 4.20514e+03, atom= 4
+Step=  186, Dmax= 6.6e-03 nm, Epot= -3.07293e+04 Fmax= 5.24972e+03, atom= 4
+Step=  187, Dmax= 7.9e-03 nm, Epot= -3.07327e+04 Fmax= 6.06979e+03, atom= 4
+Step=  188, Dmax= 9.5e-03 nm, Epot= -3.07295e+04 Fmax= 7.53397e+03, atom= 4Step=  189, Dmax= 4.8e-03 nm, Epot= -3.07606e+04 Fmax= 7.52658e+02, atom= 4
+Step=  190, Dmax= 5.7e-03 nm, Epot= -3.07729e+04 Fmax= 7.31940e+03, atom= 4
+Step=  191, Dmax= 6.9e-03 nm, Epot= -3.08086e+04 Fmax= 2.49648e+03, atom= 4
+Step=  192, Dmax= 8.2e-03 nm, Epot= -3.07776e+04 Fmax= 9.24934e+03, atom= 4Step=  193, Dmax= 4.1e-03 nm, Epot= -3.08150e+04 Fmax= 3.35950e+03, atom= 4
+Step=  194, Dmax= 4.9e-03 nm, Epot= -3.08221e+04 Fmax= 3.70366e+03, atom= 4
+Step=  195, Dmax= 5.9e-03 nm, Epot= -3.08258e+04 Fmax= 4.73985e+03, atom= 4
+Step=  196, Dmax= 7.1e-03 nm, Epot= -3.08300e+04 Fmax= 5.42172e+03, atom= 4
+Step=  197, Dmax= 8.5e-03 nm, Epot= -3.08288e+04 Fmax= 6.74941e+03, atom= 4Step=  198, Dmax= 4.3e-03 nm, Epot= -3.08530e+04 Fmax= 6.47730e+02, atom= 4
+Step=  199, Dmax= 5.1e-03 nm, Epot= -3.08690e+04 Fmax= 6.73975e+03, atom= 4
+Step=  200, Dmax= 6.1e-03 nm, Epot= -3.09005e+04 Fmax= 2.00575e+03, atom= 4
+Step=  201, Dmax= 7.4e-03 nm, Epot= -3.08768e+04 Fmax= 8.52882e+03, atom= 4Step=  202, Dmax= 3.7e-03 nm, Epot= -3.09064e+04 Fmax= 3.27243e+03, atom= 4
+Step=  203, Dmax= 4.4e-03 nm, Epot= -3.09147e+04 Fmax= 3.02542e+03, atom= 4
+Step=  204, Dmax= 5.3e-03 nm, Epot= -3.09169e+04 Fmax= 4.56408e+03, atom= 4
+Step=  205, Dmax= 6.4e-03 nm, Epot= -3.09247e+04 Fmax= 4.51310e+03, atom= 4
+Step=  206, Dmax= 7.6e-03 nm, Epot= -3.09206e+04 Fmax= 6.40435e+03, atom= 4Step=  207, Dmax= 3.8e-03 nm, Epot= -3.09416e+04 Fmax= 9.58674e+02, atom= 4
+Step=  208, Dmax= 4.6e-03 nm, Epot= -3.09482e+04 Fmax= 5.53938e+03, atom= 4
+Step=  209, Dmax= 5.5e-03 nm, Epot= -3.09695e+04 Fmax= 2.33398e+03, atom= 4
+Step=  210, Dmax= 6.6e-03 nm, Epot= -3.09559e+04 Fmax= 7.08020e+03, atom= 4Step=  211, Dmax= 3.3e-03 nm, Epot= -3.09768e+04 Fmax= 2.36273e+03, atom= 4
+Step=  212, Dmax= 4.0e-03 nm, Epot= -3.09821e+04 Fmax= 3.30815e+03, atom= 4
+Step=  213, Dmax= 4.8e-03 nm, Epot= -3.09888e+04 Fmax= 3.46340e+03, atom= 4
+Step=  214, Dmax= 5.7e-03 nm, Epot= -3.09909e+04 Fmax= 4.69213e+03, atom= 4
+Step=  215, Dmax= 6.8e-03 nm, Epot= -3.09960e+04 Fmax= 5.06831e+03, atom= 4
+Step=  216, Dmax= 8.2e-03 nm, Epot= -3.09923e+04 Fmax= 6.66496e+03, atom= 4Step=  217, Dmax= 4.1e-03 nm, Epot= -3.10161e+04 Fmax= 8.13488e+02, atom= 4
+Step=  218, Dmax= 4.9e-03 nm, Epot= -3.10229e+04 Fmax= 6.16440e+03, atom= 4
+Step=  219, Dmax= 5.9e-03 nm, Epot= -3.10485e+04 Fmax= 2.29879e+03, atom= 4
+Step=  220, Dmax= 7.1e-03 nm, Epot= -3.10282e+04 Fmax= 7.82717e+03, atom= 4Step=  221, Dmax= 3.5e-03 nm, Epot= -3.10546e+04 Fmax= 2.75190e+03, atom= 4
+Step=  222, Dmax= 4.3e-03 nm, Epot= -3.10600e+04 Fmax= 3.34026e+03, atom= 4
+Step=  223, Dmax= 5.1e-03 nm, Epot= -3.10646e+04 Fmax= 3.94166e+03, atom= 4
+Step=  224, Dmax= 6.1e-03 nm, Epot= -3.10673e+04 Fmax= 4.82220e+03, atom= 4
+Step=  225, Dmax= 7.4e-03 nm, Epot= -3.10690e+04 Fmax= 5.67360e+03, atom= 4
+Step=  226, Dmax= 8.8e-03 nm, Epot= -3.10662e+04 Fmax= 6.93685e+03, atom= 4Step=  227, Dmax= 4.4e-03 nm, Epot= -3.10929e+04 Fmax= 6.49210e+02, atom= 4
+Step=  228, Dmax= 5.3e-03 nm, Epot= -3.11023e+04 Fmax= 6.83859e+03, atom= 4
+Step=  229, Dmax= 6.4e-03 nm, Epot= -3.11331e+04 Fmax= 2.25866e+03, atom= 4
+Step=  230, Dmax= 7.6e-03 nm, Epot= -3.11047e+04 Fmax= 8.63520e+03, atom= 4Step=  231, Dmax= 3.8e-03 nm, Epot= -3.11378e+04 Fmax= 3.17388e+03, atom= 4
+Step=  232, Dmax= 4.6e-03 nm, Epot= -3.11436e+04 Fmax= 3.37122e+03, atom= 4
+Step=  233, Dmax= 5.5e-03 nm, Epot= -3.11456e+04 Fmax= 4.46021e+03, atom= 4
+Step=  234, Dmax= 6.6e-03 nm, Epot= -3.11494e+04 Fmax= 4.95760e+03, atom= 4
+Step=  235, Dmax= 7.9e-03 nm, Epot= -3.11468e+04 Fmax= 6.32981e+03, atom= 4Step=  236, Dmax= 4.0e-03 nm, Epot= -3.11684e+04 Fmax= 6.72241e+02, atom= 4
+Step=  237, Dmax= 4.7e-03 nm, Epot= -3.11763e+04 Fmax= 6.15114e+03, atom= 4
+Step=  238, Dmax= 5.7e-03 nm, Epot= -3.12021e+04 Fmax= 1.96060e+03, atom= 4
+Step=  239, Dmax= 6.8e-03 nm, Epot= -3.11810e+04 Fmax= 7.79789e+03, atom= 4Step=  240, Dmax= 3.4e-03 nm, Epot= -3.12068e+04 Fmax= 2.92798e+03, atom= 4
+Step=  241, Dmax= 4.1e-03 nm, Epot= -3.12129e+04 Fmax= 2.91469e+03, atom= 4
+Step=  242, Dmax= 4.9e-03 nm, Epot= -3.12149e+04 Fmax= 4.11738e+03, atom= 4
+Step=  243, Dmax= 5.9e-03 nm, Epot= -3.12202e+04 Fmax= 4.30275e+03, atom= 4
+Step=  244, Dmax= 7.1e-03 nm, Epot= -3.12175e+04 Fmax= 5.81540e+03, atom= 4Step=  245, Dmax= 3.5e-03 nm, Epot= -3.12352e+04 Fmax= 7.67529e+02, atom= 4
+Step=  246, Dmax= 4.3e-03 nm, Epot= -3.12417e+04 Fmax= 5.26425e+03, atom= 4
+Step=  247, Dmax= 5.1e-03 nm, Epot= -3.12608e+04 Fmax= 2.03224e+03, atom= 4
+Step=  248, Dmax= 6.1e-03 nm, Epot= -3.12476e+04 Fmax= 6.70372e+03, atom= 4Step=  249, Dmax= 3.1e-03 nm, Epot= -3.12663e+04 Fmax= 2.32679e+03, atom= 4
+Step=  250, Dmax= 3.7e-03 nm, Epot= -3.12709e+04 Fmax= 2.92532e+03, atom= 4
+Step=  251, Dmax= 4.4e-03 nm, Epot= -3.12755e+04 Fmax= 3.35792e+03, atom= 4
+Step=  252, Dmax= 5.3e-03 nm, Epot= -3.12780e+04 Fmax= 4.19867e+03, atom= 4
+Step=  253, Dmax= 6.3e-03 nm, Epot= -3.12806e+04 Fmax= 4.85603e+03, atom= 4
+Step=  254, Dmax= 7.6e-03 nm, Epot= -3.12789e+04 Fmax= 6.01852e+03, atom= 4Step=  255, Dmax= 3.8e-03 nm, Epot= -3.12986e+04 Fmax= 5.94430e+02, atom= 4
+Step=  256, Dmax= 4.6e-03 nm, Epot= -3.13083e+04 Fmax= 5.88198e+03, atom= 4
+Step=  257, Dmax= 5.5e-03 nm, Epot= -3.13316e+04 Fmax= 1.96107e+03, atom= 4
+Step=  258, Dmax= 6.6e-03 nm, Epot= -3.13124e+04 Fmax= 7.43735e+03, atom= 4Step=  259, Dmax= 3.3e-03 nm, Epot= -3.13360e+04 Fmax= 2.72760e+03, atom= 4
+Step=  260, Dmax= 3.9e-03 nm, Epot= -3.13412e+04 Fmax= 2.91509e+03, atom= 4
+Step=  261, Dmax= 4.7e-03 nm, Epot= -3.13436e+04 Fmax= 3.84257e+03, atom= 4
+Step=  262, Dmax= 5.7e-03 nm, Epot= -3.13472e+04 Fmax= 4.27800e+03, atom= 4
+Step=  263, Dmax= 6.8e-03 nm, Epot= -3.13462e+04 Fmax= 5.45976e+03, atom= 4Step=  264, Dmax= 3.4e-03 nm, Epot= -3.13618e+04 Fmax= 5.80672e+02, atom= 4
+Step=  265, Dmax= 4.1e-03 nm, Epot= -3.13718e+04 Fmax= 5.29051e+03, atom= 4
+Step=  266, Dmax= 4.9e-03 nm, Epot= -3.13914e+04 Fmax= 1.70950e+03, atom= 4
+Step=  267, Dmax= 5.9e-03 nm, Epot= -3.13779e+04 Fmax= 6.70281e+03, atom= 4Step=  268, Dmax= 2.9e-03 nm, Epot= -3.13959e+04 Fmax= 2.50376e+03, atom= 4
+Step=  269, Dmax= 3.5e-03 nm, Epot= -3.14012e+04 Fmax= 2.53874e+03, atom= 4
+Step=  270, Dmax= 4.2e-03 nm, Epot= -3.14038e+04 Fmax= 3.52371e+03, atom= 4
+Step=  271, Dmax= 5.1e-03 nm, Epot= -3.14083e+04 Fmax= 3.74178e+03, atom= 4
+Step=  272, Dmax= 6.1e-03 nm, Epot= -3.14076e+04 Fmax= 4.98318e+03, atom= 4Step=  273, Dmax= 3.1e-03 nm, Epot= -3.14201e+04 Fmax= 6.29174e+02, atom= 4
+Step=  274, Dmax= 3.7e-03 nm, Epot= -3.14289e+04 Fmax= 4.58260e+03, atom= 4
+Step=  275, Dmax= 4.4e-03 nm, Epot= -3.14440e+04 Fmax= 1.70811e+03, atom= 4
+Step=  276, Dmax= 5.3e-03 nm, Epot= -3.14357e+04 Fmax= 5.83117e+03, atom= 4Step=  277, Dmax= 2.6e-03 nm, Epot= -3.14489e+04 Fmax= 2.05502e+03, atom= 4
+Step=  278, Dmax= 3.2e-03 nm, Epot= -3.14534e+04 Fmax= 2.47199e+03, atom= 4
+Step=  279, Dmax= 3.8e-03 nm, Epot= -3.14575e+04 Fmax= 2.95069e+03, atom= 4
+Step=  280, Dmax= 4.6e-03 nm, Epot= -3.14605e+04 Fmax= 3.56439e+03, atom= 4
+Step=  281, Dmax= 5.5e-03 nm, Epot= -3.14628e+04 Fmax= 4.24869e+03, atom= 4
+Step=  282, Dmax= 6.6e-03 nm, Epot= -3.14631e+04 Fmax= 5.12895e+03, atom= 4
+Step=  283, Dmax= 7.9e-03 nm, Epot= -3.14616e+04 Fmax= 6.12774e+03, atom= 4Step=  284, Dmax= 3.9e-03 nm, Epot= -3.14825e+04 Fmax= 4.85896e+02, atom= 4
+Step=  285, Dmax= 4.7e-03 nm, Epot= -3.14924e+04 Fmax= 6.28688e+03, atom= 4
+Step=  286, Dmax= 5.7e-03 nm, Epot= -3.15188e+04 Fmax= 1.80262e+03, atom= 4
+Step=  287, Dmax= 6.8e-03 nm, Epot= -3.14943e+04 Fmax= 7.90333e+03, atom= 4Step=  288, Dmax= 3.4e-03 nm, Epot= -3.15216e+04 Fmax= 3.05953e+03, atom= 4
+Step=  289, Dmax= 4.1e-03 nm, Epot= -3.15274e+04 Fmax= 2.77112e+03, atom= 4
+Step=  290, Dmax= 4.9e-03 nm, Epot= -3.15271e+04 Fmax= 4.22810e+03, atom= 4Step=  291, Dmax= 2.5e-03 nm, Epot= -3.15350e+04 Fmax= 7.33989e+02, atom= 4
+Step=  292, Dmax= 2.9e-03 nm, Epot= -3.15417e+04 Fmax= 3.45893e+03, atom= 4
+Step=  293, Dmax= 3.5e-03 nm, Epot= -3.15512e+04 Fmax= 1.58645e+03, atom= 4
+Step=  294, Dmax= 4.2e-03 nm, Epot= -3.15494e+04 Fmax= 4.46335e+03, atom= 4Step=  295, Dmax= 2.1e-03 nm, Epot= -3.15562e+04 Fmax= 1.43438e+03, atom= 4
+Step=  296, Dmax= 2.5e-03 nm, Epot= -3.15605e+04 Fmax= 2.19692e+03, atom= 4
+Step=  297, Dmax= 3.1e-03 nm, Epot= -3.15653e+04 Fmax= 2.15527e+03, atom= 4
+Step=  298, Dmax= 3.7e-03 nm, Epot= -3.15681e+04 Fmax= 3.07106e+03, atom= 4
+Step=  299, Dmax= 4.4e-03 nm, Epot= -3.15725e+04 Fmax= 3.19830e+03, atom= 4
+Step=  300, Dmax= 5.3e-03 nm, Epot= -3.15726e+04 Fmax= 4.32494e+03, atom= 4
+Step=  301, Dmax= 6.3e-03 nm, Epot= -3.15754e+04 Fmax= 4.70643e+03, atom= 4
+Step=  302, Dmax= 7.6e-03 nm, Epot= -3.15710e+04 Fmax= 6.12385e+03, atom= 4Step=  303, Dmax= 3.8e-03 nm, Epot= -3.15919e+04 Fmax= 7.21412e+02, atom= 4
+Step=  304, Dmax= 4.6e-03 nm, Epot= -3.15922e+04 Fmax= 5.77603e+03, atom= 4
+Step=  305, Dmax= 5.5e-03 nm, Epot= -3.16138e+04 Fmax= 2.03673e+03, atom= 4
+Step=  306, Dmax= 6.6e-03 nm, Epot= -3.15929e+04 Fmax= 7.34444e+03, atom= 4Step=  307, Dmax= 3.3e-03 nm, Epot= -3.16174e+04 Fmax= 2.64345e+03, atom= 4
+Step=  308, Dmax= 3.9e-03 nm, Epot= -3.16211e+04 Fmax= 2.97431e+03, atom= 4
+Step=  309, Dmax= 4.7e-03 nm, Epot= -3.16229e+04 Fmax= 3.76770e+03, atom= 4
+Step=  310, Dmax= 5.7e-03 nm, Epot= -3.16249e+04 Fmax= 4.31955e+03, atom= 4
+Step=  311, Dmax= 6.8e-03 nm, Epot= -3.16234e+04 Fmax= 5.39258e+03, atom= 4Step=  312, Dmax= 3.4e-03 nm, Epot= -3.16392e+04 Fmax= 5.26402e+02, atom= 4
+Step=  313, Dmax= 4.1e-03 nm, Epot= -3.16466e+04 Fmax= 5.29646e+03, atom= 4
+Step=  314, Dmax= 4.9e-03 nm, Epot= -3.16656e+04 Fmax= 1.68448e+03, atom= 4
+Step=  315, Dmax= 5.9e-03 nm, Epot= -3.16500e+04 Fmax= 6.68553e+03, atom= 4Step=  316, Dmax= 2.9e-03 nm, Epot= -3.16690e+04 Fmax= 2.50762e+03, atom= 4
+Step=  317, Dmax= 3.5e-03 nm, Epot= -3.16734e+04 Fmax= 2.52426e+03, atom= 4
+Step=  318, Dmax= 4.2e-03 nm, Epot= -3.16749e+04 Fmax= 3.51135e+03, atom= 4
+Step=  319, Dmax= 5.1e-03 nm, Epot= -3.16785e+04 Fmax= 3.73630e+03, atom= 4
+Step=  320, Dmax= 6.1e-03 nm, Epot= -3.16768e+04 Fmax= 4.95346e+03, atom= 4Step=  321, Dmax= 3.0e-03 nm, Epot= -3.16896e+04 Fmax= 6.16956e+02, atom= 4
+Step=  322, Dmax= 3.7e-03 nm, Epot= -3.16950e+04 Fmax= 4.60156e+03, atom= 4
+Step=  323, Dmax= 4.4e-03 nm, Epot= -3.17097e+04 Fmax= 1.66495e+03, atom= 4
+Step=  324, Dmax= 5.3e-03 nm, Epot= -3.16994e+04 Fmax= 5.86184e+03, atom= 4Step=  325, Dmax= 2.6e-03 nm, Epot= -3.17135e+04 Fmax= 2.09200e+03, atom= 4
+Step=  326, Dmax= 3.2e-03 nm, Epot= -3.17173e+04 Fmax= 2.41446e+03, atom= 4
+Step=  327, Dmax= 3.8e-03 nm, Epot= -3.17201e+04 Fmax= 2.99653e+03, atom= 4
+Step=  328, Dmax= 4.5e-03 nm, Epot= -3.17226e+04 Fmax= 3.49182e+03, atom= 4
+Step=  329, Dmax= 5.5e-03 nm, Epot= -3.17234e+04 Fmax= 4.30180e+03, atom= 4
+Step=  330, Dmax= 6.5e-03 nm, Epot= -3.17236e+04 Fmax= 5.03992e+03, atom= 4
+Step=  331, Dmax= 7.9e-03 nm, Epot= -3.17202e+04 Fmax= 6.18627e+03, atom= 4Step=  332, Dmax= 3.9e-03 nm, Epot= -3.17420e+04 Fmax= 5.59592e+02, atom= 4
+Step=  333, Dmax= 4.7e-03 nm, Epot= -3.17433e+04 Fmax= 6.15720e+03, atom= 4
+Step=  334, Dmax= 5.7e-03 nm, Epot= -3.17680e+04 Fmax= 1.90937e+03, atom= 4
+Step=  335, Dmax= 6.8e-03 nm, Epot= -3.17424e+04 Fmax= 7.75416e+03, atom= 4Step=  336, Dmax= 3.4e-03 nm, Epot= -3.17701e+04 Fmax= 2.93155e+03, atom= 4
+Step=  337, Dmax= 4.1e-03 nm, Epot= -3.17744e+04 Fmax= 2.88486e+03, atom= 4
+Step=  338, Dmax= 4.9e-03 nm, Epot= -3.17740e+04 Fmax= 4.08645e+03, atom= 4Step=  339, Dmax= 2.4e-03 nm, Epot= -3.17819e+04 Fmax= 6.06298e+02, atom= 4
+Step=  340, Dmax= 2.9e-03 nm, Epot= -3.17882e+04 Fmax= 3.58629e+03, atom= 4
+Step=  341, Dmax= 3.5e-03 nm, Epot= -3.17979e+04 Fmax= 1.43996e+03, atom= 4
+Step=  342, Dmax= 4.2e-03 nm, Epot= -3.17942e+04 Fmax= 4.59972e+03, atom= 4Step=  343, Dmax= 2.1e-03 nm, Epot= -3.18019e+04 Fmax= 1.57593e+03, atom= 4
+Step=  344, Dmax= 2.5e-03 nm, Epot= -3.18054e+04 Fmax= 2.03841e+03, atom= 4
+Step=  345, Dmax= 3.0e-03 nm, Epot= -3.18090e+04 Fmax= 2.30456e+03, atom= 4
+Step=  346, Dmax= 3.6e-03 nm, Epot= -3.18116e+04 Fmax= 2.90014e+03, atom= 4
+Step=  347, Dmax= 4.4e-03 nm, Epot= -3.18141e+04 Fmax= 3.35417e+03, atom= 4
+Step=  348, Dmax= 5.3e-03 nm, Epot= -3.18148e+04 Fmax= 4.14049e+03, atom= 4
+Step=  349, Dmax= 6.3e-03 nm, Epot= -3.18151e+04 Fmax= 4.86715e+03, atom= 4
+Step=  350, Dmax= 7.6e-03 nm, Epot= -3.18121e+04 Fmax= 5.92439e+03, atom= 4Step=  351, Dmax= 3.8e-03 nm, Epot= -3.18321e+04 Fmax= 5.41402e+02, atom= 4
+Step=  352, Dmax= 4.5e-03 nm, Epot= -3.18335e+04 Fmax= 5.95437e+03, atom= 4
+Step=  353, Dmax= 5.4e-03 nm, Epot= -3.18564e+04 Fmax= 1.83099e+03, atom= 4
+Step=  354, Dmax= 6.5e-03 nm, Epot= -3.18325e+04 Fmax= 7.53264e+03, atom= 4Step=  355, Dmax= 3.3e-03 nm, Epot= -3.18584e+04 Fmax= 2.84037e+03, atom= 4
+Step=  356, Dmax= 3.9e-03 nm, Epot= -3.18625e+04 Fmax= 2.75541e+03, atom= 4
+Step=  357, Dmax= 4.7e-03 nm, Epot= -3.18621e+04 Fmax= 3.97092e+03, atom= 4Step=  358, Dmax= 2.4e-03 nm, Epot= -3.18695e+04 Fmax= 6.02978e+02, atom= 4
+Step=  359, Dmax= 2.8e-03 nm, Epot= -3.18752e+04 Fmax= 3.41492e+03, atom= 4
+Step=  360, Dmax= 3.4e-03 nm, Epot= -3.18841e+04 Fmax= 1.42165e+03, atom= 4
+Step=  361, Dmax= 4.1e-03 nm, Epot= -3.18809e+04 Fmax= 4.37001e+03, atom= 4Step=  362, Dmax= 2.0e-03 nm, Epot= -3.18879e+04 Fmax= 1.47783e+03, atom= 4
+Step=  363, Dmax= 2.4e-03 nm, Epot= -3.18912e+04 Fmax= 2.00916e+03, atom= 4
+Step=  364, Dmax= 2.9e-03 nm, Epot= -3.18947e+04 Fmax= 2.16660e+03, atom= 4
+Step=  365, Dmax= 3.5e-03 nm, Epot= -3.18969e+04 Fmax= 2.85415e+03, atom= 4
+Step=  366, Dmax= 4.2e-03 nm, Epot= -3.18996e+04 Fmax= 3.15957e+03, atom= 4
+Step=  367, Dmax= 5.1e-03 nm, Epot= -3.18998e+04 Fmax= 4.07040e+03, atom= 4
+Step=  368, Dmax= 6.1e-03 nm, Epot= -3.19008e+04 Fmax= 4.58958e+03, atom= 4
+Step=  369, Dmax= 7.3e-03 nm, Epot= -3.18971e+04 Fmax= 5.82289e+03, atom= 4Step=  370, Dmax= 3.6e-03 nm, Epot= -3.19162e+04 Fmax= 6.05021e+02, atom= 4
+Step=  371, Dmax= 4.4e-03 nm, Epot= -3.19155e+04 Fmax= 5.60977e+03, atom= 4Step=  372, Dmax= 2.2e-03 nm, Epot= -3.19220e+04 Fmax= 2.50640e+03, atom= 4
+Step=  373, Dmax= 2.6e-03 nm, Epot= -3.19278e+04 Fmax= 1.23848e+03, atom= 4
+Step=  374, Dmax= 3.1e-03 nm, Epot= -3.19288e+04 Fmax= 3.24433e+03, atom= 4
+Step=  375, Dmax= 3.8e-03 nm, Epot= -3.19356e+04 Fmax= 2.14843e+03, atom= 4
+Step=  376, Dmax= 4.5e-03 nm, Epot= -3.19322e+04 Fmax= 4.30983e+03, atom= 4Step=  377, Dmax= 2.3e-03 nm, Epot= -3.19406e+04 Fmax= 1.08520e+03, atom= 4
+Step=  378, Dmax= 2.7e-03 nm, Epot= -3.19429e+04 Fmax= 2.80490e+03, atom= 4
+Step=  379, Dmax= 3.3e-03 nm, Epot= -3.19487e+04 Fmax= 1.85146e+03, atom= 4
+Step=  380, Dmax= 3.9e-03 nm, Epot= -3.19475e+04 Fmax= 3.74862e+03, atom= 4Step=  381, Dmax= 2.0e-03 nm, Epot= -3.19531e+04 Fmax= 9.45224e+02, atom= 4
+Step=  382, Dmax= 2.3e-03 nm, Epot= -3.19564e+04 Fmax= 2.40011e+03, atom= 4
+Step=  383, Dmax= 2.8e-03 nm, Epot= -3.19615e+04 Fmax= 1.62689e+03, atom= 4
+Step=  384, Dmax= 3.4e-03 nm, Epot= -3.19620e+04 Fmax= 3.19349e+03, atom= 4
+Step=  385, Dmax= 4.1e-03 nm, Epot= -3.19674e+04 Fmax= 2.60533e+03, atom= 4
+Step=  386, Dmax= 4.9e-03 nm, Epot= -3.19645e+04 Fmax= 4.33828e+03, atom= 4Step=  387, Dmax= 2.4e-03 nm, Epot= -3.19736e+04 Fmax= 8.71711e+02, atom= 4
+Step=  388, Dmax= 2.9e-03 nm, Epot= -3.19757e+04 Fmax= 3.31338e+03, atom= 4
+Step=  389, Dmax= 3.5e-03 nm, Epot= -3.19835e+04 Fmax= 1.69328e+03, atom= 4
+Step=  390, Dmax= 4.2e-03 nm, Epot= -3.19798e+04 Fmax= 4.32984e+03, atom= 4Step=  391, Dmax= 2.1e-03 nm, Epot= -3.19874e+04 Fmax= 1.31421e+03, atom= 4
+Step=  392, Dmax= 2.5e-03 nm, Epot= -3.19900e+04 Fmax= 2.28385e+03, atom= 4
+Step=  393, Dmax= 3.0e-03 nm, Epot= -3.19940e+04 Fmax= 2.04646e+03, atom= 4
+Step=  394, Dmax= 3.6e-03 nm, Epot= -3.19948e+04 Fmax= 3.13692e+03, atom= 4
+Step=  395, Dmax= 4.4e-03 nm, Epot= -3.19985e+04 Fmax= 3.09836e+03, atom= 4
+Step=  396, Dmax= 5.2e-03 nm, Epot= -3.19966e+04 Fmax= 4.36734e+03, atom= 4Step=  397, Dmax= 2.6e-03 nm, Epot= -3.20064e+04 Fmax= 6.40610e+02, atom= 4
+Step=  398, Dmax= 3.1e-03 nm, Epot= -3.20094e+04 Fmax= 3.86322e+03, atom= 4
+Step=  399, Dmax= 3.8e-03 nm, Epot= -3.20198e+04 Fmax= 1.52030e+03, atom= 4
+Step=  400, Dmax= 4.5e-03 nm, Epot= -3.20130e+04 Fmax= 4.95845e+03, atom= 4Step=  401, Dmax= 2.3e-03 nm, Epot= -3.20231e+04 Fmax= 1.71427e+03, atom= 4
+Step=  402, Dmax= 2.7e-03 nm, Epot= -3.20259e+04 Fmax= 2.15512e+03, atom= 4
+Step=  403, Dmax= 3.3e-03 nm, Epot= -3.20286e+04 Fmax= 2.50156e+03, atom= 4
+Step=  404, Dmax= 3.9e-03 nm, Epot= -3.20303e+04 Fmax= 3.07190e+03, atom= 4
+Step=  405, Dmax= 4.7e-03 nm, Epot= -3.20317e+04 Fmax= 3.63295e+03, atom= 4
+Step=  406, Dmax= 5.6e-03 nm, Epot= -3.20315e+04 Fmax= 4.39411e+03, atom= 4Step=  407, Dmax= 2.8e-03 nm, Epot= -3.20418e+04 Fmax= 3.87896e+02, atom= 4
+Step=  408, Dmax= 3.4e-03 nm, Epot= -3.20503e+04 Fmax= 4.46330e+03, atom= 4
+Step=  409, Dmax= 4.1e-03 nm, Epot= -3.20639e+04 Fmax= 1.32532e+03, atom= 4
+Step=  410, Dmax= 4.9e-03 nm, Epot= -3.20536e+04 Fmax= 5.64559e+03, atom= 4Step=  411, Dmax= 2.4e-03 nm, Epot= -3.20665e+04 Fmax= 2.15450e+03, atom= 4
+Step=  412, Dmax= 2.9e-03 nm, Epot= -3.20701e+04 Fmax= 2.00617e+03, atom= 4
+Step=  413, Dmax= 3.5e-03 nm, Epot= -3.20711e+04 Fmax= 3.00210e+03, atom= 4
+Step=  414, Dmax= 4.2e-03 nm, Epot= -3.20744e+04 Fmax= 2.99073e+03, atom= 4
+Step=  415, Dmax= 5.0e-03 nm, Epot= -3.20727e+04 Fmax= 4.21937e+03, atom= 4Step=  416, Dmax= 2.5e-03 nm, Epot= -3.20818e+04 Fmax= 6.08794e+02, atom= 4
+Step=  417, Dmax= 3.0e-03 nm, Epot= -3.20850e+04 Fmax= 3.68686e+03, atom= 4
+Step=  418, Dmax= 3.6e-03 nm, Epot= -3.20946e+04 Fmax= 1.49673e+03, atom= 4
+Step=  419, Dmax= 4.4e-03 nm, Epot= -3.20886e+04 Fmax= 4.70319e+03, atom= 4Step=  420, Dmax= 2.2e-03 nm, Epot= -3.20977e+04 Fmax= 1.60729e+03, atom= 4
+Step=  421, Dmax= 2.6e-03 nm, Epot= -3.21002e+04 Fmax= 2.13168e+03, atom= 4
+Step=  422, Dmax= 3.1e-03 nm, Epot= -3.21030e+04 Fmax= 2.33996e+03, atom= 4
+Step=  423, Dmax= 3.8e-03 nm, Epot= -3.21043e+04 Fmax= 3.04246e+03, atom= 4
+Step=  424, Dmax= 4.5e-03 nm, Epot= -3.21063e+04 Fmax= 3.39837e+03, atom= 4
+Step=  425, Dmax= 5.4e-03 nm, Epot= -3.21052e+04 Fmax= 4.35107e+03, atom= 4Step=  426, Dmax= 2.7e-03 nm, Epot= -3.21153e+04 Fmax= 4.70019e+02, atom= 4
+Step=  427, Dmax= 3.3e-03 nm, Epot= -3.21202e+04 Fmax= 4.13971e+03, atom= 4
+Step=  428, Dmax= 3.9e-03 nm, Epot= -3.21321e+04 Fmax= 1.43144e+03, atom= 4
+Step=  429, Dmax= 4.7e-03 nm, Epot= -3.21232e+04 Fmax= 5.22998e+03, atom= 4Step=  430, Dmax= 2.3e-03 nm, Epot= -3.21347e+04 Fmax= 1.90380e+03, atom= 4
+Step=  431, Dmax= 2.8e-03 nm, Epot= -3.21375e+04 Fmax= 2.11458e+03, atom= 4
+Step=  432, Dmax= 3.4e-03 nm, Epot= -3.21392e+04 Fmax= 2.69101e+03, atom= 4
+Step=  433, Dmax= 4.0e-03 nm, Epot= -3.21411e+04 Fmax= 3.09379e+03, atom= 4
+Step=  434, Dmax= 4.9e-03 nm, Epot= -3.21413e+04 Fmax= 3.82852e+03, atom= 4
+Step=  435, Dmax= 5.8e-03 nm, Epot= -3.21413e+04 Fmax= 4.50072e+03, atom= 4Step=  436, Dmax= 2.9e-03 nm, Epot= -3.21524e+04 Fmax= 3.28908e+02, atom= 4
+Step=  437, Dmax= 3.5e-03 nm, Epot= -3.21623e+04 Fmax= 4.60954e+03, atom= 4
+Step=  438, Dmax= 4.2e-03 nm, Epot= -3.21767e+04 Fmax= 1.37827e+03, atom= 4
+Step=  439, Dmax= 5.0e-03 nm, Epot= -3.21644e+04 Fmax= 5.77795e+03, atom= 4Step=  440, Dmax= 2.5e-03 nm, Epot= -3.21787e+04 Fmax= 2.20495e+03, atom= 4
+Step=  441, Dmax= 3.0e-03 nm, Epot= -3.21819e+04 Fmax= 2.11391e+03, atom= 4
+Step=  442, Dmax= 3.6e-03 nm, Epot= -3.21825e+04 Fmax= 3.05040e+03, atom= 4
+Step=  443, Dmax= 4.3e-03 nm, Epot= -3.21852e+04 Fmax= 3.16712e+03, atom= 4
+Step=  444, Dmax= 5.2e-03 nm, Epot= -3.21834e+04 Fmax= 4.27262e+03, atom= 4Step=  445, Dmax= 2.6e-03 nm, Epot= -3.21931e+04 Fmax= 5.58900e+02, atom= 4
+Step=  446, Dmax= 3.1e-03 nm, Epot= -3.21955e+04 Fmax= 3.94006e+03, atom= 4
+Step=  447, Dmax= 3.8e-03 nm, Epot= -3.22060e+04 Fmax= 1.42516e+03, atom= 4
+Step=  448, Dmax= 4.5e-03 nm, Epot= -3.21980e+04 Fmax= 5.03763e+03, atom= 4Step=  449, Dmax= 2.3e-03 nm, Epot= -3.22086e+04 Fmax= 1.80148e+03, atom= 4
+Step=  450, Dmax= 2.7e-03 nm, Epot= -3.22112e+04 Fmax= 2.05397e+03, atom= 4
+Step=  451, Dmax= 3.2e-03 nm, Epot= -3.22129e+04 Fmax= 2.59004e+03, atom= 4
+Step=  452, Dmax= 3.9e-03 nm, Epot= -3.22147e+04 Fmax= 2.96407e+03, atom= 4
+Step=  453, Dmax= 4.7e-03 nm, Epot= -3.22149e+04 Fmax= 3.72140e+03, atom= 4
+Step=  454, Dmax= 5.6e-03 nm, Epot= -3.22151e+04 Fmax= 4.27864e+03, atom= 4
+Step=  455, Dmax= 6.7e-03 nm, Epot= -3.22120e+04 Fmax= 5.34785e+03, atom= 4Step=  456, Dmax= 3.4e-03 nm, Epot= -3.22283e+04 Fmax= 5.24607e+02, atom= 4
+Step=  457, Dmax= 4.0e-03 nm, Epot= -3.22271e+04 Fmax= 5.20054e+03, atom= 4Step=  458, Dmax= 2.0e-03 nm, Epot= -3.22330e+04 Fmax= 2.34123e+03, atom= 4
+Step=  459, Dmax= 2.4e-03 nm, Epot= -3.22378e+04 Fmax= 1.12254e+03, atom= 4
+Step=  460, Dmax= 2.9e-03 nm, Epot= -3.22381e+04 Fmax= 3.01452e+03, atom= 4
+Step=  461, Dmax= 3.5e-03 nm, Epot= -3.22438e+04 Fmax= 1.97250e+03, atom= 4
+Step=  462, Dmax= 4.2e-03 nm, Epot= -3.22405e+04 Fmax= 3.99184e+03, atom= 4Step=  463, Dmax= 2.1e-03 nm, Epot= -3.22479e+04 Fmax= 1.01347e+03, atom= 4
+Step=  464, Dmax= 2.5e-03 nm, Epot= -3.22493e+04 Fmax= 2.58743e+03, atom= 4
+Step=  465, Dmax= 3.0e-03 nm, Epot= -3.22541e+04 Fmax= 1.71334e+03, atom= 4
+Step=  466, Dmax= 3.6e-03 nm, Epot= -3.22526e+04 Fmax= 3.46684e+03, atom= 4Step=  467, Dmax= 1.8e-03 nm, Epot= -3.22576e+04 Fmax= 8.73883e+02, atom= 4
+Step=  468, Dmax= 2.2e-03 nm, Epot= -3.22600e+04 Fmax= 2.21265e+03, atom= 4
+Step=  469, Dmax= 2.6e-03 nm, Epot= -3.22641e+04 Fmax= 1.51189e+03, atom= 4
+Step=  470, Dmax= 3.1e-03 nm, Epot= -3.22642e+04 Fmax= 2.93916e+03, atom= 4
+Step=  471, Dmax= 3.8e-03 nm, Epot= -3.22685e+04 Fmax= 2.42304e+03, atom= 4
+Step=  472, Dmax= 4.5e-03 nm, Epot= -3.22658e+04 Fmax= 3.99104e+03, atom= 4Step=  473, Dmax= 2.3e-03 nm, Epot= -3.22737e+04 Fmax= 7.88496e+02, atom= 4
+Step=  474, Dmax= 2.7e-03 nm, Epot= -3.22749e+04 Fmax= 3.08678e+03, atom= 4
+Step=  475, Dmax= 3.2e-03 nm, Epot= -3.22815e+04 Fmax= 1.53838e+03, atom= 4
+Step=  476, Dmax= 3.9e-03 nm, Epot= -3.22778e+04 Fmax= 4.03322e+03, atom= 4Step=  477, Dmax= 1.9e-03 nm, Epot= -3.22846e+04 Fmax= 1.24404e+03, atom= 4
+Step=  478, Dmax= 2.3e-03 nm, Epot= -3.22865e+04 Fmax= 2.07804e+03, atom= 4
+Step=  479, Dmax= 2.8e-03 nm, Epot= -3.22896e+04 Fmax= 1.92699e+03, atom= 4
+Step=  480, Dmax= 3.4e-03 nm, Epot= -3.22902e+04 Fmax= 2.86058e+03, atom= 4
+Step=  481, Dmax= 4.0e-03 nm, Epot= -3.22928e+04 Fmax= 2.90517e+03, atom= 4
+Step=  482, Dmax= 4.8e-03 nm, Epot= -3.22913e+04 Fmax= 3.99232e+03, atom= 4Step=  483, Dmax= 2.4e-03 nm, Epot= -3.22996e+04 Fmax= 5.48690e+02, atom= 4
+Step=  484, Dmax= 2.9e-03 nm, Epot= -3.23018e+04 Fmax= 3.62491e+03, atom= 4
+Step=  485, Dmax= 3.5e-03 nm, Epot= -3.23108e+04 Fmax= 1.34889e+03, atom= 4
+Step=  486, Dmax= 4.2e-03 nm, Epot= -3.23043e+04 Fmax= 4.64453e+03, atom= 4Step=  487, Dmax= 2.1e-03 nm, Epot= -3.23133e+04 Fmax= 1.64383e+03, atom= 4
+Step=  488, Dmax= 2.5e-03 nm, Epot= -3.23156e+04 Fmax= 1.93000e+03, atom= 4
+Step=  489, Dmax= 3.0e-03 nm, Epot= -3.23174e+04 Fmax= 2.37690e+03, atom= 4
+Step=  490, Dmax= 3.6e-03 nm, Epot= -3.23190e+04 Fmax= 2.77211e+03, atom= 4
+Step=  491, Dmax= 4.3e-03 nm, Epot= -3.23195e+04 Fmax= 3.42758e+03, atom= 4
+Step=  492, Dmax= 5.2e-03 nm, Epot= -3.23196e+04 Fmax= 3.98951e+03, atom= 4
+Step=  493, Dmax= 6.2e-03 nm, Epot= -3.23174e+04 Fmax= 4.93685e+03, atom= 4Step=  494, Dmax= 3.1e-03 nm, Epot= -3.23312e+04 Fmax= 4.65152e+02, atom= 4
+Step=  495, Dmax= 3.7e-03 nm, Epot= -3.23317e+04 Fmax= 4.83709e+03, atom= 4
+Step=  496, Dmax= 4.5e-03 nm, Epot= -3.23468e+04 Fmax= 1.57873e+03, atom= 4
+Step=  497, Dmax= 5.4e-03 nm, Epot= -3.23311e+04 Fmax= 6.08999e+03, atom= 4Step=  498, Dmax= 2.7e-03 nm, Epot= -3.23483e+04 Fmax= 2.26144e+03, atom= 4
+Step=  499, Dmax= 3.2e-03 nm, Epot= -3.23507e+04 Fmax= 2.36678e+03, atom= 4
+Step=  500, Dmax= 3.9e-03 nm, Epot= -3.23509e+04 Fmax= 3.16704e+03, atom= 4
+
+Energy minimization reached the maximum number of steps before the forces
+reached the requested precision Fmax < 10.
+
+writing lowest energy coordinates.
+
+Back Off! I just backed up gromacs.gro to ./#gromacs.gro.1#
+
+Steepest Descents did not converge to Fmax < 10 in 501 steps.
+Potential Energy  = -3.2350912e+04
+Maximum force     =  3.1670369e+03 on atom 4
+Norm of force     =  9.8827388e+01
+
+GROMACS reminds you: "It has not escaped our notice that the specific pairing we have postulated immediately suggests a possible copying mechanism for the genetic material." (Watson & Crick)
+

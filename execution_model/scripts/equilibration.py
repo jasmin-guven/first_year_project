@@ -135,7 +135,7 @@ minimised_system = minimised_system_process.getSystem()
 
 print("Finished minimisation.")
 
-print(f"NVT equilibration for {runtime_short_nvt} ps while restraining all non-solvent atoms.")
+print(f"\nNVT equilibration for {runtime_short_nvt} ps while restraining all non-solvent atoms.")
 protocol = bss.Protocol.Equilibration(
                                 runtime=runtime_short_nvt*bss.Units.Time.picosecond,
                                 temperature_start=0*bss.Units.Temperature.kelvin,
@@ -151,7 +151,7 @@ restrained_nvt_system = restrained_nvt_system_process.getSystem()
 
 print("Finished restrained NVT.")
 
-print(f"NVT equilibration for {runtime_nvt} ps while restraining all backbone atoms.")
+print(f"\nNVT equilibration for {runtime_nvt} ps while restraining all backbone atoms.")
 protocol = bss.Protocol.Equilibration(
                                 runtime=runtime_nvt*bss.Units.Time.picosecond,
                                 temperature=300*bss.Units.Temperature.kelvin,
@@ -166,7 +166,7 @@ backbone_restrained_nvt = backbone_restrained_nvt_process.getSystem()
 
 print("Finished backbone-restrained NVT.")
 
-print(f"NVT equilibration for {runtime_nvt} ps without restraints.")
+print(f"\nNVT equilibration for {runtime_nvt} ps without restraints.")
 protocol = bss.Protocol.Equilibration(
                                 runtime=runtime_nvt*bss.Units.Time.picosecond,
                                 temperature_end=300*bss.Units.Temperature.kelvin,
@@ -180,7 +180,7 @@ nvt_system = nvt_system_process.getSystem()
 
 print("Finished NVT.")
 
-print(f"NPT equilibration for {runtime_npt} ps while restraining non-solvent heavy atoms..")
+print(f"\nNPT equilibration for {runtime_npt} ps while restraining non-solvent heavy atoms.")
 protocol = bss.Protocol.Equilibration(
                                 runtime=runtime_npt*bss.Units.Time.picosecond,
                                 pressure=1*bss.Units.Pressure.atm,
@@ -196,7 +196,7 @@ restrained_npt_system = restrained_npt_system_process.getSystem()
 
 print("Finished restrained NPT.")
 
-print(f"NPT equilibration for {runtime_npt} ps without restraints.")
+print(f"\nNPT equilibration for {runtime_npt} ps without restraints.")
 protocol = bss.Protocol.Equilibration(
                                 runtime=runtime_npt*bss.Units.Time.picosecond,
                                 pressure=1*bss.Units.Pressure.atm,
