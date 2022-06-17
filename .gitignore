@@ -3,7 +3,26 @@
 *.ent
 *.flr
 *.swp
-
+*.top
+*.gro
+*.prm7
+*.rst7
+execution_model/equilibration_files/*
+execution_model/equilibration_files/ligands/*
+execution_model/equilibration_files/protein/*
+execution_model/prep/ligands/*
+execution_model/prep/prortein/*
+*.tpr
+*.trr
+*.edr
+execution_model/scripts/backups/*
+*.cpt
+execution_model/outputs/SOMD/lig_h_1~lig_h*/free/*
+execution_model/outputs/SOMD/lig_h_1~lig_h*/bound/*
+execution_model/outputs/SOMD/test/bound/*
+execution_model/outputs/SOMD/test/free/*
+execution_model/prep/protein/*
+execution_model/prep/ligands/*
 # Jupyter
 .DS_Store
 

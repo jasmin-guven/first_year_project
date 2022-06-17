@@ -1,0 +1,23 @@
+OPENCL SOMD SCRIPT
+Running on device: 0
+cd ../outputs/SOMD/lig_h_1~lig_h_8/
+bound
+bound
+lambda is:  0.0000 at bound  for  lig_h_1~lig_h_8
+cd lambda_0.0000
+production run...
+somd-freenrg -C ./somd.cfg -l 0.0000 -d 0 -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL 1> somd.log 2> somd.err
+/home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_8/bound
+lambda is:  0.1000 at bound  for  lig_h_1~lig_h_8
+cd lambda_0.1000
+production run...
+somd-freenrg -C ./somd.cfg -l 0.1000 -d 0 -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL 1> somd.log 2> somd.err
+/home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_8/bound
+lambda is:  0.2000 at bound  for  lig_h_1~lig_h_8
+cd lambda_0.2000
+production run...
+somd-freenrg -C ./somd.cfg -l 0.2000 -d 0 -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL 1> somd.log 2> somd.err
+/home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_8/bound
+lambda is:  0.3000 at bound  for  lig_h_1~lig_h_8
+cd lambda_0.3000
+production run...

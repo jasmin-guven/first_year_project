@@ -7,6 +7,7 @@
 /home/jguven/Software/miniconda3/envs/bss-d/lib/python3.9/site-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
   return self._float_to_str(self.smallest_subnormal)
 Warning: importing 'simtk.openmm' is deprecated.  Import 'openmm' instead.
+program: equilibration.py, index: 5
 
 ==============================================================
 Sending anonymous Sire usage statistics to http://siremol.org.
@@ -17,113 +18,30 @@ SIRE_VERBOSE_PHONEHOME equal to 1. To silence this message, set
 the environment variable SIRE_SILENT_PHONEHOME to 1.
 ==============================================================
 
-program: equilibration.py, index: 5
 ---------------------------
 Working on solvated ligand.
 
 Minimising in 500 steps.
 
- <BioSimSpace.Process.Gromacs: system=<BioSimSpace.System: nMolecules=677>, protocol=BioSimSpace.Protocol.Minimisation(steps=500), exe='/opt/bin/bin/gmx', name='gromacs', work_dir='/tmp/tmprcaws009', seed=None>
+ <BioSimSpace.Process.Gromacs: system=<BioSimSpace.System: nMolecules=677>, protocol=BioSimSpace.Protocol.Minimisation(steps=500), exe='/opt/bin/bin/gmx', name='gromacs', work_dir='/tmp/tmp5v6_7nd3', seed=None>
 
- Runtime: 0.0893 mins
-Finished minimisation.
+ Runtime: 0.0084 mins
+Function:    bool gmx::decideWhetherToUseGpusForNonbonded(gmx::TaskTarget, const std::vector<int>&, gmx::EmulateGpuNonbonded, bool, bool, bool)
 
-NVT equilibration for 5 ps while restraining all non-solvent atoms.
+Inconsistency in user input:
+Nonbonded interactions on the GPU were requested with -nb gpu, but the GROMACS
+binary has been built without GPU support. Either run without selecting GPU
+options, or recompile GROMACS with GPU support enabled
 
- <BioSimSpace.Process.Gromacs: system=<BioSimSpace.System: nMolecules=677>, protocol=BioSimSpace.Protocol.Equilibration(timestep=2.0000 fs, runtime=5.0000 ps, temperature_start=0.0100 K, temperature_end=300.0000 K, pressure=None, report_interval=100, restart_interval=500, restraint='all', force_constant=10.00), exe='/opt/bin/bin/gmx', name='gromacs', work_dir='/tmp/tmpem4fykng', seed=None>
-
- Runtime: 0.1139 mins
-Finished restrained NVT.
-
-NVT equilibration for 50 ps without restraints.
-
- <BioSimSpace.Process.Gromacs: system=<BioSimSpace.System: nMolecules=677>, protocol=BioSimSpace.Protocol.Equilibration(timestep=2.0000 fs, runtime=50.0000 ps, temperature_start=300.0000 K, temperature_end=300.0000 K, pressure=None, report_interval=100, restart_interval=500, restraint=None, force_constant=10.00), exe='/opt/bin/bin/gmx', name='gromacs', work_dir='/tmp/tmpddfph01j', seed=None>
-
- Runtime: 0.8812 mins
-Finished unrestrained NVT.
-
-NPT equilibration for 200 ps while restraining non-solvent heavy atoms.
-
- <BioSimSpace.Process.Gromacs: system=<BioSimSpace.System: nMolecules=677>, protocol=BioSimSpace.Protocol.Equilibration(timestep=2.0000 fs, runtime=200.0000 ps, temperature_start=300.0000 K, temperature_end=300.0000 K, pressure=1.0000 atm, report_interval=100, restart_interval=500, restraint='heavy', force_constant=10.00), exe='/opt/bin/bin/gmx', name='gromacs', work_dir='/tmp/tmpq5edjutz', seed=None>
-
- Runtime: 5.4181 mins
-Finished restrained NPT.
-
-NPT equilibration for 200 ps without restraints.
-
- <BioSimSpace.Process.Gromacs: system=<BioSimSpace.System: nMolecules=677>, protocol=BioSimSpace.Protocol.Equilibration(timestep=2.0000 fs, runtime=200.0000 ps, temperature_start=300.0000 K, temperature_end=300.0000 K, pressure=1.0000 atm, report_interval=100, restart_interval=500, restraint=None, force_constant=10.00), exe='/opt/bin/bin/gmx', name='gromacs', work_dir='/tmp/tmpq4d8uuw0', seed=None>
-
- Runtime: 4.2451 mins
-Finished equilibrating ligand.
----------------------------
-Working on solvated ligand+protein.
-
-Minimising in 500 steps..
-
- <BioSimSpace.Process.Gromacs: system=<BioSimSpace.System: nMolecules=16836>, protocol=BioSimSpace.Protocol.Minimisation(steps=500), exe='/opt/bin/bin/gmx', name='gromacs', work_dir='/tmp/tmpj335uw_q', seed=None>
-
- Runtime: 2.2422 mins
-Finished minimisation.
-
-NVT equilibration for 5 ps while restraining all non-solvent atoms.
-
- <BioSimSpace.Process.Gromacs: system=<BioSimSpace.System: nMolecules=677>, protocol=BioSimSpace.Protocol.Equilibration(timestep=2.0000 fs, runtime=5.0000 ps, temperature_start=0.0100 K, temperature_end=300.0000 K, pressure=None, report_interval=100, restart_interval=500, restraint='all', force_constant=10.00), exe='/opt/bin/bin/gmx', name='gromacs', work_dir='/tmp/tmpcx7i9jfl', seed=None>
-
- Runtime: 0.1431 mins
-Finished restrained NVT.
-
-NVT equilibration for 50 ps while restraining all backbone atoms.
-
- <BioSimSpace.Process.Gromacs: system=<BioSimSpace.System: nMolecules=677>, protocol=BioSimSpace.Protocol.Equilibration(timestep=2.0000 fs, runtime=50.0000 ps, temperature_start=300.0000 K, temperature_end=300.0000 K, pressure=None, report_interval=100, restart_interval=500, restraint='backbone', force_constant=10.00), exe='/opt/bin/bin/gmx', name='gromacs', work_dir='/tmp/tmpwrweglsz', seed=None>
-
- Runtime: 1.2999 mins
-Finished backbone-restrained NVT.
-
-NVT equilibration for 50 ps without restraints.
-
- <BioSimSpace.Process.Gromacs: system=<BioSimSpace.System: nMolecules=677>, protocol=BioSimSpace.Protocol.Equilibration(timestep=2.0000 fs, runtime=50.0000 ps, temperature_start=300.0000 K, temperature_end=300.0000 K, pressure=None, report_interval=100, restart_interval=500, restraint=None, force_constant=10.00), exe='/opt/bin/bin/gmx', name='gromacs', work_dir='/tmp/tmpvl1pg_5_', seed=None>
-
- Runtime: 1.1457 mins
-Finished NVT.
-
-NPT equilibration for 200 ps while restraining non-solvent heavy atoms.
-
- <BioSimSpace.Process.Gromacs: system=<BioSimSpace.System: nMolecules=677>, protocol=BioSimSpace.Protocol.Equilibration(timestep=2.0000 fs, runtime=200.0000 ps, temperature_start=300.0000 K, temperature_end=300.0000 K, pressure=1.0000 atm, report_interval=100, restart_interval=500, restraint='heavy', force_constant=10.00), exe='/opt/bin/bin/gmx', name='gromacs', work_dir='/tmp/tmp94q44512', seed=None>
-
- Runtime: 5.5436 mins
-Finished restrained NPT.
-
-NPT equilibration for 200 ps without restraints.
-
- <BioSimSpace.Process.Gromacs: system=<BioSimSpace.System: nMolecules=677>, protocol=BioSimSpace.Protocol.Equilibration(timestep=2.0000 fs, runtime=200.0000 ps, temperature_start=300.0000 K, temperature_end=300.0000 K, pressure=1.0000 atm, report_interval=100, restart_interval=500, restraint=None, force_constant=10.00), exe='/opt/bin/bin/gmx', name='gromacs', work_dir='/tmp/tmpo9izm7i4', seed=None>
-
- Runtime: 4.3708 mins
-Finished equilibrating ligand-protein system.
-Saving solvated/equilibrated systems.
-Ligand:
-<BioSimSpace.System: nMolecules=677>
-
- Ligand + protein:
-<BioSimSpace.System: nMolecules=677>
-First 20 molecules in ligand + protein system:
-<BioSimSpace.Molecule: nAtoms=30, nResidues=1>
-<BioSimSpace.Molecule: nAtoms=3, nResidues=1>
-<BioSimSpace.Molecule: nAtoms=3, nResidues=1>
-<BioSimSpace.Molecule: nAtoms=3, nResidues=1>
-<BioSimSpace.Molecule: nAtoms=3, nResidues=1>
-<BioSimSpace.Molecule: nAtoms=3, nResidues=1>
-<BioSimSpace.Molecule: nAtoms=3, nResidues=1>
-<BioSimSpace.Molecule: nAtoms=3, nResidues=1>
-<BioSimSpace.Molecule: nAtoms=3, nResidues=1>
-<BioSimSpace.Molecule: nAtoms=3, nResidues=1>
-<BioSimSpace.Molecule: nAtoms=3, nResidues=1>
-<BioSimSpace.Molecule: nAtoms=3, nResidues=1>
-<BioSimSpace.Molecule: nAtoms=3, nResidues=1>
-<BioSimSpace.Molecule: nAtoms=3, nResidues=1>
-<BioSimSpace.Molecule: nAtoms=3, nResidues=1>
-<BioSimSpace.Molecule: nAtoms=3, nResidues=1>
-<BioSimSpace.Molecule: nAtoms=3, nResidues=1>
-<BioSimSpace.Molecule: nAtoms=3, nResidues=1>
-<BioSimSpace.Molecule: nAtoms=3, nResidues=1>
-<BioSimSpace.Molecule: nAtoms=3, nResidues=1>
-Done.
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+None
+All output has been redirected to the stdout stream!
+None
+Traceback (most recent call last):
+  File "/home/jguven/projects/metalloproteins/execution_model/scripts/equilibration.py", line 52, in <module>
+    minimised_process = run_process(ligand_solvated, protocol)
+  File "/home/jguven/projects/metalloproteins/execution_model/scripts/equilibration.py", line 23, in run_process
+    raise _Exceptions.ThirdPartyError("The process exited with an error!")
+BioSimSpace._Exceptions._exceptions.ThirdPartyError: The process exited with an error!

@@ -1,4 +1,4 @@
-#!/bin/bash
+:#!/bin/bash
 
 # Number of ligands
 N_LIGANDS=$(< "../ligands.dat" wc -l)

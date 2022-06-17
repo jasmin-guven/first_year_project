@@ -5,13 +5,9 @@ import os
 
 
 def run_process(system, md_protocol):
-    """
-    @param system: solvated system (bss object)
-    @param md_protocol: bss protocolbss protocol
-    @return the process.
-    """
-    process = bss.Process.Gromacs(system, md_protocol)
+    process = bss.Process.Gromacs(system, md_protocol, "/home/jguven/Software/miniconda3/envs/bss-d/bin.AVX2_256/gmx")
     process.setArg("-nt", 1)
+    process.setArg("-nb", "gpu")
     process.start()
     process.wait()    
     print(f"\n {process}")
@@ -96,7 +92,7 @@ protocol = bss.Protocol.Equilibration(
                                 temperature=300*bss.Units.Temperature.kelvin,
                                 restraint="heavy",
                                 )
-restrained_npt_process = run_process(nvt, protocol)
+restrained_npt_process = run_npt_process(nvt, protocol)
 
 output_files = restrained_npt_process.workDir()
 os.system(f"cp -r {output_files} ../equilibration_files/ligands/restrained_npt_{index}")
@@ -112,7 +108,7 @@ protocol = bss.Protocol.Equilibration(
                                 temperature=300*bss.Units.Temperature.kelvin,
                                 )
 
-npt_process = run_process(restrained_npt, protocol)
+npt_process = run_npt_process(restrained_npt, protocol)
 
 output_files = npt_process.workDir()
 os.system(f"cp -r {output_files} ../equilibration_files/ligands/npt_{index}")
@@ -142,7 +138,7 @@ protocol = bss.Protocol.Equilibration(
                                 temperature_end=300*bss.Units.Temperature.kelvin,
                                 restraint="all"
                                 )
-restrained_nvt_system_process = run_process(minimised, protocol)
+restrained_nvt_system_process = run_process(minimised_system, protocol)
 
 output_files = restrained_nvt_system_process.workDir()
 os.system(f"cp -r {output_files} ../equilibration_files/protein/restrained_nvt_{index}")

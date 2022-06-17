@@ -1,0 +1,2146 @@
+OPENCL SOMD SCRIPT
+Running on device: 0
+cd ../outputs/SOMD/lig_h_1~lig_h_9/
+bound
+bound
+lambda is:  0.0000 a t bound  for  lig_h_1~lig_h_9
+cd lambda_0.0000
+production run...
+
+Loading configuration information from file ./somd.cfg
+
+Running a somd-freenrg calculation using files ./somd.prm7, ./somd.rst7 and ./somd.pert.
+Using parameters:
+===============
+barostat == True
+buffered coordinates frequency == 2000
+constraint == hbonds-notperturbed
+crdfile == ./somd.rst7
+cutoff distance == 10 angstrom
+cutoff type == cutoffperiodic
+energy frequency == 250
+equilibrate == False
+lambda array == (0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0)
+lambda_val == 0.0
+minimise == True
+morphfile == ./somd.pert
+ncycles == 5
+ncycles_per_snap == 1
+nmoves == 200000
+perturbed residue number == 739
+platform == OpenCL
+pressure == 1 atm
+reaction field dielectric == 78.3
+save coordinates == True
+temperature == 300 t
+thermostat == True
+timestep == 0.002 ps
+topfile == ./somd.prm7
+===============
+### Running Single Topology Molecular Dynamics Free Energy on unknown ###
+###================Setting up calculation=====================###
+Index GPU = 0 
+Loaded a restart file on which we have performed 3400000 moves.
+There are 2240 atoms in the group 
+###===========================================================###
+
+###=======================Minimisation========================###
+Running minimisation.
+Energy before the minimisation: -7407.63 kcal mol-1
+Tolerance for minimisation: 1
+Maximum number of minimisation iterations: 1000
+
+==============================================================
+Sending anonymous Sire usage statistics to http://siremol.org.
+For more information, see http://siremol.org/analytics
+To disable, set the environment variable 'SIRE_DONT_PHONEHOME' to 1
+To see the information sent, set the environment variable 
+SIRE_VERBOSE_PHONEHOME equal to 1. To silence this message, set
+the environment variable SIRE_SILENT_PHONEHOME to 1.
+==============================================================
+
+Energy after the minimization: -9262.17 kcal mol-1
+Energy minimization done.
+###===========================================================###
+
+###====================somd-freenrg run=======================###
+Starting somd-freenrg run...
+200000 moves 5 cycles, 2000 ps simulation time
+
+Cycle =  18 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  19 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  20 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  21 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  22 
+
+Backing up previous restart
+Saving new restart
+Simulation took 4323 s 
+###===========================================================###
+
+Clearing buffers...
+Starting somd-freenrg: number of threads equals 20
+/home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_9/bound
+lambda is:  0.1000 a t bound  for  lig_h_1~lig_h_9
+cd lambda_0.1000
+production run...
+
+Loading configuration information from file ./somd.cfg
+
+Running a somd-freenrg calculation using files ./somd.prm7, ./somd.rst7 and ./somd.pert.
+Using parameters:
+===============
+barostat == True
+buffered coordinates frequency == 2000
+constraint == hbonds-notperturbed
+crdfile == ./somd.rst7
+cutoff distance == 10 angstrom
+cutoff type == cutoffperiodic
+energy frequency == 250
+equilibrate == False
+lambda array == (0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0)
+lambda_val == 0.1
+minimise == True
+morphfile == ./somd.pert
+ncycles == 5
+ncycles_per_snap == 1
+nmoves == 200000
+perturbed residue number == 739
+platform == OpenCL
+pressure == 1 atm
+reaction field dielectric == 78.3
+save coordinates == True
+temperature == 300 t
+thermostat == True
+timestep == 0.002 ps
+topfile == ./somd.prm7
+===============
+### Running Single Topology Molecular Dynamics Free Energy on unknown ###
+###================Setting up calculation=====================###
+New run. Loading input and creating restart
+lambda is 0.1
+Create the System...
+Selecting dummy groups
+Creating force fields... 
+Setting up moves...
+Created a MD move that uses OpenMM for all molecules on 0 
+Saving restart
+Setting up sim file. 
+There are 2240 atoms in the group 
+###===========================================================###
+
+###=======================Minimisation========================###
+Running minimisation.
+Energy before the minimisation: -7367.18 kcal mol-1
+Tolerance for minimisation: 1
+Maximum number of minimisation iterations: 1000
+
+==============================================================
+Sending anonymous Sire usage statistics to http://siremol.org.
+For more information, see http://siremol.org/analytics
+To disable, set the environment variable 'SIRE_DONT_PHONEHOME' to 1
+To see the information sent, set the environment variable 
+SIRE_VERBOSE_PHONEHOME equal to 1. To silence this message, set
+the environment variable SIRE_SILENT_PHONEHOME to 1.
+==============================================================
+
+Energy after the minimization: -9264.74 kcal mol-1
+Energy minimization done.
+###===========================================================###
+
+###====================somd-freenrg run=======================###
+Starting somd-freenrg run...
+200000 moves 5 cycles, 2000 ps simulation time
+
+Cycle =  1 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  2 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  3 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  4 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  5 
+
+Backing up previous restart
+Saving new restart
+Simulation took 4401 s 
+###===========================================================###
+
+Clearing buffers...
+Starting somd-freenrg: number of threads equals 20
+/home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_9/bound
+lambda is:  0.2000 a t bound  for  lig_h_1~lig_h_9
+cd lambda_0.2000
+production run...
+
+Loading configuration information from file ./somd.cfg
+
+Running a somd-freenrg calculation using files ./somd.prm7, ./somd.rst7 and ./somd.pert.
+Using parameters:
+===============
+barostat == True
+buffered coordinates frequency == 2000
+constraint == hbonds-notperturbed
+crdfile == ./somd.rst7
+cutoff distance == 10 angstrom
+cutoff type == cutoffperiodic
+energy frequency == 250
+equilibrate == False
+lambda array == (0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0)
+lambda_val == 0.2
+minimise == True
+morphfile == ./somd.pert
+ncycles == 5
+ncycles_per_snap == 1
+nmoves == 200000
+perturbed residue number == 739
+platform == OpenCL
+pressure == 1 atm
+reaction field dielectric == 78.3
+save coordinates == True
+temperature == 300 t
+thermostat == True
+timestep == 0.002 ps
+topfile == ./somd.prm7
+===============
+### Running Single Topology Molecular Dynamics Free Energy on unknown ###
+###================Setting up calculation=====================###
+New run. Loading input and creating restart
+lambda is 0.2
+Create the System...
+Selecting dummy groups
+Creating force fields... 
+Setting up moves...
+Created a MD move that uses OpenMM for all molecules on 0 
+Saving restart
+Setting up sim file. 
+There are 2240 atoms in the group 
+###===========================================================###
+
+###=======================Minimisation========================###
+Running minimisation.
+Energy before the minimisation: -7367.18 kcal mol-1
+Tolerance for minimisation: 1
+Maximum number of minimisation iterations: 1000
+
+==============================================================
+Sending anonymous Sire usage statistics to http://siremol.org.
+For more information, see http://siremol.org/analytics
+To disable, set the environment variable 'SIRE_DONT_PHONEHOME' to 1
+To see the information sent, set the environment variable 
+SIRE_VERBOSE_PHONEHOME equal to 1. To silence this message, set
+the environment variable SIRE_SILENT_PHONEHOME to 1.
+==============================================================
+
+Energy after the minimization: -9263.4 kcal mol-1
+Energy minimization done.
+###===========================================================###
+
+###====================somd-freenrg run=======================###
+Starting somd-freenrg run...
+200000 moves 5 cycles, 2000 ps simulation time
+
+Cycle =  1 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  2 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  3 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  4 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  5 
+
+Backing up previous restart
+Saving new restart
+Simulation took 4411 s 
+###===========================================================###
+
+Clearing buffers...
+Starting somd-freenrg: number of threads equals 20
+/home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_9/bound
+lambda is:  0.3000 a t bound  for  lig_h_1~lig_h_9
+cd lambda_0.3000
+production run...
+
+Loading configuration information from file ./somd.cfg
+
+Running a somd-freenrg calculation using files ./somd.prm7, ./somd.rst7 and ./somd.pert.
+Using parameters:
+===============
+barostat == True
+buffered coordinates frequency == 2000
+constraint == hbonds-notperturbed
+crdfile == ./somd.rst7
+cutoff distance == 10 angstrom
+cutoff type == cutoffperiodic
+energy frequency == 250
+equilibrate == False
+lambda array == (0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0)
+lambda_val == 0.3
+minimise == True
+morphfile == ./somd.pert
+ncycles == 5
+ncycles_per_snap == 1
+nmoves == 200000
+perturbed residue number == 739
+platform == OpenCL
+pressure == 1 atm
+reaction field dielectric == 78.3
+save coordinates == True
+temperature == 300 t
+thermostat == True
+timestep == 0.002 ps
+topfile == ./somd.prm7
+===============
+### Running Single Topology Molecular Dynamics Free Energy on unknown ###
+###================Setting up calculation=====================###
+New run. Loading input and creating restart
+lambda is 0.3
+Create the System...
+Selecting dummy groups
+Creating force fields... 
+Setting up moves...
+Created a MD move that uses OpenMM for all molecules on 0 
+Saving restart
+Setting up sim file. 
+There are 2240 atoms in the group 
+###===========================================================###
+
+###=======================Minimisation========================###
+Running minimisation.
+Energy before the minimisation: -7367.18 kcal mol-1
+Tolerance for minimisation: 1
+Maximum number of minimisation iterations: 1000
+
+==============================================================
+Sending anonymous Sire usage statistics to http://siremol.org.
+For more information, see http://siremol.org/analytics
+To disable, set the environment variable 'SIRE_DONT_PHONEHOME' to 1
+To see the information sent, set the environment variable 
+SIRE_VERBOSE_PHONEHOME equal to 1. To silence this message, set
+the environment variable SIRE_SILENT_PHONEHOME to 1.
+==============================================================
+
+Energy after the minimization: -9265.68 kcal mol-1
+Energy minimization done.
+###===========================================================###
+
+###====================somd-freenrg run=======================###
+Starting somd-freenrg run...
+200000 moves 5 cycles, 2000 ps simulation time
+
+Cycle =  1 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  2 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  3 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  4 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  5 
+
+Backing up previous restart
+Saving new restart
+Simulation took 4414 s 
+###===========================================================###
+
+Clearing buffers...
+Starting somd-freenrg: number of threads equals 20
+/home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_9/bound
+lambda is:  0.4000 a t bound  for  lig_h_1~lig_h_9
+cd lambda_0.4000
+production run...
+
+Loading configuration information from file ./somd.cfg
+
+Running a somd-freenrg calculation using files ./somd.prm7, ./somd.rst7 and ./somd.pert.
+Using parameters:
+===============
+barostat == True
+buffered coordinates frequency == 2000
+constraint == hbonds-notperturbed
+crdfile == ./somd.rst7
+cutoff distance == 10 angstrom
+cutoff type == cutoffperiodic
+energy frequency == 250
+equilibrate == False
+lambda array == (0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0)
+lambda_val == 0.4
+minimise == True
+morphfile == ./somd.pert
+ncycles == 5
+ncycles_per_snap == 1
+nmoves == 200000
+perturbed residue number == 739
+platform == OpenCL
+pressure == 1 atm
+reaction field dielectric == 78.3
+save coordinates == True
+temperature == 300 t
+thermostat == True
+timestep == 0.002 ps
+topfile == ./somd.prm7
+===============
+### Running Single Topology Molecular Dynamics Free Energy on unknown ###
+###================Setting up calculation=====================###
+New run. Loading input and creating restart
+lambda is 0.4
+Create the System...
+Selecting dummy groups
+Creating force fields... 
+Setting up moves...
+Created a MD move that uses OpenMM for all molecules on 0 
+Saving restart
+Setting up sim file. 
+There are 2240 atoms in the group 
+###===========================================================###
+
+###=======================Minimisation========================###
+Running minimisation.
+Energy before the minimisation: -7367.18 kcal mol-1
+Tolerance for minimisation: 1
+Maximum number of minimisation iterations: 1000
+
+==============================================================
+Sending anonymous Sire usage statistics to http://siremol.org.
+For more information, see http://siremol.org/analytics
+To disable, set the environment variable 'SIRE_DONT_PHONEHOME' to 1
+To see the information sent, set the environment variable 
+SIRE_VERBOSE_PHONEHOME equal to 1. To silence this message, set
+the environment variable SIRE_SILENT_PHONEHOME to 1.
+==============================================================
+
+Energy after the minimization: -9249.2 kcal mol-1
+Energy minimization done.
+###===========================================================###
+
+###====================somd-freenrg run=======================###
+Starting somd-freenrg run...
+200000 moves 5 cycles, 2000 ps simulation time
+
+Cycle =  1 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  2 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  3 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  4 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  5 
+
+Backing up previous restart
+Saving new restart
+Simulation took 4412 s 
+###===========================================================###
+
+Clearing buffers...
+Starting somd-freenrg: number of threads equals 20
+/home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_9/bound
+lambda is:  0.5000 a t bound  for  lig_h_1~lig_h_9
+cd lambda_0.5000
+production run...
+
+Loading configuration information from file ./somd.cfg
+
+Running a somd-freenrg calculation using files ./somd.prm7, ./somd.rst7 and ./somd.pert.
+Using parameters:
+===============
+barostat == True
+buffered coordinates frequency == 2000
+constraint == hbonds-notperturbed
+crdfile == ./somd.rst7
+cutoff distance == 10 angstrom
+cutoff type == cutoffperiodic
+energy frequency == 250
+equilibrate == False
+lambda array == (0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0)
+lambda_val == 0.5
+minimise == True
+morphfile == ./somd.pert
+ncycles == 5
+ncycles_per_snap == 1
+nmoves == 200000
+perturbed residue number == 739
+platform == OpenCL
+pressure == 1 atm
+reaction field dielectric == 78.3
+save coordinates == True
+temperature == 300 t
+thermostat == True
+timestep == 0.002 ps
+topfile == ./somd.prm7
+===============
+### Running Single Topology Molecular Dynamics Free Energy on unknown ###
+###================Setting up calculation=====================###
+New run. Loading input and creating restart
+lambda is 0.5
+Create the System...
+Selecting dummy groups
+Creating force fields... 
+Setting up moves...
+Created a MD move that uses OpenMM for all molecules on 0 
+Saving restart
+Setting up sim file. 
+There are 2240 atoms in the group 
+###===========================================================###
+
+###=======================Minimisation========================###
+Running minimisation.
+Energy before the minimisation: -7367.18 kcal mol-1
+Tolerance for minimisation: 1
+Maximum number of minimisation iterations: 1000
+
+==============================================================
+Sending anonymous Sire usage statistics to http://siremol.org.
+For more information, see http://siremol.org/analytics
+To disable, set the environment variable 'SIRE_DONT_PHONEHOME' to 1
+To see the information sent, set the environment variable 
+SIRE_VERBOSE_PHONEHOME equal to 1. To silence this message, set
+the environment variable SIRE_SILENT_PHONEHOME to 1.
+==============================================================
+
+Energy after the minimization: -9264.52 kcal mol-1
+Energy minimization done.
+###===========================================================###
+
+###====================somd-freenrg run=======================###
+Starting somd-freenrg run...
+200000 moves 5 cycles, 2000 ps simulation time
+
+Cycle =  1 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  2 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  3 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  4 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  5 
+
+Backing up previous restart
+Saving new restart
+Simulation took 4411 s 
+###===========================================================###
+
+Clearing buffers...
+Starting somd-freenrg: number of threads equals 20
+/home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_9/bound
+lambda is:  0.6000 a t bound  for  lig_h_1~lig_h_9
+cd lambda_0.6000
+production run...
+
+Loading configuration information from file ./somd.cfg
+
+Running a somd-freenrg calculation using files ./somd.prm7, ./somd.rst7 and ./somd.pert.
+Using parameters:
+===============
+barostat == True
+buffered coordinates frequency == 2000
+constraint == hbonds-notperturbed
+crdfile == ./somd.rst7
+cutoff distance == 10 angstrom
+cutoff type == cutoffperiodic
+energy frequency == 250
+equilibrate == False
+lambda array == (0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0)
+lambda_val == 0.6
+minimise == True
+morphfile == ./somd.pert
+ncycles == 5
+ncycles_per_snap == 1
+nmoves == 200000
+perturbed residue number == 739
+platform == OpenCL
+pressure == 1 atm
+reaction field dielectric == 78.3
+save coordinates == True
+temperature == 300 t
+thermostat == True
+timestep == 0.002 ps
+topfile == ./somd.prm7
+===============
+### Running Single Topology Molecular Dynamics Free Energy on unknown ###
+###================Setting up calculation=====================###
+New run. Loading input and creating restart
+lambda is 0.6
+Create the System...
+Selecting dummy groups
+Creating force fields... 
+Setting up moves...
+Created a MD move that uses OpenMM for all molecules on 0 
+Saving restart
+Setting up sim file. 
+There are 2240 atoms in the group 
+###===========================================================###
+
+###=======================Minimisation========================###
+Running minimisation.
+Energy before the minimisation: -7367.18 kcal mol-1
+Tolerance for minimisation: 1
+Maximum number of minimisation iterations: 1000
+
+==============================================================
+Sending anonymous Sire usage statistics to http://siremol.org.
+For more information, see http://siremol.org/analytics
+To disable, set the environment variable 'SIRE_DONT_PHONEHOME' to 1
+To see the information sent, set the environment variable 
+SIRE_VERBOSE_PHONEHOME equal to 1. To silence this message, set
+the environment variable SIRE_SILENT_PHONEHOME to 1.
+==============================================================
+
+Energy after the minimization: -9260.16 kcal mol-1
+Energy minimization done.
+###===========================================================###
+
+###====================somd-freenrg run=======================###
+Starting somd-freenrg run...
+200000 moves 5 cycles, 2000 ps simulation time
+
+Cycle =  1 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  2 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  3 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  4 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  5 
+
+Backing up previous restart
+Saving new restart
+Simulation took 4411 s 
+###===========================================================###
+
+Clearing buffers...
+Starting somd-freenrg: number of threads equals 20
+/home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_9/bound
+lambda is:  0.7000 a t bound  for  lig_h_1~lig_h_9
+cd lambda_0.7000
+production run...
+
+Loading configuration information from file ./somd.cfg
+
+Running a somd-freenrg calculation using files ./somd.prm7, ./somd.rst7 and ./somd.pert.
+Using parameters:
+===============
+barostat == True
+buffered coordinates frequency == 2000
+constraint == hbonds-notperturbed
+crdfile == ./somd.rst7
+cutoff distance == 10 angstrom
+cutoff type == cutoffperiodic
+energy frequency == 250
+equilibrate == False
+lambda array == (0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0)
+lambda_val == 0.7
+minimise == True
+morphfile == ./somd.pert
+ncycles == 5
+ncycles_per_snap == 1
+nmoves == 200000
+perturbed residue number == 739
+platform == OpenCL
+pressure == 1 atm
+reaction field dielectric == 78.3
+save coordinates == True
+temperature == 300 t
+thermostat == True
+timestep == 0.002 ps
+topfile == ./somd.prm7
+===============
+### Running Single Topology Molecular Dynamics Free Energy on unknown ###
+###================Setting up calculation=====================###
+New run. Loading input and creating restart
+lambda is 0.7
+Create the System...
+Selecting dummy groups
+Creating force fields... 
+Setting up moves...
+Created a MD move that uses OpenMM for all molecules on 0 
+Saving restart
+Setting up sim file. 
+There are 2240 atoms in the group 
+###===========================================================###
+
+###=======================Minimisation========================###
+Running minimisation.
+Energy before the minimisation: -7367.18 kcal mol-1
+Tolerance for minimisation: 1
+Maximum number of minimisation iterations: 1000
+
+==============================================================
+Sending anonymous Sire usage statistics to http://siremol.org.
+For more information, see http://siremol.org/analytics
+To disable, set the environment variable 'SIRE_DONT_PHONEHOME' to 1
+To see the information sent, set the environment variable 
+SIRE_VERBOSE_PHONEHOME equal to 1. To silence this message, set
+the environment variable SIRE_SILENT_PHONEHOME to 1.
+==============================================================
+
+Energy after the minimization: -9269.7 kcal mol-1
+Energy minimization done.
+###===========================================================###
+
+###====================somd-freenrg run=======================###
+Starting somd-freenrg run...
+200000 moves 5 cycles, 2000 ps simulation time
+
+Cycle =  1 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  2 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  3 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  4 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  5 
+
+Backing up previous restart
+Saving new restart
+Simulation took 4412 s 
+###===========================================================###
+
+Clearing buffers...
+Starting somd-freenrg: number of threads equals 20
+/home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_9/bound
+lambda is:  0.8000 a t bound  for  lig_h_1~lig_h_9
+cd lambda_0.8000
+production run...
+
+Loading configuration information from file ./somd.cfg
+
+Running a somd-freenrg calculation using files ./somd.prm7, ./somd.rst7 and ./somd.pert.
+Using parameters:
+===============
+barostat == True
+buffered coordinates frequency == 2000
+constraint == hbonds-notperturbed
+crdfile == ./somd.rst7
+cutoff distance == 10 angstrom
+cutoff type == cutoffperiodic
+energy frequency == 250
+equilibrate == False
+lambda array == (0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0)
+lambda_val == 0.8
+minimise == True
+morphfile == ./somd.pert
+ncycles == 5
+ncycles_per_snap == 1
+nmoves == 200000
+perturbed residue number == 739
+platform == OpenCL
+pressure == 1 atm
+reaction field dielectric == 78.3
+save coordinates == True
+temperature == 300 t
+thermostat == True
+timestep == 0.002 ps
+topfile == ./somd.prm7
+===============
+### Running Single Topology Molecular Dynamics Free Energy on unknown ###
+###================Setting up calculation=====================###
+New run. Loading input and creating restart
+lambda is 0.8
+Create the System...
+Selecting dummy groups
+Creating force fields... 
+Setting up moves...
+Created a MD move that uses OpenMM for all molecules on 0 
+Saving restart
+Setting up sim file. 
+There are 2240 atoms in the group 
+###===========================================================###
+
+###=======================Minimisation========================###
+Running minimisation.
+Energy before the minimisation: -7367.18 kcal mol-1
+Tolerance for minimisation: 1
+Maximum number of minimisation iterations: 1000
+
+==============================================================
+Sending anonymous Sire usage statistics to http://siremol.org.
+For more information, see http://siremol.org/analytics
+To disable, set the environment variable 'SIRE_DONT_PHONEHOME' to 1
+To see the information sent, set the environment variable 
+SIRE_VERBOSE_PHONEHOME equal to 1. To silence this message, set
+the environment variable SIRE_SILENT_PHONEHOME to 1.
+==============================================================
+
+Energy after the minimization: -9266.25 kcal mol-1
+Energy minimization done.
+###===========================================================###
+
+###====================somd-freenrg run=======================###
+Starting somd-freenrg run...
+200000 moves 5 cycles, 2000 ps simulation time
+
+Cycle =  1 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  2 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  3 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  4 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  5 
+
+Backing up previous restart
+Saving new restart
+Simulation took 4413 s 
+###===========================================================###
+
+Clearing buffers...
+Starting somd-freenrg: number of threads equals 20
+/home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_9/bound
+lambda is:  0.9000 a t bound  for  lig_h_1~lig_h_9
+cd lambda_0.9000
+production run...
+
+Loading configuration information from file ./somd.cfg
+
+Running a somd-freenrg calculation using files ./somd.prm7, ./somd.rst7 and ./somd.pert.
+Using parameters:
+===============
+barostat == True
+buffered coordinates frequency == 2000
+constraint == hbonds-notperturbed
+crdfile == ./somd.rst7
+cutoff distance == 10 angstrom
+cutoff type == cutoffperiodic
+energy frequency == 250
+equilibrate == False
+lambda array == (0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0)
+lambda_val == 0.9
+minimise == True
+morphfile == ./somd.pert
+ncycles == 5
+ncycles_per_snap == 1
+nmoves == 200000
+perturbed residue number == 739
+platform == OpenCL
+pressure == 1 atm
+reaction field dielectric == 78.3
+save coordinates == True
+temperature == 300 t
+thermostat == True
+timestep == 0.002 ps
+topfile == ./somd.prm7
+===============
+### Running Single Topology Molecular Dynamics Free Energy on unknown ###
+###================Setting up calculation=====================###
+New run. Loading input and creating restart
+lambda is 0.9
+Create the System...
+Selecting dummy groups
+Creating force fields... 
+Setting up moves...
+Created a MD move that uses OpenMM for all molecules on 0 
+Saving restart
+Setting up sim file. 
+There are 2240 atoms in the group 
+###===========================================================###
+
+###=======================Minimisation========================###
+Running minimisation.
+Energy before the minimisation: -7367.18 kcal mol-1
+Tolerance for minimisation: 1
+Maximum number of minimisation iterations: 1000
+
+==============================================================
+Sending anonymous Sire usage statistics to http://siremol.org.
+For more information, see http://siremol.org/analytics
+To disable, set the environment variable 'SIRE_DONT_PHONEHOME' to 1
+To see the information sent, set the environment variable 
+SIRE_VERBOSE_PHONEHOME equal to 1. To silence this message, set
+the environment variable SIRE_SILENT_PHONEHOME to 1.
+==============================================================
+
+Energy after the minimization: -9265.44 kcal mol-1
+Energy minimization done.
+###===========================================================###
+
+###====================somd-freenrg run=======================###
+Starting somd-freenrg run...
+200000 moves 5 cycles, 2000 ps simulation time
+
+Cycle =  1 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  2 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  3 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  4 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  5 
+
+Backing up previous restart
+Saving new restart
+Simulation took 4412 s 
+###===========================================================###
+
+Clearing buffers...
+Starting somd-freenrg: number of threads equals 20
+/home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_9/bound
+lambda is:  1.0000 a t bound  for  lig_h_1~lig_h_9
+cd lambda_1.0000
+production run...
+
+Loading configuration information from file ./somd.cfg
+
+Running a somd-freenrg calculation using files ./somd.prm7, ./somd.rst7 and ./somd.pert.
+Using parameters:
+===============
+barostat == True
+buffered coordinates frequency == 2000
+constraint == hbonds-notperturbed
+crdfile == ./somd.rst7
+cutoff distance == 10 angstrom
+cutoff type == cutoffperiodic
+energy frequency == 250
+equilibrate == False
+lambda array == (0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0)
+lambda_val == 1.0
+minimise == True
+morphfile == ./somd.pert
+ncycles == 5
+ncycles_per_snap == 1
+nmoves == 200000
+perturbed residue number == 739
+platform == OpenCL
+pressure == 1 atm
+reaction field dielectric == 78.3
+save coordinates == True
+temperature == 300 t
+thermostat == True
+timestep == 0.002 ps
+topfile == ./somd.prm7
+===============
+### Running Single Topology Molecular Dynamics Free Energy on unknown ###
+###================Setting up calculation=====================###
+New run. Loading input and creating restart
+lambda is 1.0
+Create the System...
+Selecting dummy groups
+Creating force fields... 
+Setting up moves...
+Created a MD move that uses OpenMM for all molecules on 0 
+Saving restart
+Setting up sim file. 
+There are 2240 atoms in the group 
+###===========================================================###
+
+###=======================Minimisation========================###
+Running minimisation.
+Energy before the minimisation: -7367.18 kcal mol-1
+Tolerance for minimisation: 1
+Maximum number of minimisation iterations: 1000
+
+==============================================================
+Sending anonymous Sire usage statistics to http://siremol.org.
+For more information, see http://siremol.org/analytics
+To disable, set the environment variable 'SIRE_DONT_PHONEHOME' to 1
+To see the information sent, set the environment variable 
+SIRE_VERBOSE_PHONEHOME equal to 1. To silence this message, set
+the environment variable SIRE_SILENT_PHONEHOME to 1.
+==============================================================
+
+Energy after the minimization: -9267.52 kcal mol-1
+Energy minimization done.
+###===========================================================###
+
+###====================somd-freenrg run=======================###
+Starting somd-freenrg run...
+200000 moves 5 cycles, 2000 ps simulation time
+
+Cycle =  1 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  2 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  3 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  4 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  5 
+
+Backing up previous restart
+Saving new restart
+Simulation took 4372 s 
+###===========================================================###
+
+Clearing buffers...
+Starting somd-freenrg: number of threads equals 20
+/home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_9/bound
+free
+./rbfe.sh: line 39: cd: free: No such file or directory
+free
+lambda is:  0.0000 a t free  for  lig_h_1~lig_h_9
+cd lambda_0.0000
+production run...
+
+Loading configuration information from file ./somd.cfg
+
+Running a somd-freenrg calculation using files ./somd.prm7, ./somd.rst7 and ./somd.pert.
+Using parameters:
+===============
+barostat == True
+buffered coordinates frequency == 2000
+constraint == hbonds-notperturbed
+crdfile == ./somd.rst7
+cutoff distance == 10 angstrom
+cutoff type == cutoffperiodic
+energy frequency == 250
+equilibrate == False
+lambda array == (0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0)
+lambda_val == 0.0
+minimise == True
+morphfile == ./somd.pert
+ncycles == 5
+ncycles_per_snap == 1
+nmoves == 200000
+perturbed residue number == 739
+platform == OpenCL
+pressure == 1 atm
+reaction field dielectric == 78.3
+save coordinates == True
+temperature == 300 t
+thermostat == True
+timestep == 0.002 ps
+topfile == ./somd.prm7
+===============
+### Running Single Topology Molecular Dynamics Free Energy on unknown ###
+###================Setting up calculation=====================###
+Index GPU = 0 
+Loaded a restart file on which we have performed 4400000 moves.
+There are 2240 atoms in the group 
+###===========================================================###
+
+###=======================Minimisation========================###
+Running minimisation.
+Energy before the minimisation: -7388.01 kcal mol-1
+Tolerance for minimisation: 1
+Maximum number of minimisation iterations: 1000
+
+==============================================================
+Sending anonymous Sire usage statistics to http://siremol.org.
+For more information, see http://siremol.org/analytics
+To disable, set the environment variable 'SIRE_DONT_PHONEHOME' to 1
+To see the information sent, set the environment variable 
+SIRE_VERBOSE_PHONEHOME equal to 1. To silence this message, set
+the environment variable SIRE_SILENT_PHONEHOME to 1.
+==============================================================
+
+Energy after the minimization: -9280.62 kcal mol-1
+Energy minimization done.
+###===========================================================###
+
+###====================somd-freenrg run=======================###
+Starting somd-freenrg run...
+200000 moves 5 cycles, 2000 ps simulation time
+
+Cycle =  23 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  24 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  25 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  26 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  27 
+
+Backing up previous restart
+Saving new restart
+Simulation took 4376 s 
+###===========================================================###
+
+Clearing buffers...
+Starting somd-freenrg: number of threads equals 20
+/home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_9/bound
+lambda is:  0.1000 a t free  for  lig_h_1~lig_h_9
+cd lambda_0.1000
+production run...
+
+Loading configuration information from file ./somd.cfg
+
+Running a somd-freenrg calculation using files ./somd.prm7, ./somd.rst7 and ./somd.pert.
+Using parameters:
+===============
+barostat == True
+buffered coordinates frequency == 2000
+constraint == hbonds-notperturbed
+crdfile == ./somd.rst7
+cutoff distance == 10 angstrom
+cutoff type == cutoffperiodic
+energy frequency == 250
+equilibrate == False
+lambda array == (0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0)
+lambda_val == 0.1
+minimise == True
+morphfile == ./somd.pert
+ncycles == 5
+ncycles_per_snap == 1
+nmoves == 200000
+perturbed residue number == 739
+platform == OpenCL
+pressure == 1 atm
+reaction field dielectric == 78.3
+save coordinates == True
+temperature == 300 t
+thermostat == True
+timestep == 0.002 ps
+topfile == ./somd.prm7
+===============
+### Running Single Topology Molecular Dynamics Free Energy on unknown ###
+###================Setting up calculation=====================###
+Index GPU = 0 
+Loaded a restart file on which we have performed 1000000 moves.
+There are 2240 atoms in the group 
+###===========================================================###
+
+###=======================Minimisation========================###
+Running minimisation.
+Energy before the minimisation: -7318.92 kcal mol-1
+Tolerance for minimisation: 1
+Maximum number of minimisation iterations: 1000
+
+==============================================================
+Sending anonymous Sire usage statistics to http://siremol.org.
+For more information, see http://siremol.org/analytics
+To disable, set the environment variable 'SIRE_DONT_PHONEHOME' to 1
+To see the information sent, set the environment variable 
+SIRE_VERBOSE_PHONEHOME equal to 1. To silence this message, set
+the environment variable SIRE_SILENT_PHONEHOME to 1.
+==============================================================
+
+Energy after the minimization: -9231.09 kcal mol-1
+Energy minimization done.
+###===========================================================###
+
+###====================somd-freenrg run=======================###
+Starting somd-freenrg run...
+200000 moves 5 cycles, 2000 ps simulation time
+
+Cycle =  6 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  7 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  8 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  9 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  10 
+
+Backing up previous restart
+Saving new restart
+Simulation took 4412 s 
+###===========================================================###
+
+Clearing buffers...
+Starting somd-freenrg: number of threads equals 20
+/home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_9/bound
+lambda is:  0.2000 a t free  for  lig_h_1~lig_h_9
+cd lambda_0.2000
+production run...
+
+Loading configuration information from file ./somd.cfg
+
+Running a somd-freenrg calculation using files ./somd.prm7, ./somd.rst7 and ./somd.pert.
+Using parameters:
+===============
+barostat == True
+buffered coordinates frequency == 2000
+constraint == hbonds-notperturbed
+crdfile == ./somd.rst7
+cutoff distance == 10 angstrom
+cutoff type == cutoffperiodic
+energy frequency == 250
+equilibrate == False
+lambda array == (0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0)
+lambda_val == 0.2
+minimise == True
+morphfile == ./somd.pert
+ncycles == 5
+ncycles_per_snap == 1
+nmoves == 200000
+perturbed residue number == 739
+platform == OpenCL
+pressure == 1 atm
+reaction field dielectric == 78.3
+save coordinates == True
+temperature == 300 t
+thermostat == True
+timestep == 0.002 ps
+topfile == ./somd.prm7
+===============
+### Running Single Topology Molecular Dynamics Free Energy on unknown ###
+###================Setting up calculation=====================###
+Index GPU = 0 
+Loaded a restart file on which we have performed 1000000 moves.
+There are 2240 atoms in the group 
+###===========================================================###
+
+###=======================Minimisation========================###
+Running minimisation.
+Energy before the minimisation: -7431.52 kcal mol-1
+Tolerance for minimisation: 1
+Maximum number of minimisation iterations: 1000
+
+==============================================================
+Sending anonymous Sire usage statistics to http://siremol.org.
+For more information, see http://siremol.org/analytics
+To disable, set the environment variable 'SIRE_DONT_PHONEHOME' to 1
+To see the information sent, set the environment variable 
+SIRE_VERBOSE_PHONEHOME equal to 1. To silence this message, set
+the environment variable SIRE_SILENT_PHONEHOME to 1.
+==============================================================
+
+Energy after the minimization: -9240.79 kcal mol-1
+Energy minimization done.
+###===========================================================###
+
+###====================somd-freenrg run=======================###
+Starting somd-freenrg run...
+200000 moves 5 cycles, 2000 ps simulation time
+
+Cycle =  6 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  7 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  8 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  9 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  10 
+
+Backing up previous restart
+Saving new restart
+Simulation took 4409 s 
+###===========================================================###
+
+Clearing buffers...
+Starting somd-freenrg: number of threads equals 20
+/home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_9/bound
+lambda is:  0.3000 a t free  for  lig_h_1~lig_h_9
+cd lambda_0.3000
+production run...
+
+Loading configuration information from file ./somd.cfg
+
+Running a somd-freenrg calculation using files ./somd.prm7, ./somd.rst7 and ./somd.pert.
+Using parameters:
+===============
+barostat == True
+buffered coordinates frequency == 2000
+constraint == hbonds-notperturbed
+crdfile == ./somd.rst7
+cutoff distance == 10 angstrom
+cutoff type == cutoffperiodic
+energy frequency == 250
+equilibrate == False
+lambda array == (0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0)
+lambda_val == 0.3
+minimise == True
+morphfile == ./somd.pert
+ncycles == 5
+ncycles_per_snap == 1
+nmoves == 200000
+perturbed residue number == 739
+platform == OpenCL
+pressure == 1 atm
+reaction field dielectric == 78.3
+save coordinates == True
+temperature == 300 t
+thermostat == True
+timestep == 0.002 ps
+topfile == ./somd.prm7
+===============
+### Running Single Topology Molecular Dynamics Free Energy on unknown ###
+###================Setting up calculation=====================###
+Index GPU = 0 
+Loaded a restart file on which we have performed 1000000 moves.
+There are 2240 atoms in the group 
+###===========================================================###
+
+###=======================Minimisation========================###
+Running minimisation.
+Energy before the minimisation: -7380.97 kcal mol-1
+Tolerance for minimisation: 1
+Maximum number of minimisation iterations: 1000
+
+==============================================================
+Sending anonymous Sire usage statistics to http://siremol.org.
+For more information, see http://siremol.org/analytics
+To disable, set the environment variable 'SIRE_DONT_PHONEHOME' to 1
+To see the information sent, set the environment variable 
+SIRE_VERBOSE_PHONEHOME equal to 1. To silence this message, set
+the environment variable SIRE_SILENT_PHONEHOME to 1.
+==============================================================
+
+Energy after the minimization: -9224.73 kcal mol-1
+Energy minimization done.
+###===========================================================###
+
+###====================somd-freenrg run=======================###
+Starting somd-freenrg run...
+200000 moves 5 cycles, 2000 ps simulation time
+
+Cycle =  6 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  7 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  8 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  9 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  10 
+
+Backing up previous restart
+Saving new restart
+Simulation took 4411 s 
+###===========================================================###
+
+Clearing buffers...
+Starting somd-freenrg: number of threads equals 20
+/home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_9/bound
+lambda is:  0.4000 a t free  for  lig_h_1~lig_h_9
+cd lambda_0.4000
+production run...
+
+Loading configuration information from file ./somd.cfg
+
+Running a somd-freenrg calculation using files ./somd.prm7, ./somd.rst7 and ./somd.pert.
+Using parameters:
+===============
+barostat == True
+buffered coordinates frequency == 2000
+constraint == hbonds-notperturbed
+crdfile == ./somd.rst7
+cutoff distance == 10 angstrom
+cutoff type == cutoffperiodic
+energy frequency == 250
+equilibrate == False
+lambda array == (0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0)
+lambda_val == 0.4
+minimise == True
+morphfile == ./somd.pert
+ncycles == 5
+ncycles_per_snap == 1
+nmoves == 200000
+perturbed residue number == 739
+platform == OpenCL
+pressure == 1 atm
+reaction field dielectric == 78.3
+save coordinates == True
+temperature == 300 t
+thermostat == True
+timestep == 0.002 ps
+topfile == ./somd.prm7
+===============
+### Running Single Topology Molecular Dynamics Free Energy on unknown ###
+###================Setting up calculation=====================###
+Index GPU = 0 
+Loaded a restart file on which we have performed 1000000 moves.
+There are 2240 atoms in the group 
+###===========================================================###
+
+###=======================Minimisation========================###
+Running minimisation.
+Energy before the minimisation: -7421.56 kcal mol-1
+Tolerance for minimisation: 1
+Maximum number of minimisation iterations: 1000
+
+==============================================================
+Sending anonymous Sire usage statistics to http://siremol.org.
+For more information, see http://siremol.org/analytics
+To disable, set the environment variable 'SIRE_DONT_PHONEHOME' to 1
+To see the information sent, set the environment variable 
+SIRE_VERBOSE_PHONEHOME equal to 1. To silence this message, set
+the environment variable SIRE_SILENT_PHONEHOME to 1.
+==============================================================
+
+Energy after the minimization: -9280.7 kcal mol-1
+Energy minimization done.
+###===========================================================###
+
+###====================somd-freenrg run=======================###
+Starting somd-freenrg run...
+200000 moves 5 cycles, 2000 ps simulation time
+
+Cycle =  6 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  7 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  8 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  9 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  10 
+
+Backing up previous restart
+Saving new restart
+Simulation took 4412 s 
+###===========================================================###
+
+Clearing buffers...
+Starting somd-freenrg: number of threads equals 20
+/home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_9/bound
+lambda is:  0.5000 a t free  for  lig_h_1~lig_h_9
+cd lambda_0.5000
+production run...
+
+Loading configuration information from file ./somd.cfg
+
+Running a somd-freenrg calculation using files ./somd.prm7, ./somd.rst7 and ./somd.pert.
+Using parameters:
+===============
+barostat == True
+buffered coordinates frequency == 2000
+constraint == hbonds-notperturbed
+crdfile == ./somd.rst7
+cutoff distance == 10 angstrom
+cutoff type == cutoffperiodic
+energy frequency == 250
+equilibrate == False
+lambda array == (0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0)
+lambda_val == 0.5
+minimise == True
+morphfile == ./somd.pert
+ncycles == 5
+ncycles_per_snap == 1
+nmoves == 200000
+perturbed residue number == 739
+platform == OpenCL
+pressure == 1 atm
+reaction field dielectric == 78.3
+save coordinates == True
+temperature == 300 t
+thermostat == True
+timestep == 0.002 ps
+topfile == ./somd.prm7
+===============
+### Running Single Topology Molecular Dynamics Free Energy on unknown ###
+###================Setting up calculation=====================###
+Index GPU = 0 
+Loaded a restart file on which we have performed 1000000 moves.
+There are 2240 atoms in the group 
+###===========================================================###
+
+###=======================Minimisation========================###
+Running minimisation.
+Energy before the minimisation: -7395.95 kcal mol-1
+Tolerance for minimisation: 1
+Maximum number of minimisation iterations: 1000
+
+==============================================================
+Sending anonymous Sire usage statistics to http://siremol.org.
+For more information, see http://siremol.org/analytics
+To disable, set the environment variable 'SIRE_DONT_PHONEHOME' to 1
+To see the information sent, set the environment variable 
+SIRE_VERBOSE_PHONEHOME equal to 1. To silence this message, set
+the environment variable SIRE_SILENT_PHONEHOME to 1.
+==============================================================
+
+Energy after the minimization: -9275.08 kcal mol-1
+Energy minimization done.
+###===========================================================###
+
+###====================somd-freenrg run=======================###
+Starting somd-freenrg run...
+200000 moves 5 cycles, 2000 ps simulation time
+
+Cycle =  6 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  7 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  8 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  9 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  10 
+
+Backing up previous restart
+Saving new restart
+Simulation took 4411 s 
+###===========================================================###
+
+Clearing buffers...
+Starting somd-freenrg: number of threads equals 20
+/home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_9/bound
+lambda is:  0.6000 a t free  for  lig_h_1~lig_h_9
+cd lambda_0.6000
+production run...
+
+Loading configuration information from file ./somd.cfg
+
+Running a somd-freenrg calculation using files ./somd.prm7, ./somd.rst7 and ./somd.pert.
+Using parameters:
+===============
+barostat == True
+buffered coordinates frequency == 2000
+constraint == hbonds-notperturbed
+crdfile == ./somd.rst7
+cutoff distance == 10 angstrom
+cutoff type == cutoffperiodic
+energy frequency == 250
+equilibrate == False
+lambda array == (0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0)
+lambda_val == 0.6
+minimise == True
+morphfile == ./somd.pert
+ncycles == 5
+ncycles_per_snap == 1
+nmoves == 200000
+perturbed residue number == 739
+platform == OpenCL
+pressure == 1 atm
+reaction field dielectric == 78.3
+save coordinates == True
+temperature == 300 t
+thermostat == True
+timestep == 0.002 ps
+topfile == ./somd.prm7
+===============
+### Running Single Topology Molecular Dynamics Free Energy on unknown ###
+###================Setting up calculation=====================###
+Index GPU = 0 
+Loaded a restart file on which we have performed 1000000 moves.
+There are 2240 atoms in the group 
+###===========================================================###
+
+###=======================Minimisation========================###
+Running minimisation.
+Energy before the minimisation: -7400.81 kcal mol-1
+Tolerance for minimisation: 1
+Maximum number of minimisation iterations: 1000
+
+==============================================================
+Sending anonymous Sire usage statistics to http://siremol.org.
+For more information, see http://siremol.org/analytics
+To disable, set the environment variable 'SIRE_DONT_PHONEHOME' to 1
+To see the information sent, set the environment variable 
+SIRE_VERBOSE_PHONEHOME equal to 1. To silence this message, set
+the environment variable SIRE_SILENT_PHONEHOME to 1.
+==============================================================
+
+Energy after the minimization: -9238.15 kcal mol-1
+Energy minimization done.
+###===========================================================###
+
+###====================somd-freenrg run=======================###
+Starting somd-freenrg run...
+200000 moves 5 cycles, 2000 ps simulation time
+
+Cycle =  6 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  7 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  8 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  9 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  10 
+
+Backing up previous restart
+Saving new restart
+Simulation took 4410 s 
+###===========================================================###
+
+Clearing buffers...
+Starting somd-freenrg: number of threads equals 20
+/home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_9/bound
+lambda is:  0.7000 a t free  for  lig_h_1~lig_h_9
+cd lambda_0.7000
+production run...
+
+Loading configuration information from file ./somd.cfg
+
+Running a somd-freenrg calculation using files ./somd.prm7, ./somd.rst7 and ./somd.pert.
+Using parameters:
+===============
+barostat == True
+buffered coordinates frequency == 2000
+constraint == hbonds-notperturbed
+crdfile == ./somd.rst7
+cutoff distance == 10 angstrom
+cutoff type == cutoffperiodic
+energy frequency == 250
+equilibrate == False
+lambda array == (0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0)
+lambda_val == 0.7
+minimise == True
+morphfile == ./somd.pert
+ncycles == 5
+ncycles_per_snap == 1
+nmoves == 200000
+perturbed residue number == 739
+platform == OpenCL
+pressure == 1 atm
+reaction field dielectric == 78.3
+save coordinates == True
+temperature == 300 t
+thermostat == True
+timestep == 0.002 ps
+topfile == ./somd.prm7
+===============
+### Running Single Topology Molecular Dynamics Free Energy on unknown ###
+###================Setting up calculation=====================###
+Index GPU = 0 
+Loaded a restart file on which we have performed 1000000 moves.
+There are 2240 atoms in the group 
+###===========================================================###
+
+###=======================Minimisation========================###
+Running minimisation.
+Energy before the minimisation: -7397.3 kcal mol-1
+Tolerance for minimisation: 1
+Maximum number of minimisation iterations: 1000
+
+==============================================================
+Sending anonymous Sire usage statistics to http://siremol.org.
+For more information, see http://siremol.org/analytics
+To disable, set the environment variable 'SIRE_DONT_PHONEHOME' to 1
+To see the information sent, set the environment variable 
+SIRE_VERBOSE_PHONEHOME equal to 1. To silence this message, set
+the environment variable SIRE_SILENT_PHONEHOME to 1.
+==============================================================
+
+Energy after the minimization: -9286.87 kcal mol-1
+Energy minimization done.
+###===========================================================###
+
+###====================somd-freenrg run=======================###
+Starting somd-freenrg run...
+200000 moves 5 cycles, 2000 ps simulation time
+
+Cycle =  6 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  7 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  8 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  9 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  10 
+
+Backing up previous restart
+Saving new restart
+Simulation took 4409 s 
+###===========================================================###
+
+Clearing buffers...
+Starting somd-freenrg: number of threads equals 20
+/home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_9/bound
+lambda is:  0.8000 a t free  for  lig_h_1~lig_h_9
+cd lambda_0.8000
+production run...
+
+Loading configuration information from file ./somd.cfg
+
+Running a somd-freenrg calculation using files ./somd.prm7, ./somd.rst7 and ./somd.pert.
+Using parameters:
+===============
+barostat == True
+buffered coordinates frequency == 2000
+constraint == hbonds-notperturbed
+crdfile == ./somd.rst7
+cutoff distance == 10 angstrom
+cutoff type == cutoffperiodic
+energy frequency == 250
+equilibrate == False
+lambda array == (0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0)
+lambda_val == 0.8
+minimise == True
+morphfile == ./somd.pert
+ncycles == 5
+ncycles_per_snap == 1
+nmoves == 200000
+perturbed residue number == 739
+platform == OpenCL
+pressure == 1 atm
+reaction field dielectric == 78.3
+save coordinates == True
+temperature == 300 t
+thermostat == True
+timestep == 0.002 ps
+topfile == ./somd.prm7
+===============
+### Running Single Topology Molecular Dynamics Free Energy on unknown ###
+###================Setting up calculation=====================###
+Index GPU = 0 
+Loaded a restart file on which we have performed 1000000 moves.
+There are 2240 atoms in the group 
+###===========================================================###
+
+###=======================Minimisation========================###
+Running minimisation.
+Energy before the minimisation: -7471.09 kcal mol-1
+Tolerance for minimisation: 1
+Maximum number of minimisation iterations: 1000
+
+==============================================================
+Sending anonymous Sire usage statistics to http://siremol.org.
+For more information, see http://siremol.org/analytics
+To disable, set the environment variable 'SIRE_DONT_PHONEHOME' to 1
+To see the information sent, set the environment variable 
+SIRE_VERBOSE_PHONEHOME equal to 1. To silence this message, set
+the environment variable SIRE_SILENT_PHONEHOME to 1.
+==============================================================
+
+Energy after the minimization: -9257.22 kcal mol-1
+Energy minimization done.
+###===========================================================###
+
+###====================somd-freenrg run=======================###
+Starting somd-freenrg run...
+200000 moves 5 cycles, 2000 ps simulation time
+
+Cycle =  6 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  7 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  8 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  9 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  10 
+
+Backing up previous restart
+Saving new restart
+Simulation took 4412 s 
+###===========================================================###
+
+Clearing buffers...
+Starting somd-freenrg: number of threads equals 20
+/home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_9/bound
+lambda is:  0.9000 a t free  for  lig_h_1~lig_h_9
+cd lambda_0.9000
+production run...
+
+Loading configuration information from file ./somd.cfg
+
+Running a somd-freenrg calculation using files ./somd.prm7, ./somd.rst7 and ./somd.pert.
+Using parameters:
+===============
+barostat == True
+buffered coordinates frequency == 2000
+constraint == hbonds-notperturbed
+crdfile == ./somd.rst7
+cutoff distance == 10 angstrom
+cutoff type == cutoffperiodic
+energy frequency == 250
+equilibrate == False
+lambda array == (0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0)
+lambda_val == 0.9
+minimise == True
+morphfile == ./somd.pert
+ncycles == 5
+ncycles_per_snap == 1
+nmoves == 200000
+perturbed residue number == 739
+platform == OpenCL
+pressure == 1 atm
+reaction field dielectric == 78.3
+save coordinates == True
+temperature == 300 t
+thermostat == True
+timestep == 0.002 ps
+topfile == ./somd.prm7
+===============
+### Running Single Topology Molecular Dynamics Free Energy on unknown ###
+###================Setting up calculation=====================###
+Index GPU = 0 
+Loaded a restart file on which we have performed 1000000 moves.
+There are 2240 atoms in the group 
+###===========================================================###
+
+###=======================Minimisation========================###
+Running minimisation.
+Energy before the minimisation: -7402.4 kcal mol-1
+Tolerance for minimisation: 1
+Maximum number of minimisation iterations: 1000
+
+==============================================================
+Sending anonymous Sire usage statistics to http://siremol.org.
+For more information, see http://siremol.org/analytics
+To disable, set the environment variable 'SIRE_DONT_PHONEHOME' to 1
+To see the information sent, set the environment variable 
+SIRE_VERBOSE_PHONEHOME equal to 1. To silence this message, set
+the environment variable SIRE_SILENT_PHONEHOME to 1.
+==============================================================
+
+Energy after the minimization: -9244.56 kcal mol-1
+Energy minimization done.
+###===========================================================###
+
+###====================somd-freenrg run=======================###
+Starting somd-freenrg run...
+200000 moves 5 cycles, 2000 ps simulation time
+
+Cycle =  6 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  7 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  8 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  9 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  10 
+
+Backing up previous restart
+Saving new restart
+Simulation took 4409 s 
+###===========================================================###
+
+Clearing buffers...
+Starting somd-freenrg: number of threads equals 20
+/home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_9/bound
+lambda is:  1.0000 a t free  for  lig_h_1~lig_h_9
+cd lambda_1.0000
+production run...
+
+Loading configuration information from file ./somd.cfg
+
+Running a somd-freenrg calculation using files ./somd.prm7, ./somd.rst7 and ./somd.pert.
+Using parameters:
+===============
+barostat == True
+buffered coordinates frequency == 2000
+constraint == hbonds-notperturbed
+crdfile == ./somd.rst7
+cutoff distance == 10 angstrom
+cutoff type == cutoffperiodic
+energy frequency == 250
+equilibrate == False
+lambda array == (0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0)
+lambda_val == 1.0
+minimise == True
+morphfile == ./somd.pert
+ncycles == 5
+ncycles_per_snap == 1
+nmoves == 200000
+perturbed residue number == 739
+platform == OpenCL
+pressure == 1 atm
+reaction field dielectric == 78.3
+save coordinates == True
+temperature == 300 t
+thermostat == True
+timestep == 0.002 ps
+topfile == ./somd.prm7
+===============
+### Running Single Topology Molecular Dynamics Free Energy on unknown ###
+###================Setting up calculation=====================###
+Index GPU = 0 
+Loaded a restart file on which we have performed 1000000 moves.
+There are 2240 atoms in the group 
+###===========================================================###
+
+###=======================Minimisation========================###
+Running minimisation.
+Energy before the minimisation: -7381.47 kcal mol-1
+Tolerance for minimisation: 1
+Maximum number of minimisation iterations: 1000
+
+==============================================================
+Sending anonymous Sire usage statistics to http://siremol.org.
+For more information, see http://siremol.org/analytics
+To disable, set the environment variable 'SIRE_DONT_PHONEHOME' to 1
+To see the information sent, set the environment variable 
+SIRE_VERBOSE_PHONEHOME equal to 1. To silence this message, set
+the environment variable SIRE_SILENT_PHONEHOME to 1.
+==============================================================
+
+Energy after the minimization: -9234.58 kcal mol-1
+Energy minimization done.
+###===========================================================###
+
+###====================somd-freenrg run=======================###
+Starting somd-freenrg run...
+200000 moves 5 cycles, 2000 ps simulation time
+
+Cycle =  6 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  7 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  8 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  9 
+
+Backing up previous restart
+Saving new restart
+
+Cycle =  10 
+
+Backing up previous restart
+Saving new restart
+Simulation took 4371 s 
+###===========================================================###
+
+Clearing buffers...
+Starting somd-freenrg: number of threads equals 20
+/home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_9/bound
