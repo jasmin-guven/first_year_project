@@ -18,14 +18,15 @@ the environment variable SIRE_SILENT_PHONEHOME to 1.
 ==============================================================
 
 Program: rbfe_setup.py, ligand 1: 1, ligand 2: 12
+=======================================
+==============FREE STAGE===============
+=======================================
 Loading ligands 1 and 12.
-ligand_1_sys: ../prep/ligands/lig_h_1_ligand_prepped.prm7
-ligand_2_sys: ../prep/ligands/lig_h_12_ligand_prepped.prm7
+<class 'BioSimSpace._SireWrappers._molecule.Molecule'>
 Mapping and aligning...
-<BioSimSpace.Molecule: nAtoms=30, nResidues=1> <BioSimSpace.Molecule: nAtoms=28, nResidues=1>
 Merging...
 Traceback (most recent call last):
-  File "/home/jguven/projects/metalloproteins/execution_model/scripts/rbfe_setup.py", line 33, in <module>
+  File "/home/jguven/projects/metalloproteins/execution_model/scripts/rbfe_setup.py", line 43, in <module>
     merged_ligands = bss.Align.merge(ligand_1, ligand_2_aligned, mapping)
   File "/home/jguven/Software/miniconda3/envs/bss-d/lib/python3.9/site-packages/BioSimSpace/Align/_align.py", line 1216, in merge
     return _merge(molecule0, molecule1, sire_mapping, allow_ring_breaking=allow_ring_breaking,
@@ -36,6 +37,6 @@ BioSimSpace._Exceptions._exceptions.IncompatibleError: The merge has opened/clos
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/home/jguven/projects/metalloproteins/execution_model/scripts/rbfe_setup.py", line 35, in <module>
+  File "/home/jguven/projects/metalloproteins/execution_model/scripts/rbfe_setup.py", line 45, in <module>
     raise NameError(f"The merge has opened/closed a ring on ligand {sys.argv[2]}")
 NameError: The merge has opened/closed a ring on ligand 12

@@ -1,59 +1,64 @@
 OPENCL SOMD SCRIPT
-Running on device: 0
+Running on device: 1
 cd ../outputs/SOMD/lig_h_1~lig_h_12/
 cd bound
 lambda is:  0.0000 at bound for  lig_h_1~lig_h_12
 cd lambda_0.0000
 production run...
-somd-freenrg -C ./somd.cfg -l 0.0000 -d 0 -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL 1> somd.log 2> somd.err
+somd-freenrg -C ./somd.cfg -l 0.0000 -d 1 -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL 1> somd.log 2> somd.err
 /home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_12/bound
 lambda is:  0.1000 at bound for  lig_h_1~lig_h_12
 cd lambda_0.1000
 production run...
-somd-freenrg -C ./somd.cfg -l 0.1000 -d 0 -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL 1> somd.log 2> somd.err
+somd-freenrg -C ./somd.cfg -l 0.1000 -d 1 -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL 1> somd.log 2> somd.err
 /home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_12/bound
 lambda is:  0.2000 at bound for  lig_h_1~lig_h_12
 cd lambda_0.2000
 production run...
-somd-freenrg -C ./somd.cfg -l 0.2000 -d 0 -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL 1> somd.log 2> somd.err
+somd-freenrg -C ./somd.cfg -l 0.2000 -d 1 -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL 1> somd.log 2> somd.err
 /home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_12/bound
 lambda is:  0.3000 at bound for  lig_h_1~lig_h_12
 cd lambda_0.3000
 production run...
-somd-freenrg -C ./somd.cfg -l 0.3000 -d 0 -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL 1> somd.log 2> somd.err
+somd-freenrg -C ./somd.cfg -l 0.3000 -d 1 -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL 1> somd.log 2> somd.err
 /home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_12/bound
 lambda is:  0.4000 at bound for  lig_h_1~lig_h_12
 cd lambda_0.4000
 production run...
-somd-freenrg -C ./somd.cfg -l 0.4000 -d 0 -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL 1> somd.log 2> somd.err
+somd-freenrg -C ./somd.cfg -l 0.4000 -d 1 -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL 1> somd.log 2> somd.err
 /home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_12/bound
 lambda is:  0.5000 at bound for  lig_h_1~lig_h_12
 cd lambda_0.5000
 production run...
-somd-freenrg -C ./somd.cfg -l 0.5000 -d 0 -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL 1> somd.log 2> somd.err
+somd-freenrg -C ./somd.cfg -l 0.5000 -d 1 -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL 1> somd.log 2> somd.err
 /home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_12/bound
 lambda is:  0.6000 at bound for  lig_h_1~lig_h_12
 cd lambda_0.6000
 production run...
-somd-freenrg -C ./somd.cfg -l 0.6000 -d 0 -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL 1> somd.log 2> somd.err
+./rbfe_bound.sh: line 41: 457111 Killed                  somd-freenrg -C ./somd.cfg -l $lambda -d $GPU -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL > somd.log 2> somd.err
+somd-freenrg -C ./somd.cfg -l 0.6000 -d 1 -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL 1> somd.log 2> somd.err
 /home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_12/bound
 lambda is:  0.7000 at bound for  lig_h_1~lig_h_12
 cd lambda_0.7000
 production run...
-somd-freenrg -C ./somd.cfg -l 0.7000 -d 0 -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL 1> somd.log 2> somd.err
+./rbfe_bound.sh: line 41: 458155 Killed                  somd-freenrg -C ./somd.cfg -l $lambda -d $GPU -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL > somd.log 2> somd.err
+somd-freenrg -C ./somd.cfg -l 0.7000 -d 1 -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL 1> somd.log 2> somd.err
 /home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_12/bound
 lambda is:  0.8000 at bound for  lig_h_1~lig_h_12
 cd lambda_0.8000
 production run...
-somd-freenrg -C ./somd.cfg -l 0.8000 -d 0 -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL 1> somd.log 2> somd.err
+./rbfe_bound.sh: line 41: 458176 Killed                  somd-freenrg -C ./somd.cfg -l $lambda -d $GPU -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL > somd.log 2> somd.err
+somd-freenrg -C ./somd.cfg -l 0.8000 -d 1 -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL 1> somd.log 2> somd.err
 /home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_12/bound
 lambda is:  0.9000 at bound for  lig_h_1~lig_h_12
 cd lambda_0.9000
 production run...
-somd-freenrg -C ./somd.cfg -l 0.9000 -d 0 -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL 1> somd.log 2> somd.err
+./rbfe_bound.sh: line 41: 458197 Killed                  somd-freenrg -C ./somd.cfg -l $lambda -d $GPU -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL > somd.log 2> somd.err
+somd-freenrg -C ./somd.cfg -l 0.9000 -d 1 -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL 1> somd.log 2> somd.err
 /home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_12/bound
 lambda is:  1.0000 at bound for  lig_h_1~lig_h_12
 cd lambda_1.0000
 production run...
-somd-freenrg -C ./somd.cfg -l 1.0000 -d 0 -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL 1> somd.log 2> somd.err
+./rbfe_bound.sh: line 41: 458218 Killed                  somd-freenrg -C ./somd.cfg -l $lambda -d $GPU -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL > somd.log 2> somd.err
+somd-freenrg -C ./somd.cfg -l 1.0000 -d 1 -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL 1> somd.log 2> somd.err
 /home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_12/bound

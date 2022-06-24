@@ -2,16 +2,16 @@
 ;	File 'mdout.mdp' was generated
 ;	By user: jguven (1002)
 ;	On host: azuma
-;	At date: Fri Jun 10 19:00:33 2022
+;	At date: Mon Jun 20 18:26:24 2022
 ;
 ;	Created by:
-;	               :-) GROMACS - gmx grompp, 2022.1-conda_forge (-:
+;	                     :-) GROMACS - gmx grompp, 2022.2 (-:
 ;	
-;	Executable:   /home/jguven/Software/miniconda3/envs/bss-d/bin.AVX2_256/gmx
-;	Data prefix:  /home/jguven/Software/miniconda3/envs/bss-d
+;	Executable:   /usr/local/gromacs/bin/gmx
+;	Data prefix:  /usr/local/gromacs
 ;	Working dir:  /home/jguven/projects/metalloproteins/execution_model/scripts
 ;	Command line:
-;	  gmx grompp -f ../inputs/gromacs_files/system/npt.mdp -c ../inputs/ligands/lig_h_11_system_solvated.gro -p ../inputs/ligands/lig_h_11_system_solvated.top -o sys_npt/lig_h_1~lig_h_11/npt.tpr
+;	  gmx grompp -f equilibration/systems/lig_h_11/npt.mdp -c equilibration/systems/lig_h_11/npt.gro -t equilibration/systems/lig_h_11/r_npt.cpt -p equilibration/systems/lig_h_11/npt.top -o equilibration/systems/lig_h_11/npt.tpr
 
 ; VARIOUS PREPROCESSING OPTIONS
 ; Preprocessor information: use cpp syntax.
@@ -169,7 +169,7 @@ annealing-temp           =
 ; GENERATE VELOCITIES FOR STARTUP RUN
 gen-vel                  = no
 gen-temp                 = 300
-gen-seed                 = 1790637438
+gen-seed                 = -4199494
 
 ; OPTIONS FOR BONDS    
 constraints              = h-bonds

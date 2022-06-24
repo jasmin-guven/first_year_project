@@ -12,6 +12,7 @@ execution_model/equilibration_files/ligands/*
 execution_model/equilibration_files/protein/*
 execution_model/prep/ligands/*
 execution_model/prep/prortein/*
+execution_model/scripts/equilibration/*
 *.tpr
 *.trr
 *.edr
@@ -23,6 +24,17 @@ execution_model/outputs/SOMD/test/bound/*
 execution_model/outputs/SOMD/test/free/*
 execution_model/prep/protein/*
 execution_model/prep/ligands/*
+execution_model/scripts/nvt/lig_h_1~lig_h*/*
+execution_model/scripts/r_nvt/lig_h_1~lig_h_*/
+execution_model/scripts/npt/lig_h_1~lig_h_*/*
+execution_model/scripts/r_npt/lig_h_1~lig_h_*/*
+execution_model/scripts/bb_nvt/lig_h_1~lig_h_*/*
+execution_model/scripts/sys_nvt/lig_h_1~lig_h_*/*
+execution_model/scripts/sys_minimisation/lig_h_1~lig_h_*/*
+execution_model/scripts/minimisation/lig_h_1~lig_h_*/*
+execution_model/scripts/lig_h_1~lig_h_16/*
+execution_model/scripts/sys_nvt/lig_h_1~lig_h_8/*
+execution_model/outputs/GROMACS/lig_h_1~lig_h_8/bound/lambda_0.0000/gromacs*
 # Jupyter
 .DS_Store
 
