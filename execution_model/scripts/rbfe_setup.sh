@@ -4,7 +4,7 @@ N_LIGANDS=$(ls -l parallel_solvation/ligands | grep ^d | wc -l)
 
 for i in $(seq 1 $N_LIGANDS)
 do
-echo $i
+#echo $i
 PERTURBATION_INDEX=$(($i +1))
 if [ $PERTURBATION_INDEX -lt 17 ]
 then

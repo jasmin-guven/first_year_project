@@ -21,7 +21,7 @@ export OPENMM_DEFAULT_PLATFORM="OpenCL"
 echo "Running on device: $OPENCL_VISIBLE_DEVICES"
 
 # Uncomment for testing
-#lambdas=0.0000
+# lambdas=0.0000
 
 lambdas=( 0.0000 0.1000 0.2000 0.3000 0.4000 0.5000 0.6000 0.7000 0.8000 0.9000 1.0000 )
 engine="SOMD"

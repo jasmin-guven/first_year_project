@@ -63,8 +63,8 @@ print("Solvating ligand + protein system.")
 box, angles = bss.Box.cubic(max(box_sizes_system))
 system_solvated = bss.Solvent.solvate(solvent_force_field, molecule=system, box=box, angles=angles)
 
-# bss.IO.saveMolecules(f"temp/{ligand_name}_ligand_solvated", ligand_params_solvated, ["PRM7", "RST7"])
-# bss.IO.saveMolecules(f"temp/{ligand_name}_system_solvated", system_solvated, ["PRM7", "RST7"])
-bss.IO.saveMolecules(f"../inputs/ligands/{ligand_name}_ligand_solvated", ligand_params_solvated, ["Gro87", "GroTop"])
-bss.IO.saveMolecules(f"../inputs/ligands/{ligand_name}_system_solvated", system_solvated, ["Gro87", "GroTop"])
+bss.IO.saveMolecules(f"temp/{ligand_name}_ligand_solvated", ligand_params_solvated, ["PRM7", "RST7"])
+bss.IO.saveMolecules(f"temp/{ligand_name}_system_solvated", system_solvated, ["PRM7", "RST7"])
+# bss.IO.saveMolecules(f"../inputs/ligands/{ligand_name}_ligand_solvated", ligand_params_solvated, ["Gro87", "GroTop"])
+# bss.IO.saveMolecules(f"../inputs/ligands/{ligand_name}_system_solvated", system_solvated, ["Gro87", "GroTop"])
 
