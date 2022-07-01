@@ -394,8 +394,8 @@ if __name__ == '__main__':
             for value in result[2].values():
                 FILE.write(
                     "%s  %s  %s  %s\n" % (
-                        value.x(), value.y(), value.y() + value.yMaxError(), value.y() - value.yMaxError()))
-                x.append(value.x())
+                        value.x_label_locations(), value.y(), value.y() + value.yMaxError(), value.y() - value.yMaxError()))
+                x.append(value.x_label_locations())
                 y.append(value.y())
 
             try:
