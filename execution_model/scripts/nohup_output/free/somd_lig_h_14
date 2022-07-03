@@ -1,0 +1,59 @@
+OPENCL SOMD SCRIPT
+Running on device: 2
+cd ../outputs/SOMD/lig_h_1~lig_h_14/
+cd free
+lambda is:  0.0000 at free for  lig_h_1~lig_h_14
+cd lambda_0.0000
+production run...
+somd-freenrg -C ./somd.cfg -l 0.0000 -d 2 -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL 1> somd.log 2> somd.err
+/home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_14/free
+lambda is:  0.1000 at free for  lig_h_1~lig_h_14
+cd lambda_0.1000
+production run...
+somd-freenrg -C ./somd.cfg -l 0.1000 -d 2 -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL 1> somd.log 2> somd.err
+/home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_14/free
+lambda is:  0.2000 at free for  lig_h_1~lig_h_14
+cd lambda_0.2000
+production run...
+somd-freenrg -C ./somd.cfg -l 0.2000 -d 2 -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL 1> somd.log 2> somd.err
+/home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_14/free
+lambda is:  0.3000 at free for  lig_h_1~lig_h_14
+cd lambda_0.3000
+production run...
+somd-freenrg -C ./somd.cfg -l 0.3000 -d 2 -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL 1> somd.log 2> somd.err
+/home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_14/free
+lambda is:  0.4000 at free for  lig_h_1~lig_h_14
+cd lambda_0.4000
+production run...
+somd-freenrg -C ./somd.cfg -l 0.4000 -d 2 -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL 1> somd.log 2> somd.err
+/home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_14/free
+lambda is:  0.5000 at free for  lig_h_1~lig_h_14
+cd lambda_0.5000
+production run...
+somd-freenrg -C ./somd.cfg -l 0.5000 -d 2 -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL 1> somd.log 2> somd.err
+/home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_14/free
+lambda is:  0.6000 at free for  lig_h_1~lig_h_14
+cd lambda_0.6000
+production run...
+somd-freenrg -C ./somd.cfg -l 0.6000 -d 2 -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL 1> somd.log 2> somd.err
+/home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_14/free
+lambda is:  0.7000 at free for  lig_h_1~lig_h_14
+cd lambda_0.7000
+production run...
+somd-freenrg -C ./somd.cfg -l 0.7000 -d 2 -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL 1> somd.log 2> somd.err
+/home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_14/free
+lambda is:  0.8000 at free for  lig_h_1~lig_h_14
+cd lambda_0.8000
+production run...
+somd-freenrg -C ./somd.cfg -l 0.8000 -d 2 -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL 1> somd.log 2> somd.err
+/home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_14/free
+lambda is:  0.9000 at free for  lig_h_1~lig_h_14
+cd lambda_0.9000
+production run...
+somd-freenrg -C ./somd.cfg -l 0.9000 -d 2 -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL 1> somd.log 2> somd.err
+/home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_14/free
+lambda is:  1.0000 at free for  lig_h_1~lig_h_14
+cd lambda_1.0000
+production run...
+somd-freenrg -C ./somd.cfg -l 1.0000 -d 2 -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL 1> somd.log 2> somd.err
+/home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_14/free

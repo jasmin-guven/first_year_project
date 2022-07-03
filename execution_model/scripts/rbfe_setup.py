@@ -9,43 +9,43 @@ warnings.filterwarnings("ignore")
 from Sire import Base as _SireBase
 
 
-print(f"Program: {sys.argv[0]}, ligand 1: {sys.argv[1]}, ligand 2: {sys.argv[2]}")
-print("=======================================")
-print("==============FREE STAGE===============")
-print("=======================================")
-print(f"Loading ligands {sys.argv[1]} and {sys.argv[2]}.")
-ligand_path = "equilibration/ligands/"
-ligand_1_sys_gmx = bss.IO.readMolecules([f"{ligand_path}/lig_h_{sys.argv[1]}/npt.gro",
-                                     f"{ligand_path}/lig_h_{sys.argv[1]}/npt.top"])
-ligand_2_sys_gmx = bss.IO.readMolecules([f"{ligand_path}/lig_h_{sys.argv[2]}/npt.gro",
-                                     f"{ligand_path}/lig_h_{sys.argv[2]}/npt.top"])
+# print(f"Program: {sys.argv[0]}, ligand 1: {sys.argv[1]}, ligand 2: {sys.argv[2]}")
+# print("=======================================")
+# print("==============FREE STAGE===============")
+# print("=======================================")
+# print(f"Loading ligands {sys.argv[1]} and {sys.argv[2]}.")
+# ligand_path = "equilibration/ligands/"
+# ligand_1_sys_gmx = bss.IO.readMolecules([f"{ligand_path}/lig_h_{sys.argv[1]}/npt.gro",
+#                                      f"{ligand_path}/lig_h_{sys.argv[1]}/npt.top"])
+# ligand_2_sys_gmx = bss.IO.readMolecules([f"{ligand_path}/lig_h_{sys.argv[2]}/npt.gro",
+#                                      f"{ligand_path}/lig_h_{sys.argv[2]}/npt.top"])
 
-ligand_1_sys_amb = bss.IO.saveMolecules(f"{ligand_path}/lig_h_{sys.argv[1]}", ligand_1_sys_gmx, ["PRM7", "RST7"])
-ligand_2_sys_amb = bss.IO.saveMolecules(f"{ligand_path}/lig_h_{sys.argv[2]}", ligand_2_sys_gmx, ["PRM7", "RST7"])
+# ligand_1_sys_amb = bss.IO.saveMolecules(f"{ligand_path}/lig_h_{sys.argv[1]}", ligand_1_sys_gmx, ["PRM7", "RST7"])
+# ligand_2_sys_amb = bss.IO.saveMolecules(f"{ligand_path}/lig_h_{sys.argv[2]}", ligand_2_sys_gmx, ["PRM7", "RST7"])
 
-ligand_1_sys = bss.IO.readMolecules([f"{ligand_path}/lig_h_{sys.argv[1]}.prm7",
-                                     f"{ligand_path}/lig_h_{sys.argv[1]}.rst7"])
-ligand_2_sys = bss.IO.readMolecules([f"{ligand_path}/lig_h_{sys.argv[2]}.prm7",
-                                     f"{ligand_path}/lig_h_{sys.argv[2]}.rst7"])
+# ligand_1_sys = bss.IO.readMolecules([f"{ligand_path}/lig_h_{sys.argv[1]}.prm7",
+#                                      f"{ligand_path}/lig_h_{sys.argv[1]}.rst7"])
+# ligand_2_sys = bss.IO.readMolecules([f"{ligand_path}/lig_h_{sys.argv[2]}.prm7",
+#                                      f"{ligand_path}/lig_h_{sys.argv[2]}.rst7"])
 
-ligand_1 = ligand_1_sys.getMolecule(0)
-ligand_2 = ligand_2_sys.getMolecule(0)
+# ligand_1 = ligand_1_sys.getMolecule(0)
+# ligand_2 = ligand_2_sys.getMolecule(0)
 
-print("Mapping and aligning...")
+# print("Mapping and aligning...")
 
-mapping = bss.Align.matchAtoms(ligand_1, ligand_2, complete_rings_only=False)
-inverse_mapping = {v:k for k, v in mapping.items()}
-ligand_2_aligned = bss.Align.rmsdAlign(ligand_2, ligand_1, inverse_mapping)
+# mapping = bss.Align.matchAtoms(ligand_1, ligand_2, complete_rings_only=False)
+# inverse_mapping = {v:k for k, v in mapping.items()}
+# ligand_2_aligned = bss.Align.rmsdAlign(ligand_2, ligand_1, inverse_mapping)
 
-print("Merging...")
-try:
-    merged_ligands = bss.Align.merge(ligand_1, ligand_2_aligned, mapping, allow_ring_breaking=True, allow_ring_size_change=True)
-except _Exceptions.IncompatibleError:
-    raise NameError(f"The merge has opened/closed a ring on ligand {sys.argv[2]}")
+# print("Merging...")
+# try:
+#     merged_ligands = bss.Align.merge(ligand_1, ligand_2_aligned, mapping, allow_ring_breaking=True, allow_ring_size_change=True)
+# except _Exceptions.IncompatibleError:
+#     raise NameError(f"The merge has opened/closed a ring on ligand {sys.argv[2]}")
 
-ligand_1_sys.removeMolecules(ligand_1)
-ligand_1_sys.addMolecules(merged_ligands)
-system_free = ligand_1_sys
+# ligand_1_sys.removeMolecules(ligand_1)
+# ligand_1_sys.addMolecules(merged_ligands)
+# system_free = ligand_1_sys
 
 print("=======================================")
 print("==============BOUND STAGE==============")
@@ -159,12 +159,12 @@ bss.FreeEnergy.Relative(
     engine=f"{engine}",
     work_dir=workdir + "/bound")
 
-system_free._sire_object.setProperty("water_model", _SireBase.wrap("tip3p") )
-print("=======================================")
-print("==============FREE STAGE===============")
-print("=======================================")
-bss.FreeEnergy.Relative(
-    system_free,
-    rbfe_protocol,
-    engine=f"{engine}",
-    work_dir=workdir + "/free")
+# system_free._sire_object.setProperty("water_model", _SireBase.wrap("tip3p") )
+# print("=======================================")
+# print("==============FREE STAGE===============")
+# print("=======================================")
+# bss.FreeEnergy.Relative(
+#     system_free,
+#     rbfe_protocol,
+#     engine=f"{engine}",
+#     work_dir=workdir + "/free")

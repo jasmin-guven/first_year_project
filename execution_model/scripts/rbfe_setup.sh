@@ -1,4 +1,4 @@
-#!/bin/bash
+c#!/bin/bash
 
 N_LIGANDS=$(ls -l parallel_solvation/ligands | grep ^d | wc -l)
 
