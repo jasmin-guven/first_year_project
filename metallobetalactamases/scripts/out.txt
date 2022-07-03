@@ -15,4 +15,3 @@
 13	lig_7.sdf
 14	lig_8.sdf
 15	lig_9.sdf
-16	ligands.mol2
