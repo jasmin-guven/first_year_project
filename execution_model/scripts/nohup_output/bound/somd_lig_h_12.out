@@ -5,3 +5,8 @@ cd bound
 lambda is:  0.0000 at bound for  lig_h_1~lig_h_12
 cd lambda_0.0000
 production run...
+somd-freenrg -C ./somd.cfg -l 0.0000 -d 2 -c ./somd.rst7 -t ./somd.prm7 -m ./somd.pert -p OpenCL 1> somd.log 2> somd.err
+/home/jguven/projects/metalloproteins/execution_model/outputs/SOMD/lig_h_1~lig_h_12/bound
+lambda is:  0.1000 at bound for  lig_h_1~lig_h_12
+cd lambda_0.1000
+production run...
