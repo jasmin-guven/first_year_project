@@ -1,0 +1,6 @@
+HEADER                                                                          
+TITLE     6DD0_P (2)                                                            
+HETATM    1 ZN   ZN  A 401     -45.620 -11.323  16.230  1.00 11.51          ZN2+
+HETATM    2 ZN   ZN  A 402     -43.369  -8.935  19.097  1.00  8.80          ZN2+
+MASTER        0    0    0    0    0    0    0    0    2    0    0    0          
+END                                                                             
