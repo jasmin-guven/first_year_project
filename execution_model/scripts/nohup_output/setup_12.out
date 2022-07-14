@@ -7,6 +7,12 @@
 /home/jguven/Software/miniconda3/envs/bss-d/lib/python3.9/site-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
   return self._float_to_str(self.smallest_subnormal)
 Warning: importing 'simtk.openmm' is deprecated.  Import 'openmm' instead.
+Program: rbfe_setup.py, ligand 1: 1, ligand 2: 12
+=======================================
+==============FREE STAGE===============
+=======================================
+Loading ligands 1 and 12.
+Mapping and aligning...
 
 ==============================================================
 Sending anonymous Sire usage statistics to http://siremol.org.
@@ -17,16 +23,8 @@ SIRE_VERBOSE_PHONEHOME equal to 1. To silence this message, set
 the environment variable SIRE_SILENT_PHONEHOME to 1.
 ==============================================================
 
-=======================================
-==============BOUND STAGE==============
-=======================================
-Loading bound ligands 1 and 12.
-Using molecules ligand_1, ligand_2, protein
-<BioSimSpace.Molecule: nAtoms=30, nResidues=1> <BioSimSpace.Molecule: nAtoms=28, nResidues=1> <BioSimSpace.Molecule: nAtoms=4018, nResidues=270>
-Mapping...
-Aligning...
 Merging...
 Setting up SOMD directory environment in ../outputs/SOMD/lig_h_1~lig_h_12/.
 =======================================
-==============BOUND STAGE==============
+==============FREE STAGE===============
 =======================================
