@@ -29,14 +29,15 @@ def get_experimental_error(error_a, ki_a, error_b, ki_b):
     return (_K_B * _TEMPERATURE * fraction_error / fraction) * _N_A / 4184
 
 
-experimental_dataframe = pd.read_csv("../inputs/experimental_data/experimental_K_i.csv")
+experimental_dataframe = pd.read_csv("../inputs/experimental_data/exp_no_12.csv")
 experimental_values = experimental_dataframe["K_i"]
 experimental_errors = experimental_dataframe["K_i_err"]
 compound_1 = experimental_values[0]
 compound_1_error = experimental_errors[0]
-ki = [experimental_values[8], experimental_values[14], experimental_values[15]]
-ki_errors = [experimental_errors[8], experimental_errors[14], experimental_errors[15]]
-
+# ki = [experimental_values[8], experimental_values[14], experimental_values[15]]
+# ki_errors = [experimental_errors[8], experimental_errors[14], experimental_errors[15]]
+ki = experimental_values
+ki_errors = experimental_errors
 experimental_free_energy_differences = []
 experimental_free_energy_errors = []
 for i in range(len(ki)):
@@ -59,7 +60,7 @@ for i in range(len(free_energy_differences_str)):
 fig = plt.figure(figsize=(10, 10))
 sns.set(context="notebook", palette="colorblind", style="ticks", font_scale=2, font="Helvetica")
 x_label_locations = np.arange(len(experimental_free_energy_differences))
-
+print(x_label_locations)
 bar_width = 0.35
 
 plt.bar(x_label_locations - bar_width / 2,
@@ -96,11 +97,11 @@ for cap in caps:
     cap.set_color("black")
     cap.set_markeredgewidth(1.5)
 
-transformations = ["Ligand 1 to 9", "Ligand 1 to 15", "Ligand 1 to 16"]
+# transformations = ["Ligand 1 to 9", "Ligand 1 to 15", "Ligand 1 to 16"]
 plt.axhline(color="black")
 plt.xlabel("Transformations")
 plt.ylabel("$\Delta\Delta$G$_{\mathrm{bind}}$ kcal$\cdot$mol$^{-1}$")
-plt.xticks(x_label_locations, transformations)
+plt.xticks(x_label_locations, x_label_locations)
 plt.legend(loc="lower left")
 
 # sns.despine()
