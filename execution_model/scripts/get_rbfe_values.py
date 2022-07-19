@@ -1,5 +1,6 @@
 import BioSimSpace as bss
 import pandas as pd
+import numpy as np
 
 
 def add_to_dictionary(dictionary, key, value) -> dict:
@@ -14,8 +15,8 @@ def add_to_dictionary(dictionary, key, value) -> dict:
     return dictionary
 
 
-ligands_all = np.arange(1, 17, 1)
-ligands = np.delete(ligands_all, 11)
+ligands_all = np.arange(2, 17, 1)
+ligands = np.delete(ligands_all, 10)
 print(ligands)
 data_dictionary = {}
 for ligand in ligands:   
