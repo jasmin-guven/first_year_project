@@ -57,7 +57,15 @@ for i in range(len(ligands)):
     rmsd_dictionary["rmsd"] = rmsds
 
 
+
+
 fig = plt.figure(figsize=(10, 10))
 sns.set(context="notebook", palette="colorblind", style="ticks", font_scale=2)
-plt.boxplot(rmsd_dictionary["rmsd"])
+
+median_line_properties = dict(linestyle='-', linewidth=2.5, color="#D0006F")
+xtick_positions = np.arange(1, 15, 1)
+plt.boxplot(rmsd_dictionary["rmsd"], medianprops=median_line_properties)
+plt.xticks(ticks=xtick_positions, labels=ligands, rotation=70, ha="right")
+plt.xlabel("Ligand")
+plt.ylabel(f"RMSD ($\AA$)")
 plt.savefig("../../plots/box_plot_rmsd.pdf")
