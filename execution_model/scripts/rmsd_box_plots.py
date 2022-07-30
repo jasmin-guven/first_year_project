@@ -4,6 +4,8 @@ import MDAnalysis.analysis.rms
 import matplotlib.pyplot as plt
 import os
 import pandas as pd
+import seaborn as sns
+
 
 ligands_all = np.arange(2, 17, 1)
 ligands = np.delete(ligands_all, 10)
@@ -54,5 +56,8 @@ for i in range(len(ligands)):
     rmsd_dictionary["time"] = times
     rmsd_dictionary["rmsd"] = rmsds
 
-    # dataframe = pd.DataFrame.from_dict(rmsd_dictionary)
 
+fig = plt.figure(figsize=(10, 10))
+sns.set(context="notebook", palette="colorblind", style="ticks", font_scale=2)
+plt.boxplot(rmsd_dictionary["rmsd"])
+plt.savefig("../../plots/box_plot_rmsd.pdf")
