@@ -38,6 +38,7 @@ compound_1_error = experimental_errors[0]
 # ki_errors = [experimental_errors[8], experimental_errors[14], experimental_errors[15]]
 ki = experimental_values
 ki_errors = experimental_errors
+
 experimental_free_energy_differences = []
 experimental_free_energy_errors = []
 for i in range(len(ki)):
@@ -46,7 +47,11 @@ for i in range(len(ki)):
     experimental_free_energy_differences.append(ddg)
     experimental_free_energy_errors.append(error)
 
+experimental_free_energy_differences = np.delete(experimental_free_energy_differences, 0)
+experimental_free_energy_errors = np.delete(experimental_free_energy_errors, 0)
+
 calculation_dataframe = pd.read_csv("../outputs/free_energy/free_energy_molsim.csv")
+ligand_names = calculation_dataframe["ligand"].tolist()
 free_energy_differences_str = calculation_dataframe["free_energy"]
 free_energy_errors_str = calculation_dataframe["error"]
 free_energy_differences = []
@@ -58,7 +63,7 @@ for i in range(len(free_energy_differences_str)):
     free_energy_errors.append(float(stripped_error))
 
 fig = plt.figure(figsize=(10, 10))
-sns.set(context="notebook", palette="colorblind", style="ticks", font_scale=2, font="Helvetica")
+sns.set(context="notebook", palette="colorblind", style="ticks", font_scale=2)
 x_label_locations = np.arange(len(experimental_free_energy_differences))
 print(x_label_locations)
 bar_width = 0.35
@@ -97,14 +102,18 @@ for cap in caps:
     cap.set_color("black")
     cap.set_markeredgewidth(1.5)
 
-# transformations = ["Ligand 1 to 9", "Ligand 1 to 15", "Ligand 1 to 16"]
+transformations = []
+for name in ligand_names:
+    label = f"Ligand 1 to {str(name)}"
+    transformations.append(label)
+
 plt.axhline(color="black")
 plt.xlabel("Transformations")
 plt.ylabel("$\Delta\Delta$G$_{\mathrm{bind}}$ kcal$\cdot$mol$^{-1}$")
-plt.xticks(x_label_locations, x_label_locations)
+plt.xticks(x_label_locations, transformations, rotation=70, ha="right")
 plt.legend(loc="lower left")
 
-# sns.despine()
+sns.despine()
 plt.tight_layout()
 plt.legend(frameon=False)
 plt.savefig("../../plots/dd_g_molsim.png", dpi=1200, transparent=True)

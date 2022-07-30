@@ -58,7 +58,7 @@ for index in indices:
                                                name="minim",
                                                work_dir=lig_work_dir)
     os.system(f"gmx grompp -f {lig_work_dir}/minim.mdp -c {lig_work_dir}/minim.gro -p {lig_work_dir}/minim.top -o {lig_work_dir}/minim.tpr")
-    os.system(f"gmx mdrun -v -deffnm {lig_work_dir}/minim -nt 1 -nb gpu")
+    os.system(f"gmx mdrun -v -deffnm {lig_work_dir}/minim -nt 1 -nb gpu")bi
     print("---------------------------------------")
     print("-------------RESTRAINED NVT------------")
     print("---------------------------------------")
