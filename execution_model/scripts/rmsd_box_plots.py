@@ -3,7 +3,7 @@ import MDAnalysis as mda
 import MDAnalysis.analysis.rms
 import matplotlib.pyplot as plt
 import os
-
+import pandas as pd
 
 ligands_all = np.arange(2, 17, 1)
 ligands = np.delete(ligands_all, 10)
@@ -44,10 +44,15 @@ for i in range(len(ligands)):
     times.append(time)
     rmsds.append(rmsd_values)
 
+    fig = plt.figure(figsize=(8, 8))
+    ax = fig.add_subplot(111)
+    ax.plot(time, rmsd_values, "k-")
+    ax.set_xlabel("time (ps)", fontsize = 14)
+    ax.set_ylabel(r"RMSD ($\AA$)", fontsize = 14)
+    plt.savefig(f"../../plots/rmsd_lig_{ligands[i]}.pdf")
+
     rmsd_dictionary["time"] = times
     rmsd_dictionary["rmsd"] = rmsds
 
-
-
-
+    # dataframe = pd.DataFrame.from_dict(rmsd_dictionary)
 
