@@ -34,8 +34,6 @@ experimental_values = experimental_dataframe["K_i"]
 experimental_errors = experimental_dataframe["K_i_err"]
 compound_1 = experimental_values[0]
 compound_1_error = experimental_errors[0]
-# ki = [experimental_values[8], experimental_values[14], experimental_values[15]]
-# ki_errors = [experimental_errors[8], experimental_errors[14], experimental_errors[15]]
 ki = experimental_values
 ki_errors = experimental_errors
 
@@ -65,7 +63,6 @@ for i in range(len(free_energy_differences_str)):
 fig = plt.figure(figsize=(10, 10))
 sns.set(context="notebook", palette="colorblind", style="ticks", font_scale=2)
 x_label_locations = np.arange(len(experimental_free_energy_differences))
-print(x_label_locations)
 bar_width = 0.35
 
 plt.bar(x_label_locations - bar_width / 2,
@@ -106,6 +103,14 @@ transformations = []
 for name in ligand_names:
     label = f"Ligand 1 to {str(name)}"
     transformations.append(label)
+
+ddg_dict = dict(transformations=transformations,
+                ddg_exp=experimental_free_energy_differences,
+                ddg_exp_err=experimental_free_energy_errors,
+                ddg_afe=free_energy_differences,
+                ddg_afe_err=free_energy_errors)
+ddg_dataframe = pd.DataFrame.from_dict(ddg_dict)
+ddg_dataframe.to_csv("../outputs/free_energy/ddg_data.csv")
 
 plt.axhline(color="black")
 plt.xlabel("Transformations")
