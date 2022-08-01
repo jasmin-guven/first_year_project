@@ -55,5 +55,5 @@ for ligand in ligands:
         ax.tick_params(axis="y", rotation=360)
         ax.set_title(r"$\lambda$ index", fontsize=24)
         ax.set_ylabel(r"$\lambda$ index", fontsize=24)
-        ax.set_xlabel(f"{stage} ligand {ligand}")
+        ax.set_xlabel(f"{stage} ligand {ligand}", fontsize=24)
         plt.savefig(f"../../plots/overlap_matrices/{stage}/om_{ligand}.pdf")
