@@ -52,8 +52,8 @@ for ligand in ligands:
                         vmax=1
                         )
         ax.xaxis.tick_top()
-        ax.xaxis.set_label_position("top")
         ax.tick_params(axis="y", rotation=360)
-        ax.set_xlabel(r"$\lambda$ index", fontsize=24)
+        ax.set_title(r"$\lambda$ index", fontsize=24)
         ax.set_ylabel(r"$\lambda$ index", fontsize=24)
+        ax.set_xlabel(f"{stage} ligand {ligand}")
         plt.savefig(f"../../plots/overlap_matrices/{stage}/om_{ligand}.pdf")
