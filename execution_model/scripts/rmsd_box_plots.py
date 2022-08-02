@@ -8,7 +8,7 @@ import seaborn as sns
 
 
 ligands_all = np.arange(2, 17, 1)
-ligands = np.delete(ligands_all, 10)
+ligands = np.delete(ligands_all, [10, 12, 13])
 
 times = []
 rmsds = []
@@ -63,7 +63,7 @@ fig = plt.figure(figsize=(10, 10))
 sns.set(context="notebook", palette="colorblind", style="ticks", font_scale=2)
 
 median_line_properties = dict(linestyle='-', linewidth=2.5, color="#D0006F")
-xtick_positions = np.arange(1, 15, 1)
+xtick_positions = np.arange(1, len(ligands) + 1, 1)
 plt.boxplot(rmsd_dictionary["rmsd"], medianprops=median_line_properties)
 plt.xticks(ticks=xtick_positions, labels=ligands)
 plt.xlabel("Ligand")
