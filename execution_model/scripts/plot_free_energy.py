@@ -29,7 +29,7 @@ def get_experimental_error(error_a, ki_a, error_b, ki_b):
     return (_K_B * _TEMPERATURE * fraction_error / fraction) * _N_A / 4184
 
 
-experimental_dataframe = pd.read_csv("../inputs/experimental_data/exp_no_12.csv")
+experimental_dataframe = pd.read_csv("../inputs/experimental_data/exp_only_correct_structs.csv")
 experimental_values = experimental_dataframe["K_i"]
 experimental_errors = experimental_dataframe["K_i_err"]
 compound_1 = experimental_values[0]
@@ -121,5 +121,5 @@ plt.legend(loc="lower left")
 sns.despine()
 plt.tight_layout()
 plt.legend(frameon=False)
-plt.savefig("../../plots/dd_g.png", dpi=1200)
+plt.savefig("../../plots/dd_g.pdf")
 # plt.show()

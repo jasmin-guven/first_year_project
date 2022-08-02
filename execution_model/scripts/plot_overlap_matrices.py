@@ -6,7 +6,7 @@ import matplotlib
 
 
 ligands_all = np.arange(2, 17, 1)
-ligands = np.delete(ligands_all, 10)
+ligands = np.delete(ligands_all, [10, 12, 13])
 stages = ["bound", "free"]
 for ligand in ligands:
     for stage in stages:
