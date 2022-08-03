@@ -60,7 +60,7 @@ for i in range(len(free_energy_differences_str)):
     free_energy_differences.append(float(stripped_value))
     free_energy_errors.append(float(stripped_error))
 
-fig = plt.figure(figsize=(10, 10))
+fig = plt.figure(figsize=(8, 8))
 sns.set(context="notebook", palette="colorblind", style="ticks", font_scale=2)
 x_label_locations = np.arange(len(experimental_free_energy_differences))
 bar_width = 0.35
