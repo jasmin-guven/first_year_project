@@ -36,9 +36,9 @@ for ligand in ligands:
         colour_bar_args = dict(ticks=[0.025, 0.1, 0.3, 0.8],
                             shrink=0.815)
 
-        fig = plt.figure(figsize=(10, 10))
+        fig = plt.figure(figsize=(8, 8))
         sns.set_style("ticks")
-        sns.set_context("notebook", font_scale=1.5)
+        sns.set_context("notebook", font_scale=2)
         ax = sns.heatmap(matrix, 
                         annot=True, 
                         fmt=".2f", 
