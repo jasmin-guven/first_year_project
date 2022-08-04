@@ -16,7 +16,7 @@ def add_to_dictionary(dictionary, key, value) -> dict:
 
 
 ligands_all = np.arange(2, 17, 1)
-ligands = np.delete(ligands_all, [10, 12, 13])
+ligands = np.delete(ligands_all, 10)
 print(ligands)
 data_dictionary = {}
 for ligand in ligands:   
