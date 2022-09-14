@@ -87,7 +87,8 @@ plt.bar(x_label_locations + bar_width / 2,
         width=bar_width,
         yerr=free_energy_errors,
         label="AFE calculation",
-        color="#D0006F")
+        color="#D0006F",
+        linewidth=0)
 
 (_, caps, _) = plt.errorbar(x_label_locations + bar_width / 2,
                             free_energy_differences,
