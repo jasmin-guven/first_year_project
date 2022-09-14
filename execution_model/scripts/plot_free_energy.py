@@ -70,7 +70,8 @@ plt.bar(x_label_locations - bar_width / 2,
         width=bar_width,
         yerr=experimental_free_energy_errors,
         label="Experimental",
-        color="#0099AB")
+        color="#0099AB",
+        linewidth=0)
 
 (_, caps, _) = plt.errorbar(x_label_locations - bar_width / 2,
                             experimental_free_energy_differences,
