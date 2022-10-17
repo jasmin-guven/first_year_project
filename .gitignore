@@ -1,4 +1,5 @@
 # Data files
+plots/vmd_kpc2/*
 *.pdb
 *.ent
 *.flr

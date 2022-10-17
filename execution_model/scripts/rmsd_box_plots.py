@@ -51,10 +51,10 @@ for i in range(len(ligands)):
     ax.plot(time, rmsd_values, "k-")
     ax.set_xlabel("time (ps)", fontsize = 14)
     ax.set_ylabel(r"RMSD ($\AA$)", fontsize = 14)
-    plt.savefig(f"../../plots/rmsd/{stage}/rmsd_lig_{ligands[i]}.pdf")
+    plt.savefig(f"../../plots/rmsd/{stage}/rmsd_lig_{ligands[i]}.png", transparent=True)
 
-    # rmsd_dictionary["time"] = times
-    # rmsd_dictionary["rmsd"] = rmsds
+    rmsd_dictionary["time"] = times
+    rmsd_dictionary["rmsd"] = rmsds
 
 
 fig = plt.figure(figsize=(10, 10))
@@ -66,4 +66,4 @@ plt.boxplot(rmsd_dictionary["rmsd"], medianprops=median_line_properties)
 plt.xticks(ticks=xtick_positions, labels=ligands)
 plt.xlabel("Ligand")
 plt.ylabel(f"RMSD ($\AA$)")
-plt.savefig(f"../../plots/rmsd/{stage}/box_plot_rmsd_{stage}.pdf")
+plt.savefig(f"../../plots/rmsd/{stage}/box_plot_rmsd_{stage}.png", transparent=True)
